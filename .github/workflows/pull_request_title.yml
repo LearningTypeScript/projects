@@ -1,0 +1,21 @@
+name: Gitmoji + Commitlint Pull Request Title Rule 
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - reopened
+      - synchronize
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: gitmoji + commitlint title rule
+        run: |
+          npm install --save-dev @commitlint/cli commitlint-config-gitmoji
+          echo "module.exports = {extends: ['gitmoji']}" > commitlint.config.js
+          echo ${{github.event.pull_request.title}} | npx commitlint
