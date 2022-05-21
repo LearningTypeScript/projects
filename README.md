@@ -30,9 +30,6 @@ Each has their own README.md with instructions on the commands to run from withi
 
 Each project follows a chapter in the Learning TypeScript book and aligns to one of the following three categories:
 
-- 🥗 Appetizers: bite-sized directed warmups
-- 🍲 Entrees: larger, more hands-off challenges
-- 🍰 Desserts: entrees with a fun twist
-
-🥗 Appetizers each contain a set of independent mini-projects, or _Steps_.
-🍲 Entrees and 🍰 Desserts each contain a single self-contained project.
+- 🥗 Appetizers: bite-sized directed warmups: set of independent mini-projects
+- 🍲 Entrees: larger, more hands-off challenge: a single self-contained project
+- 🍰 Desserts: the same structure as entrees, with a fun thematic twist
