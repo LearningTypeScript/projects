@@ -1,0 +1,192 @@
+[
+  {
+    "height": 5114,
+    "name": "Algonquin Peak",
+    "type": "mountain"
+  },
+  {
+    "acres": 64800,
+    "name": "Allegany State Park",
+    "type": "park"
+  },
+  {
+    "acres": 5205,
+    "name": "Bear Mountain State Park",
+    "type": "park"
+  },
+  {
+    "height": 95,
+    "lit": 1874,
+    "name": "Bluff Point Light",
+    "type": "lighthouse"
+  },
+  {
+    "name": "Cayuga Lake",
+    "miles": 66,
+    "type": "lake"
+  },
+  {
+    "acres": 597,
+    "name": "Chimney Bluffs State Park",
+    "type": "park"
+  },
+  {
+    "height": 90,
+    "name": "Cohoes Falls",
+    "type": "waterfall"
+  },
+  {
+    "depth": 202,
+    "length": 301,
+    "name": "Delaware River",
+    "type": "river"
+  },
+  {
+    "height": 82,
+    "lit": 1826,
+    "name": "Dunkirk Light",
+    "type": "lighthouse"
+  },
+  {
+    "name": "Fort Brewerton",
+    "type": "fort"
+  },
+  {
+    "height": 91,
+    "lit": 1782,
+    "name": "Fort Niagara Light",
+    "type": "lighthouse"
+  },
+  {
+    "name": "Fort Ontario",
+    "type": "fort"
+  },
+  {
+    "name": "Fort Stanwix",
+    "type": "fort"
+  },
+  {
+    "name": "Fort Ticonderoga",
+    "type": "fort"
+  },
+  {
+    "name": "Fort William Henry",
+    "type": "fort"
+  },
+  {
+    "acres": 7667,
+    "name": "Hudson Highlands State Park",
+    "type": "park"
+  },
+  {
+    "depth": 30,
+    "length": 315,
+    "name": "Hudson River",
+    "type": "river"
+  },
+  {
+    "height": 260,
+    "name": "Kaaterskill Falls",
+    "type": "waterfall"
+  },
+  {
+    "name": "Lake Champlain",
+    "miles": 490,
+    "type": "lake"
+  },
+  {
+    "name": "Lake George",
+    "miles": 44,
+    "type": "lake"
+  },
+  {
+    "acres": 14427,
+    "name": "Letchworth State Park",
+    "type": "park"
+  },
+  {
+    "name": "Madison Barracks",
+    "type": "fort"
+  },
+  {
+    "acres": 22275,
+    "name": "Minnewaska State Park",
+    "type": "park"
+  },
+  {
+    "depth": 10,
+    "length": 149,
+    "name": "Mohawk River",
+    "type": "river"
+  },
+  {
+    "height": 4960,
+    "name": "Mount Haystack",
+    "type": "mountain"
+  },
+  {
+    "height": 5344,
+    "name": "Mount Marcy",
+    "type": "mountain"
+  },
+  {
+    "height": 4926,
+    "name": "Mount Skylight",
+    "type": "mountain"
+  },
+  {
+    "name": "Old Fort Niagara",
+    "type": "fort"
+  },
+  {
+    "name": "Old Stone Fort",
+    "type": "fort"
+  },
+  {
+    "name": "Oneida Lake",
+    "miles": 80,
+    "type": "lake"
+  },
+  {
+    "acres": 1110,
+    "name": "Robert H. Treman State Park",
+    "type": "park"
+  },
+  {
+    "name": "Seneca Lake",
+    "miles": 67,
+    "type": "lake"
+  },
+  {
+    "height": 70,
+    "lit": 1825,
+    "name": "Sodus Point Light",
+    "type": "lighthouse"
+  },
+  {
+    "height": 87,
+    "name": "Stony Kill Falls",
+    "type": "waterfall"
+  },
+  {
+    "length": 444,
+    "name": "Susquehanna River",
+    "type": "river"
+  },
+  {
+    "height": 71,
+    "lit": 1876,
+    "name": "Thirty Mile Point Light",
+    "type": "lighthouse"
+  },
+  {
+    "height": 187,
+    "name": "Verkeerder Kill Falls",
+    "type": "waterfall"
+  },
+  {
+    "height": 4867,
+    "name": "Whiteface Mountain",
+    "type": "mountain"
+  }
+]
