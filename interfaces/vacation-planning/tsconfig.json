@@ -1,8 +1,0 @@
-{
-  "compilerOptions": {
-    "esModuleInterop": true,
-    "noEmit": true,
-    "strict": true,
-    "target": "es2021"
-  }
-}
