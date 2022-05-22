@@ -11,5 +11,5 @@ updates:
       - "npm"
       - "dependencies"
     commit-message:
-      prefix: "⬆️"
+      prefix: "⬆️ "
       include: scope
