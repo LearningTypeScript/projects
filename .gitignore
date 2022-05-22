@@ -1,3 +1,4 @@
 node_modules/
 *.js
 !jest.config.js
+!commitlint.config.js

@@ -1,0 +1,20 @@
+name: Pull Request Title
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - reopened
+      - synchronize
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'npm'
+      - run: npm ci
+      - name: Commitlint on PR Title
+        run: echo ${{github.event.pull_request.title}} | npx commitlint
