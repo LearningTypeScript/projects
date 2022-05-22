@@ -17,5 +17,4 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - name: Commitlint on PR Title
-        run: |
-          echo ${{github.event.pull_request.title}} | npx commitlint
+        run: echo ${{github.event.pull_request.title}} | npx commitlint
