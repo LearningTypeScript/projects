@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,json,ts,tsx}\""
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",
     "commitlint-config-gitmoji": "^2.2.5",
