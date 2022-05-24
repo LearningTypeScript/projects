@@ -10,3 +10,6 @@ updates:
     labels:
       - "npm"
       - "dependencies"
+    commit-message:
+      prefix: ":arrow_up: "
+      include: scope
