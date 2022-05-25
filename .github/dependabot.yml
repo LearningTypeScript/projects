@@ -11,5 +11,5 @@ updates:
       - "npm"
       - "dependencies"
     commit-message:
-      prefix: ":arrow_up: build"
+      prefix: "⬆️ build"
       include: scope
