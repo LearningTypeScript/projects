@@ -1,16 +1,16 @@
 {
-  "description": "A Learning TypeScript > Generics project.",
-  "keywords": [
-    "learning",
-    "typescript",
-    "project",
-    "generics",
-    "appetizer"
-  ],
-  "license": "MIT",
-  "name": "hidash",
-  "scripts": {
-    "test": "jest",
-    "test:solutions": "cross-env TEST_SOLUTIONS=1 jest"
-  }
+	"description": "A Learning TypeScript > Generics project.",
+	"keywords": [
+		"learning",
+		"typescript",
+		"project",
+		"generics",
+		"appetizer"
+	],
+	"license": "MIT",
+	"name": "hidash",
+	"scripts": {
+		"test": "jest",
+		"test:solutions": "cross-env TEST_SOLUTIONS=1 jest"
+	}
 }

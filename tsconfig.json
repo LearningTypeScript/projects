@@ -1,9 +1,9 @@
 {
-  "compilerOptions": {
-    "esModuleInterop": true,
-    "moduleResolution": "node",
-    "noEmit": true,
-    "strict": true,
-    "target": "es2020"
-  }
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"noEmit": true,
+		"strict": true,
+		"target": "es2020"
+	}
 }

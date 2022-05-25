@@ -12,11 +12,11 @@ mealDate = new Date("September 13, 2021");
 console.log(`We're starting on ${mealDate} with a dressing of ${dressing}.`);
 
 if (arugula) {
-  console.log(`There are ${arugula} arugula serving(s) for this first meal.`);
+	console.log(`There are ${arugula} arugula serving(s) for this first meal.`);
 }
 
 if (lettuce) {
-  console.log(`There are ${arugula} arugula serving(s) for this first meal.`);
+	console.log(`There are ${arugula} arugula serving(s) for this first meal.`);
 }
 
 arugula = undefined;
@@ -27,11 +27,11 @@ mealDate = new Date("March 13, 2022");
 console.log(`Next up, a ${mealDate} meal with a dressing of ${dressing}.`);
 
 if (arugula) {
-  console.log(`This time, there are ${arugula} arugula serving(s).`);
+	console.log(`This time, there are ${arugula} arugula serving(s).`);
 }
 
 if (lettuce) {
-  console.log(`This time, there are ${arugula} arugula serving(s).`);
+	console.log(`This time, there are ${arugula} arugula serving(s).`);
 }
 
 export {};
