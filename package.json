@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@commitlint/cli": "^17.0.0",
+    "@commitlint/cli": "^17.0.1",
     "commitlint-config-gitmoji": "^2.2.5",
     "cross-env": "7.0.3",
     "jest": "28.1.0",
