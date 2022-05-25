@@ -1,8 +1,8 @@
 {
-  "description": "A Learning TypeScript > Unions and Literals appetizer project.",
-  "name": "dinner-party-primitives",
-  "scripts": {
-    "tsc": "tsc",
-    "tsc:solutions": "tsc ./src/*/solution.ts"
-  }
+	"description": "A Learning TypeScript > Unions and Literals appetizer project.",
+	"name": "dinner-party-primitives",
+	"scripts": {
+		"tsc": "tsc",
+		"tsc:solutions": "tsc ./src/*/solution.ts"
+	}
 }

@@ -26,9 +26,9 @@ Example: Given the following array as input...
 
 ```js
 [
-  { city: "Troy", name: "Muddaddy Flats" },
-  { city: "Albany", name: "Bombers" },
-  { city: "Troy", name: "Nighthalks" },
+	{ city: "Troy", name: "Muddaddy Flats" },
+	{ city: "Albany", name: "Bombers" },
+	{ city: "Troy", name: "Nighthalks" },
 ];
 ```
 

@@ -1,8 +1,8 @@
 {
-  "description": "A Learning TypeScript > Unions and Literals project.",
-  "name": "narrow-trail",
-  "scripts": {
-    "test": "jest",
-    "test:solutions": "cross-env TEST_SOLUTIONS=1 jest"
-  }
+	"description": "A Learning TypeScript > Unions and Literals project.",
+	"name": "narrow-trail",
+	"scripts": {
+		"test": "jest",
+		"test:solutions": "cross-env TEST_SOLUTIONS=1 jest"
+	}
 }
