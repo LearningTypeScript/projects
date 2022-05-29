@@ -1,0 +1,39 @@
+name: Solutions
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+          cache: "npm"
+      - run: npm ci
+      - name: Run all solutions tests
+        run: |
+          root_dir=$(pwd)
+          for path in $(find projects/ -depth);
+            do 
+              if [ -e $path/package.json ];
+                then
+                  echo -e "\nRunning test for $path"
+                  cd $path
+                  npm run test:solutions
+                  exit_code=$?
+                  if [ $exit_code -ne 0 ];
+                    then
+                      echo "Exit code of $exit_code"
+                      exit $exit_code
+                  fi
+                  cd $root_dir
+              fi
+          done
