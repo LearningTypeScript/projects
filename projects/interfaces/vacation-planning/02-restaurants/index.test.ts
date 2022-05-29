@@ -3,9 +3,9 @@ import { describe, expect, test } from "@jest/globals";
 import * as index from "./index";
 import * as solution from "./solution";
 
-const { groupLandmarks } = process.env.TEST_SOLUTIONS ? solution : index;
+const { groupRestaurants } = process.env.TEST_SOLUTIONS ? solution : index;
 
-describe(groupLandmarks, () => {
+describe(groupRestaurants, () => {
 	test.each([
 		[[], {}],
 		[
@@ -56,6 +56,6 @@ describe(groupLandmarks, () => {
 			},
 		],
 	])("%j", (city: solution.Landmark[], grouped: solution.GroupedLandmarks) => {
-		expect(groupLandmarks(city)).toEqual(grouped);
+		expect(groupRestaurants(city)).toEqual(grouped);
 	});
 });
