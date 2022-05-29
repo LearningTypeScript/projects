@@ -1,0 +1,41 @@
+name: "🐛 Report a Bug in a Project"
+description: "Report a bug trying to run and/or test a project"
+title: "🐛 Bug: [project name here] <short description of the bug>"
+labels:
+  - "type: bug"
+body:
+  - attributes:
+      description: If any of these required steps are not taken, we may not be able to review your issue. Help us to help you!
+      label: Before You File a Bug Report Please Confirm You Have Done The Following...
+      options:
+        - label: I have tried restarting my IDE and the issue persists.
+          required: true
+        - label: I have pulled the latest `main` branch of the repository.
+          required: true
+        - label: I have [searched for related issues](https://github.com/LearningTypeScript/projects/issues?q=is%3Aissue+label%3A%22type%3A+bug%22) and found none that matched my issue.
+          required: true
+        - label: This is the appropriate issue form for the bug I would like to report.
+          required: true
+    type: checkboxes
+  - attributes:
+      description: What did you expect to happen?
+      label: Expected
+    type: textarea
+    validations:
+      required: true
+  - attributes:
+      description: What happened instead?
+      label: Actual
+    type: textarea
+    validations:
+      required: true
+  - attributes:
+      description: Which file or section within which project contains the bug?
+      label: Impacted Project
+    type: textarea
+    validations:
+      required: true
+  - attributes:
+      label: Additional Info
+      description: Any additional info you'd like to provide.
+    type: textarea

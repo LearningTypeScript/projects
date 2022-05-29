@@ -1,0 +1,7 @@
+blank_issues_enabled: false
+contact_links:
+  - about: |
+      This issue tracker is specifically for the projects that accompany the Learning TypeScript website.
+      Go here to report any other kind of issue for learningtypescript.com.
+    name: Looking for the Website Issue Tracker?
+    url: https://github.com/JoshuaKGoldberg/learning-typescript
