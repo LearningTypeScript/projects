@@ -12,7 +12,8 @@
       "profile": "http://fuadolatunji.me",
       "contributions": [
         "infra",
-        "doc"
+        "doc",
+        "bug"
       ]
     }
   ],
