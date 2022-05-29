@@ -33,7 +33,7 @@ describe(describeCity, () => {
 			},
 			dedent`
         Lake George, New York
-        * Located at 42°39'09"N 73°45'26"W
+        * Located at 43°25'28"N 73°42'55"W
       `,
 		],
 		[
