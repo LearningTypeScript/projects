@@ -1,0 +1,12 @@
+{
+	"description": "A Learning TypeScript > From JavaScript to TypeScript project.",
+	"devDependencies": {
+		"cross-env": "^7.0.3",
+		"jest": "27.5.1"
+	},
+	"name": "the-typeinator",
+	"scripts": {
+		"test": "jest",
+		"test:solutions": "cross-env TEST_SOLUTIONS=1 jest"
+	}
+}
