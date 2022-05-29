@@ -1,4 +1,4 @@
-name: Markdown lint
+name: Markdownlint
 
 on:
   push:
