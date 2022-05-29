@@ -1,0 +1,40 @@
+name: "✍ Report a Typo"
+description: "Report a typo you encountered with documentation and/or project"
+title: "✍ Typo: [project name here] <short description of the typo>"
+labels:
+  - "type: typo"
+body:
+  - attributes:
+      description: If any of these required steps are not taken, we may not be able to review your issue. Help us to help you!
+      label: Before You File a Typo Report Please Confirm You Have Done The Following...
+      options:
+        - label: I have pulled the latest `main` branch of the repository.
+          required: true
+        - label: I have [searched for related issues and pull requests](https://github.com/LearningTypeScript/projects/issues?q=label%3A%22type%3A+typo%22) and found none that matched my issue.
+          required: true
+        - label: I have searched the word or phrase in question online to verify it's incorrect.
+          required: true
+        - label: This is the appropriate issue form for the typo I would like to report.
+          required: true
+    type: checkboxes
+  - attributes:
+      value: |
+        If this report is for a small typo you're sure is a mistake,
+        feel free to instead send a pull request directly.
+    type: markdown
+  - attributes:
+      description: Which file within which project contains the typo?
+      label: Impacted Project File
+    type: textarea
+    validations:
+      required: true
+  - attributes:
+      description: In detail, what is wrong with the file's text?
+      label: What's Wrong?
+    type: textarea
+    validations:
+      required: true
+  - attributes:
+      label: Additional Info
+      description: Any additional info you'd like to provide.
+    type: textarea

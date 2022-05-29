@@ -1,0 +1,33 @@
+name: "🛠 Request an Improvement in Tooling"
+description: "Report a bug or request an enhancement in repository tooling"
+title: "🛠 Tooling: <short description of the request>"
+labels:
+  - "area: tooling"
+body:
+  - attributes:
+      description: If any of these required steps are not taken, we may not be able to review your issue. Help us to help you!
+      label: Before You File a Bug Report Please Confirm You Have Done The Following...
+      options:
+        - label: I have pulled the latest `main` branch of the repository.
+          required: true
+        - label: I have [searched for related issues](https://github.com/LearningTypeScript/projects/issues?q=is%3Aissue+label%3A%22area%3A+tooling) and found none that matched my request.
+          required: true
+        - label: This is the appropriate issue form for the tooling issue I would like to report.
+          required: true
+    type: checkboxes
+  - attributes:
+      description: What did you expect to happen?
+      label: Expected
+    type: textarea
+    validations:
+      required: true
+  - attributes:
+      description: What happened instead?
+      label: Actual
+    type: textarea
+    validations:
+      required: true
+  - attributes:
+      label: Additional Info
+      description: Any additional info you'd like to provide.
+    type: textarea
