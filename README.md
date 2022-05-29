@@ -46,7 +46,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="http://fuadolatunji.me"><img src="https://avatars.githubusercontent.com/u/65264054?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Fuad Olatunji</b></sub></a><br /><a href="#infra-fuadop" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="http://fuadolatunji.me"><img src="https://avatars.githubusercontent.com/u/65264054?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Fuad Olatunji</b></sub></a><br /><a href="#infra-fuadop" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/LearningTypeScript/projects/commits?author=fuadop" title="Documentation">📖</a></td>
   </tr>
 </table>
 
