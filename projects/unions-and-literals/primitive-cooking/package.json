@@ -2,7 +2,7 @@
 	"description": "A Learning TypeScript > Unions and Literals appetizer project.",
 	"name": "dinner-party-primitives",
 	"scripts": {
-		"tsc": "tsc",
-		"tsc:solutions": "tsc ./src/*/solution.ts"
+		"test": "tsc",
+		"test:solutions": "tsc ./src/*/solution.ts"
 	}
 }
