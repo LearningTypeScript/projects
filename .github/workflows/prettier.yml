@@ -17,6 +17,4 @@ jobs:
           cache: "npm"
       - run: npm ci
       - name: Verify if all files are prettier-ed
-        run: |
-          npx prettier --write ".husky/**/*"
-          npx prettier --check "**/*" --ignore-unknown
+        run: npx prettier --check "**/*" --ignore-unknown
