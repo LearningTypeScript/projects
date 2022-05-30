@@ -1,11 +1,5 @@
 {
 	"description": "A Learning TypeScript > Arrays project.",
-	"devDependencies": {
-		"cross-env": "^7.0.3",
-		"jest": "27.5.1",
-		"typescript": "4.6.2",
-		"vitest": "^0.9.4"
-	},
 	"name": "analyzing-dna",
 	"scripts": {
 		"test": "jest",
