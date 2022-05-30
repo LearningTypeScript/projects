@@ -13,6 +13,7 @@
   </a>
   <img alt="TypeScript: Strict" src="https://img.shields.io/badge/typescript-strict-14cc21.svg">
 </p>
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
