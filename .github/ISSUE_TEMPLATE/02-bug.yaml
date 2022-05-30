@@ -6,7 +6,7 @@ labels:
 body:
   - attributes:
       description: If any of these required steps are not taken, we may not be able to review your issue. Help us to help you!
-      label: Before You File a Bug Report Please Confirm You Have Done The Following...
+      label: Bug Report Checklist
       options:
         - label: I have tried restarting my IDE and the issue persists.
           required: true
