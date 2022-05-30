@@ -1,0 +1,8 @@
+{
+	"description": "A Learning TypeScript > Interfaces project.",
+	"name": "vacation-planning",
+	"scripts": {
+		"test": "tsc",
+		"test:solutions": "tsc ./*/solution.ts"
+	}
+}
