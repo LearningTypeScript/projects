@@ -1,27 +1,16 @@
-<h1 align="center"> Learning TypeScript Projects </h1>
-
-<!-- Dev Badge Section -->
-<p align="center">
-  <a href="https://github.com/LearningTypeScript/projects/actions/workflows/prettier.yml">
-    <img alt="Code Style: Prettier" src="https://img.shields.io/badge/code_style-prettier-14cc21.svg">
-  </a>
-  <a href="https://github.com/LearningTypeScript/projects/actions/workflows/markdown.yml">
-    <img alt="Markdown Style: Markdownlint" src="https://img.shields.io/badge/markdown_style-markdownlint-14cc21.svg">
-  </a>
-  <a href="https://github.com/LearningTypeScript/projects/actions">
-    <img alt="Github Actions: Build Passing" src="https://img.shields.io/badge/github_actions-build_passing-14cc21.svg">
-  </a>
-  <img alt="TypeScript: Strict" src="https://img.shields.io/badge/typescript-strict-14cc21.svg">
-  <a href="#contributors-">
-    <img alt="All Contributors" src="[ac-badge]">
-  </a>
-</p>
+# Learning TypeScript Projects
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
 [ac-badge]: https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+[![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-14cc21.svg)](https://github.com/LearningTypeScript/projects/actions/workflows/prettier.yml)
+[![Markdown Style: Markdownlint](https://img.shields.io/badge/markdown_style-markdownlint-14cc21.svg)](https://github.com/LearningTypeScript/projects/actions/workflows/markdown.yml)
+[![Github Actions: Build Passing](https://img.shields.io/badge/github_actions-build_passing-14cc21.svg)](https://github.com/LearningTypeScript/projects/actions)
+![TypeScript: Strict](https://img.shields.io/badge/typescript-strict-14cc21.svg)
+[![All Contributors][ac-badge]](#contributors-)
 
 > Hands-on real world projects that will help you exercise your knowledge of TypeScript.
 
