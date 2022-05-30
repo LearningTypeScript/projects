@@ -12,11 +12,14 @@
     <img alt="Github Actions: Build Passing" src="https://img.shields.io/badge/github_actions-build_passing-14cc21.svg">
   </a>
   <img alt="TypeScript: Strict" src="https://img.shields.io/badge/typescript-strict-14cc21.svg">
+  <a href="#contributors-">
+    <img alt="All Contributors" src="[ac-badge]">
+  </a>
 </p>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[ac-badge]: https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
