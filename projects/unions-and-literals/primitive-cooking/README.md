@@ -1,4 +1,4 @@
-# Dinner Party Primitives
+# Primitive Cooking
 
 > A [Learning TypeScript > Unions and Literals](https://learning-typescript.com/unions-and-literals) 🥗 appetizer project.
 
