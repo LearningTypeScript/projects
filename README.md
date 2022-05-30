@@ -1,9 +1,7 @@
 # Learning TypeScript Projects
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > Hands-on real world projects that will help you exercise your knowledge of TypeScript.
@@ -50,6 +48,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http://fuadolatunji.me"><img src="https://avatars.githubusercontent.com/u/65264054?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Fuad Olatunji</b></sub></a><br /><a href="#infra-fuadop" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/LearningTypeScript/projects/commits?author=fuadop" title="Documentation">📖</a> <a href="https://github.com/LearningTypeScript/projects/issues?q=author%3Afuadop" title="Bug reports">🐛</a> <a href="#security-fuadop" title="Security">🛡️</a></td>
+    <td align="center"><a href="http://www.joshuakgoldberg.com"><img src="https://avatars.githubusercontent.com/u/3335181?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Josh Goldberg</b></sub></a><br /><a href="https://github.com/LearningTypeScript/projects/issues?q=author%3AJoshuaKGoldberg" title="Bug reports">🐛</a> <a href="#business-JoshuaKGoldberg" title="Business development">💼</a> <a href="https://github.com/LearningTypeScript/projects/commits?author=JoshuaKGoldberg" title="Code">💻</a> <a href="https://github.com/LearningTypeScript/projects/commits?author=JoshuaKGoldberg" title="Documentation">📖</a> <a href="#maintenance-JoshuaKGoldberg" title="Maintenance">🚧</a> <a href="https://github.com/LearningTypeScript/projects/pulls?q=is%3Apr+reviewed-by%3AJoshuaKGoldberg" title="Reviewed Pull Requests">👀</a> <a href="#security-JoshuaKGoldberg" title="Security">🛡️</a> <a href="https://github.com/LearningTypeScript/projects/commits?author=JoshuaKGoldberg" title="Tests">⚠️</a></td>
   </tr>
 </table>
 
