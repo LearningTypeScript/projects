@@ -15,7 +15,7 @@ The [README.md #Setup section](../README.md#setup) contains the general right st
 If you plan on sending pull requests, however, you'll need to [fork the repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo) to your personal account and clone it from there instead:
 
 ```shell
-git clone https://github.com/<your-username>/projects learning-typescript-projects
+git clone https://github.com/learning-typescript-projects/your-username/projects
 cd learning-typescript-projects
 npm install
 ```
