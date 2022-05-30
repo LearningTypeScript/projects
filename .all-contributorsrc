@@ -16,6 +16,22 @@
         "bug",
         "security"
       ]
+    },
+    {
+      "login": "JoshuaKGoldberg",
+      "name": "Josh Goldberg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3335181?v=4",
+      "profile": "http://www.joshuakgoldberg.com",
+      "contributions": [
+        "bug",
+        "business",
+        "code",
+        "doc",
+        "maintenance",
+        "review",
+        "security",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7,
