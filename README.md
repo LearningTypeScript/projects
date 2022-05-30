@@ -1,5 +1,18 @@
 # Learning TypeScript Projects
 
+<!-- Dev Badge Section -->
+<p align="center">
+  <a href="https://github.com/LearningTypeScript/projects/actions/workflows/prettier.yml">
+    <img alt="Code Style: Prettier" src="https://img.shields.io/badge/code_style-prettier-14cc21.svg">
+  </a>
+  <a href="https://github.com/LearningTypeScript/projects/actions/workflows/markdown.yml">
+    <img alt="Markdown Style: Markdownlint" src="https://img.shields.io/badge/markdown_style-markdownlint-14cc21.svg">
+  </a>
+  <a href="https://github.com/LearningTypeScript/projects/actions">
+    <img alt="Github Actions: Build Passing" src="https://img.shields.io/badge/github_actions-build_passing-14cc21.svg">
+  </a>
+  <img alt="TypeScript: Strict" src="https://img.shields.io/badge/typescript-strict-14cc21.svg">
+</p>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
