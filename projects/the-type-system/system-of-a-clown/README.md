@@ -24,7 +24,7 @@ tsc --watch
 
 ## Steps
 
-- [1. Fun Activities](./01-fun-activities)
+- [1. Clowning Around](./01-clowning-around)
 - [2. Clown Availability](./02-clown-availability)
 
 ## Notes
