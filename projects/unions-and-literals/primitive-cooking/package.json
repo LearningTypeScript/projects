@@ -3,6 +3,6 @@
 	"name": "dinner-party-primitives",
 	"scripts": {
 		"test": "tsc",
-		"test:solutions": "tsc ./src/*/solution.ts"
+		"test:solutions": "tsc ./*/solution.ts"
 	}
 }
