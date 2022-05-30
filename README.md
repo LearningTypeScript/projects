@@ -1,4 +1,4 @@
-# Learning TypeScript Projects
+<h1 align="center"> Learning TypeScript Projects </h1>
 
 <!-- Dev Badge Section -->
 <p align="center">
