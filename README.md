@@ -2,7 +2,7 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-[ac-badge]: https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat
+[ac-badge]: https://img.shields.io/badge/all_contributors-1-14cc21.svg
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
