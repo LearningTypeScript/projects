@@ -9,7 +9,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    if: ${{ contains('[bot]') != true }}
+    if: ${{ contains(github.actor, '[bot]') != true }}
     steps:
       - uses: actions/checkout@v3
         with:
