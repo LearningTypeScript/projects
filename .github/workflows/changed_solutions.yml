@@ -46,7 +46,9 @@ jobs:
               run_tests $dir
             elif [ -e $dir/solution.js ]; then
               run_tests $dir
-            else continue
+            else 
+              continue
+            fi
           done
 
           echo ""
