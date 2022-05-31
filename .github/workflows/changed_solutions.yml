@@ -1,0 +1,62 @@
+name: Changed Solutions
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    if: ${{ contains('[bot]') != true }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+          cache: "npm"
+      - run: npm ci
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v22
+      - name: Run solutions in changed files directory
+        run: |
+          root_dir=$(pwd)
+          failed_tests=()
+
+          function run_tests {
+            echo -e "\nRunning test for $1"
+            cd $1
+            npm run test:solutions
+            local exit_code=$?
+            if [ $exit_code -ne 0 ]; then
+              failed_tests+=("$1")
+            fi
+            cd $root_dir
+          }
+
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            dir=$(dirname $file)
+            if [ -e $dir/package.json ]; then
+              run_tests $dir
+            elif [ -e $dir/solution.ts ]; then
+              run_tests $dir
+            elif [ -e $dir/solution.js ]; then
+              run_tests $dir
+            else continue
+          done
+
+          echo ""
+          for path in ${failed_tests[@]}; do
+            echo "Tests failed at $path"
+          done
+
+          if [ ${#failed_tests[@]} -gt 0 ]; then
+            exit 1
+          else
+            exit 0
+          fi
+        shell: bash
