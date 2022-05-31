@@ -30,12 +30,9 @@ jobs:
           function run_tests {
             echo -e "\nRunning test for $1"
             cd $1
-            npm run test:solutions
-            local exit_code=$?
-            if [ $exit_code -ne 0 ]; then
-              failed_tests+=("$1")
-            fi
+            npm run test:solutions || failed_tests+=("$1")
             cd $root_dir
+            return 0
           }
 
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
