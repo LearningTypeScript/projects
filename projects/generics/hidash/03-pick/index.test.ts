@@ -7,7 +7,7 @@ import * as solution from "./solution";
 const { pick } = process.env.TEST_SOLUTIONS ? solution : index;
 
 describe(pick, () => {
-	describe("types", () => {
+	test("types", () => {
 		expectType<number>(pick({ a: 1 }, "a"));
 		expectType<number>(pick({ a: 1, b: 2 }, "b"));
 		expectType<number>(pick({ a: 1, b: false }, "a"));

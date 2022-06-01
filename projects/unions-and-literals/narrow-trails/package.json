@@ -1,5 +1,4 @@
 {
-	"description": "A Learning TypeScript > Unions and Literals project.",
 	"name": "narrow-trail",
 	"scripts": {
 		"test": "jest",
