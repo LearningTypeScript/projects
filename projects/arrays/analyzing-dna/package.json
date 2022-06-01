@@ -1,5 +1,4 @@
 {
-	"description": "A Learning TypeScript > Arrays project.",
 	"name": "analyzing-dna",
 	"scripts": {
 		"test": "jest",

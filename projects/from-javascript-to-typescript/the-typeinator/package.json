@@ -1,5 +1,4 @@
 {
-	"description": "A Learning TypeScript > From JavaScript to TypeScript project.",
 	"name": "the-typeinator",
 	"scripts": {
 		"test": "jest",

@@ -7,7 +7,7 @@ import * as solution from "./solution";
 const { zip } = process.env.TEST_SOLUTIONS ? solution : index;
 
 describe(zip, () => {
-	describe("types", () => {
+	test("types", () => {
 		expectType<never[]>(zip([], []));
 		expectType<string[]>(zip(["a"], ["b"]));
 		expectType<number[]>(zip([1], [2]));
