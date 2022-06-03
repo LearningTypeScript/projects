@@ -11,16 +11,16 @@ type Clearing = PlaceBase & {
 	type: "clearing";
 };
 
-type Town = PlaceBase & {
-	around?: Place;
-	through?: Place;
-	type: "town";
-};
-
 type Path = PlaceBase & {
 	shortcut?: Place;
 	through: Place;
 	type: "path";
+};
+
+type Town = PlaceBase & {
+	around?: Place;
+	through?: Place;
+	type: "town";
 };
 
 type StreamBase = PlaceBase & {
@@ -122,6 +122,14 @@ while (current) {
 			current = current.through;
 			break;
 
+		case "path":
+			current =
+				current.shortcut &&
+				current.shortcut.proximity < current.through.proximity
+					? current.shortcut
+					: current.through;
+			break;
+
 		case "town":
 			if (!current.around) {
 				current = current.through;
@@ -133,14 +141,6 @@ while (current) {
 						? current.around
 						: current.through;
 			}
-			break;
-
-		case "path":
-			current =
-				current.shortcut &&
-				current.shortcut.proximity < current.through.proximity
-					? current.shortcut
-					: current.through;
 			break;
 
 		case "stream":

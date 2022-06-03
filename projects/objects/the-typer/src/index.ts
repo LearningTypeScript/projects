@@ -69,10 +69,20 @@ let treasure;
 
 while (current) {
 	console.log(`At: ${current.name}`);
+
 	switch (current.type) {
 		case "clearing":
 			current = current.through;
 			break;
+
+		case "path":
+			current =
+				current.shortcut &&
+				current.shortcut.proximity < current.through.proximity
+					? current.shortcut
+					: current.through;
+			break;
+
 		case "town":
 			if (!current.around) {
 				current = current.through;
@@ -85,13 +95,7 @@ while (current) {
 						: current.through;
 			}
 			break;
-		case "path":
-			current =
-				current.shortcut &&
-				current.shortcut.proximity < current.through.proximity
-					? current.shortcut
-					: current.through;
-			break;
+
 		case "stream":
 			switch (current.area) {
 				case "begin":
@@ -108,6 +112,7 @@ while (current) {
 					break;
 			}
 	}
+
 	if (!current) {
 		console.log("Hmm. Dead end.");
 	} else if (current.treasure) {
@@ -115,6 +120,7 @@ while (current) {
 		break;
 	}
 }
+
 if (treasure) {
 	console.log(`This will do nicely: ${treasure}.`);
 } else {
