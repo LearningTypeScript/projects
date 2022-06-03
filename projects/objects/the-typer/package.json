@@ -1,0 +1,7 @@
+{
+	"name": "the-typer",
+	"scripts": {
+		"test": "tsc",
+		"test:solutions": "tsc ./src/solution.ts"
+	}
+}
