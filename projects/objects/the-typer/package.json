@@ -2,6 +2,6 @@
 	"name": "the-typer",
 	"scripts": {
 		"test": "tsc",
-		"test:solutions": "tsc ./solution.ts"
+		"test:solutions": "tsc ./src/solution.ts"
 	}
 }
