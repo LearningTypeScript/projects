@@ -11,12 +11,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
       - uses: actions/setup-node@v3
         with:
           node-version: "16"
           cache: "npm"
       - run: npm ci
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v22
+        with:
+          files: projects
+      - name: Run changed solutions in project directories
+        if: ${{ steps.changed-files.outputs.only_changed == 'true' }}
+        run: |
+          chmod +x ./scripts/changed-solutions.sh
+          ./scripts/changed-solutions.sh ${{ steps.changed-files.outputs.all_changed_files }}
+        shell: bash
       - name: Run all solutions tests
+        if: ${{ steps.changed-files.outputs.only_changed != 'true' }}
         run: |
           chmod +x ./scripts/check-solutions.sh
           ./scripts/check-solutions.sh
