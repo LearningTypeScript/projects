@@ -19,7 +19,8 @@
 		"projects",
 		"appetizer",
 		"entree",
-		"dessert"
+		"dessert",
+		"book"
 	],
 	"license": "MIT",
 	"name": "learning-typescript-projects",
