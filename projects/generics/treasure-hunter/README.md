@@ -33,7 +33,7 @@ It should have three type parameters: `Content`, `Fake`, and `Real`.
 
 The `collectTreasure` function should have three runtime parameters:
 
-- `buried`: A `Buried` object _(see later)_ of unknown data
+- `buried`: A `Buried` object _(see later)_ of `Content` data
 - `isFake`: A type predicate function that takes in a `datum` and returns whether it is `Fake`
 - `isReal`: A type predicate function that takes in a `datum` and returns whether it is `Real`
 
