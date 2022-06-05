@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
           node-version: "16"
@@ -21,13 +23,11 @@ jobs:
         uses: tj-actions/changed-files@v22
         with:
           files: projects
-      - name: print
-        run: echo ${{ steps.changed-files.outputs.only_modified }}
       - name: Run changed solutions in project directories
-        if: ${{ steps.changed-files.outputs.only_changed == 'true' }}
+        if: ${{ steps.changed-files.outputs.only_modified == 'true' }}
         run: ./scripts/changed-solutions.sh ${{ steps.changed-files.outputs.all_changed_files }}
         shell: bash
       - name: Run all solutions tests
-        if: ${{ steps.changed-files.outputs.only_changed == 'false' }}
+        if: ${{ steps.changed-files.outputs.only_modified != 'true' }}
         run: ./scripts/check-solutions.sh
         shell: bash
