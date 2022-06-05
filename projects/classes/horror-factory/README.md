@@ -1,4 +1,4 @@
-# Horror Injection
+# Horror Factory
 
 > A [Learning TypeScript > Classes](https://learning-typescript.com/classes) 🍰 dessert project.
 
