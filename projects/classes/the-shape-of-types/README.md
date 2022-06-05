@@ -65,4 +65,6 @@ Two more exported classes must be exported that each extends `Horror`:
     - `getPowerFrom`: If the previously consumed horror's `evil` matches this sorcerer's evil, returns double its power; otherwise, returns exactly its power
     - `isEvil`: Returns the `evil` boolean received in the constructor
 
-You may add `#` private members to the classes as you wish, such as to store previously consumed opponents.
+## Notes
+
+- You may add `#` private members to the classes as you wish, such as to store previously consumed opponents.
