@@ -1,4 +1,4 @@
-import { describe, expect, jest, test } from "@jest/globals";
+import { beforeEach, describe, expect, jest, test } from "@jest/globals";
 
 import * as index from "./index";
 import * as solution from "./solution";
@@ -8,6 +8,10 @@ const { runCommands } = process.env.TEST_SOLUTIONS ? solution : index;
 const mockRandom = jest.spyOn(Math, "random");
 
 describe(runCommands, () => {
+	beforeEach(() => {
+		mockRandom.mockClear();
+	});
+
 	test.each([
 		[[1, 1, 1, 1, 1, 1], false],
 		[[2, 2, 2, 2, 2, 2], false],
