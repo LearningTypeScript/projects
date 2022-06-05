@@ -22,7 +22,7 @@ jobs:
         with:
           files: projects
       - name: print
-        run: echo ${{ steps.changed-files.outputs.only_changed }}
+        run: echo ${{ steps.changed-files.outputs }}
       - name: Run changed solutions in project directories
         if: ${{ steps.changed-files.outputs.only_changed == 'true' }}
         run: ./scripts/changed-solutions.sh ${{ steps.changed-files.outputs.all_changed_files }}
