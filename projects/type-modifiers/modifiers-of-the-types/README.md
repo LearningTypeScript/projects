@@ -1,9 +1,10 @@
-# Type Forces
+# Modifiers of the Types
 
 > A [Learning TypeScript > Type Modifiers](https://learning-typescript.com/type-modifiers) 🥗 appetizer project.
 
 Greetings, my fearless friend!
-Using the power revealed to by Castle TypeScript, I have seen the plots of my evil nemesis, Skeletype!
+My companions and I are a group of powerful beings tasked with safeguarding the safety of this realm and many others.
+Using the power revealed to by Castle TypeScript, we have seen the plots of my evil nemesis, Skeletype!
 Together we defend the universe and must stop those plots from becoming a reality!
 
 We must gather our friends and gain understanding of our enemy.
@@ -28,6 +29,7 @@ npm test -- 1 --watch
 ## Steps
 
 - [1. Fabulous Secret Powers](./01-fabulous-secret-powers)
+- [2. Artifact Assertions](./02-artifact-assertions)
 
 ## Notes
 
