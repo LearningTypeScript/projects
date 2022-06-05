@@ -33,4 +33,4 @@ Then, create and export `createDemon` and `createSorcerer` functions instead of 
 
 ## Notes
 
-- Because there is now only one `Horror` class, don't use the `protected` modifier. Stick with true `#` privacy.
+- Because there is now only one `Horror` class, don't use `abstract` or `protected`. Stick with true `#` privacy.
