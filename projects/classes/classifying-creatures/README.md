@@ -29,7 +29,8 @@ npm test -- 1 --watch
 ## Steps
 
 - [1. Polly Parrot's Properties](./01-polly-parrots-properties)
-- [1. Dog Displays](./02-dog-displays)
+- [2. Dog Displays](./02-dog-displays)
+- [3. Hamster Helpers](./03-hamster-helpers)
 
 ## Notes
 
