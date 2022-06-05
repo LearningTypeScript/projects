@@ -27,8 +27,6 @@ npm test -- --watch
 
 ## Specification
 
-todo <Content>
-
 Export a `collectTreasure` function.
 It should have three type parameters: `Content`, `Fake`, and `Real`.
 `Fake` and `Real` should both extend `Content`.
