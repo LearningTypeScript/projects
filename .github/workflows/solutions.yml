@@ -25,13 +25,9 @@ jobs:
           files: projects
       - name: Run changed solutions in project directories
         if: ${{ steps.changed-files.outputs.only_changed == 'true' }}
-        run: |
-          chmod +x ./scripts/changed-solutions.sh
-          ./scripts/changed-solutions.sh ${{ steps.changed-files.outputs.all_changed_files }}
+        run: ./scripts/changed-solutions.sh ${{ steps.changed-files.outputs.all_changed_files }}
         shell: bash
       - name: Run all solutions tests
         if: ${{ steps.changed-files.outputs.only_changed != 'true' }}
-        run: |
-          chmod +x ./scripts/check-solutions.sh
-          ./scripts/check-solutions.sh
+        run: ./scripts/check-solutions.sh
         shell: bash
