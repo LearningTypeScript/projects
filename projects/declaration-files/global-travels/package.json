@@ -1,0 +1,7 @@
+{
+	"name": "global-travels",
+	"scripts": {
+		"test": "tsc",
+		"test:solutions": "tsc ./*/solution.ts"
+	}
+}
