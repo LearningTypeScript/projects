@@ -7,7 +7,7 @@ import {
 	isVolunteerIllusion,
 	Trick,
 	VolunteerIllusion,
-} from "./show";
+} from "./show.solution";
 
 function showTrick(trick: Trick) {
 	console.log(`💨 Voila! ${trick.gimmick}`);

@@ -2,6 +2,6 @@
 	"name": "type-illusions",
 	"scripts": {
 		"test": "tsc",
-		"test:solutions": "tsc ./src/solution.ts"
+		"test:solutions": "tsc ./src/*solution*.ts"
 	}
 }
