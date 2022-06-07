@@ -1,0 +1,9 @@
+{
+	// Write your configuration options here! ✨
+	"compilerOptions": {
+		"declaration": true,
+		"declarationMap": true,
+		"sourceMap": true
+	},
+	"exclude": ["*.verify.*"]
+}
