@@ -1,12 +1,12 @@
 module.exports = {
-	globals: {
-		"ts-jest": {
-			isolatedModules: true,
-			tsconfig: {
-				target: "es2020",
+	transform: {
+		"^.+\\.(t|j)sx?$": [
+			"@swc/jest",
+			{
+				jsc: {
+					target: "es2021",
+				},
 			},
-		},
+		],
 	},
-	preset: "ts-jest",
-	testEnvironment: "node",
 };

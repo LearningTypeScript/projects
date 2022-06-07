@@ -1,5 +1,12 @@
 module.exports = {
-	fakeTimers: { enableGlobally: true },
-	preset: "ts-jest",
-	testEnvironment: "node",
+	transform: {
+		"^.+\\.(t|j)sx?$": [
+			"@swc/jest",
+			{
+				jsc: {
+					target: "es2021",
+				},
+			},
+		],
+	},
 };
