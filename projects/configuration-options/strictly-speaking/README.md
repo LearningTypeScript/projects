@@ -15,8 +15,8 @@ Of conquering soldiery.
 Of brave deeds and noble intentions, spoken softly so as to not sharply jut out with overt obviousness.
 
 Will you repair for me this speechwriter program?
-I fear it was originally written without TypeScript's `--strictNullChecks` mode.
-You must restore strict null safety -`undefined` and all- that it may run justly and without type errors.
+I fear it was originally written without TypeScript's `--noImplicitAny` or `--strictNullChecks` modes.
+You must restore strict type safety -`undefined` and all- that it may run justly and without type errors.
 
 ## Setup
 

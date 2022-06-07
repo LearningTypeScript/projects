@@ -2,7 +2,7 @@
 
 import { words } from "./words";
 
-async function seconds(amount: number) {
+async function seconds(amount) {
 	await new Promise((resolve) => setTimeout(resolve, amount * 1000));
 }
 
@@ -18,7 +18,7 @@ async function speakLines(lines: (number | string)[]) {
 }
 
 function generateLines(quantity: number) {
-	const lines: (number | string)[] = [generateLine("Lorem ipsum")];
+	const lines = [generateLine("Lorem ipsum")];
 
 	for (let i = 0; i < quantity - 1; i += 1) {
 		lines.push(generateLine());
@@ -31,7 +31,7 @@ function generateLines(quantity: number) {
 	return lines;
 }
 
-function generateLine(prefix: string) {
+function generateLine(prefix) {
 	const words: string[] = prefix ? [prefix] : [];
 	const quantity = randomInt(3, 10);
 
