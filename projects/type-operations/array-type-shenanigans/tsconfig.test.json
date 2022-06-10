@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"composite": true
+	},
+	"references": [
+		{ "path": "./01-flat-filter/tsconfig.test.json" },
+		{ "path": "./02-reverse/tsconfig.test.json" },
+		{ "path": "./03-zip/tsconfig.test.json" }
+	]
+}
