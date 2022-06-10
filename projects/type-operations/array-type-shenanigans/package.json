@@ -1,0 +1,7 @@
+{
+	"name": "type-shenanigans",
+	"scripts": {
+		"test": "tsc",
+		"test:solutions": "tsc -p ./tsconfig.test.json"
+	}
+}
