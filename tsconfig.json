@@ -3,6 +3,7 @@
 		"esModuleInterop": true,
 		"moduleResolution": "node",
 		"noEmit": true,
+		"skipLibCheck": true,
 		"strict": true,
 		"target": "es2020"
 	}
