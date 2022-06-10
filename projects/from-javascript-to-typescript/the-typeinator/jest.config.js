@@ -1,4 +1,5 @@
 module.exports = {
+	fakeTimers: { enableGlobally: true },
 	transform: {
 		"^.+\\.(t|j)sx?$": [
 			"@swc/jest",
