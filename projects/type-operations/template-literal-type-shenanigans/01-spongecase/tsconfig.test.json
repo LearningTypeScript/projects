@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"composite": true,
+		"paths": {
+			"~/index": ["./solution.ts"]
+		}
+	},
+	"include": ["./index.test.ts"]
+}
