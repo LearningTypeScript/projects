@@ -1,8 +1,11 @@
 # Step 3: Typus Andronicus
 
 My countless tales crafted of luck and woe
+
 Grow me weary - and the code hard to read.
+
 Correct these imports, I request of you:
+
 Type only imports until value need.
 
 ## Specification

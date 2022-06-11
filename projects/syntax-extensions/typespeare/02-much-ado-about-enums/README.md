@@ -1,8 +1,11 @@
 # Step 2: Much Ado About Enums
 
 Objects and enums seem akin at first,
+
 but on second glance they are not the same.
+
 The objects option I find is the worst.
+
 Please switch to enum of similar name.
 
 ## Specification

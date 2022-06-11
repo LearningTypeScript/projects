@@ -3,8 +3,11 @@
 > A [Learning TypeScript > Syntax Extensions](https://learning-typescript.com/syntax-extensions) 🥗 appetizer project.
 
 Salute, dear reader, thou TypeScript guru!
+
 In these texts your syntax lesson contained.
+
 Press thee inward for your lesson further,
+
 That your latest TypeScript knowledge be strained.
 
 ## Setup
