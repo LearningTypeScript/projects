@@ -1,0 +1,7 @@
+{
+	"name": "doctor-syntax",
+	"scripts": {
+		"test": "tsc",
+		"test:solutions": "tsc ./*/*solution*.ts"
+	}
+}
