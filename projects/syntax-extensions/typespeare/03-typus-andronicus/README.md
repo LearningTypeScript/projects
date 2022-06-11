@@ -1,13 +1,15 @@
-# Step 2: Temp Enums
+# Step 3: Typus Andronicus
 
-maybe auto generates a tragedy?
+My countless tales crafted of luck and woe
+Grow me weary - and the code hard to read.
+Correct these imports, I request of you:
+Type only imports until value need.
 
 ## Specification
 
-Convert the code in `index.ts`, `colors.ts`, and `rhymes.ts` from namespaces to ECMAScript modules.
+Convert the code in `index.ts`, `conflict.ts`, `resolution.ts`, and `setup.ts` to use type imports whenever possible.
 
 ## Files
 
-- `index.ts`, `colors.ts`, and `rhymes.ts`: Modify code here.
-- `index.test.ts`, `colors.test.ts`, and `rhymes.test.ts`: Tests verifying your modules
-- `index.solution.ts`, `colors.solution.ts`, and `rhymes.solution.ts`: Solution code
+- `index.ts`, `conflict.ts`, `resolution.ts`, and `setup.ts`: Modify code here.
+- `index.solution.ts`, `conflict.solution.ts`, `resolution.solution.ts`, and `setup.solution.ts`: Solution code

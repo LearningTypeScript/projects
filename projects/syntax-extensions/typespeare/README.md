@@ -25,6 +25,8 @@ npm test -- 1 --watch
 ## Steps
 
 - [1. What's in a Namespace?](./01-whats-in-a-namespace)
+- [2. Much Ado About Enums](./02-much-ado-about-enums)
+- [3. Typus Andronicus](./03-typus-andronicus)
 
 ## Notes
 
