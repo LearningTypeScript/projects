@@ -38,7 +38,7 @@ export const resolutionCreators: ResolutionCreator[] = [
 		morbidity: "moderate",
 	}),
 	({ character }) => ({
-		description: `${character} betrays their lover for ambition. It works, at great personal cost`,
+		description: `${character} betrays their lover for ambition. It works, at great personal cost.`,
 		morbidity: "moderate",
 	}),
 	({ character, conflict, setup }) => ({
