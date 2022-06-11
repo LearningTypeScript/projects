@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"composite": true
+	},
+	"references": [
+		{ "path": "./01-spongecase/tsconfig.test.json" },
+		{ "path": "./02-word-replace/tsconfig.test.json" },
+		{ "path": "./03-split-on/tsconfig.test.json" }
+	]
+}
