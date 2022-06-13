@@ -22,7 +22,7 @@ I'm excited you're here -- whether you're using the projects to practice as you 
 
 ## Setup
 
-First, clone the repository to your local computer, then run `npm install` to install required packages.
+Clone the repository to your computer, then run `npm install` to install packages.
 
 ```shell
 git clone https://github.com/LearningTypeScript/projects learning-typescript-projects
