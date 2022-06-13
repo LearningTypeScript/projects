@@ -15,7 +15,7 @@
 	<!-- ALL-CONTRIBUTORS-BADGE:END -->
 </p>
 
-<img align="right" alt="Learning TypeScript title with a sun conure and O'Reilly logo" height="192px" src="./cover-conure.png" width="192px">
+<img align="right" alt="Learning TypeScript title with a sun conure and O'Reilly logo" height="176px" src="./cover-conure.png" width="176px">
 
 Welcome to the repository housing all of the projects for _Learning TypeScript_!
 I'm excited you're here -- whether you're using the projects to practice as you read the book, or just browsing.
