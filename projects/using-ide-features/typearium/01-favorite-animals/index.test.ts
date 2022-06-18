@@ -1,7 +1,7 @@
-import { describe, expect, it, test } from "@jest/globals";
+import { describe, expect, it } from "@jest/globals";
 
 import * as index from "./index";
-import * as solution from "./index.solution";
+import * as solution from "./solution";
 
 const { checkIsAnyAnimalFavorite, getFavoriteAnimals, logFavoriteAnimals } =
 	process.env.TEST_SOLUTIONS ? solution : index;
