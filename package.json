@@ -5,6 +5,7 @@
 		"@swc/jest": "^0.2.21",
 		"commitlint-config-gitmoji": "^2.2.5",
 		"cross-env": "7.0.3",
+		"cspell": "^6.1.2",
 		"husky": "^8.0.0",
 		"jest": "28.1.0",
 		"markdownlint-cli": "^0.31.1",
