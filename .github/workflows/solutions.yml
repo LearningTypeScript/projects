@@ -17,7 +17,5 @@ jobs:
           cache: "npm"
       - run: npm ci
       - name: Run all solutions tests
-        run: |
-          chmod +x ./scripts/check-solutions.sh
-          ./scripts/check-solutions.sh
+        run: ./scripts/check-solutions.sh
         shell: bash
