@@ -12,17 +12,18 @@ Are you up to the task, recruit?
 
 ## Setup
 
-In one terminal, start the TypeScript compiler in watch mode:
+In one terminal, run the TypeScript compiler via the `tsc` script within whichever step you're working on.
+For example, to start the TypeScript compiler on the first step in watch mode:
 
 ```shell
-tsc --watch
+npm run tsc -- --project 01-incoming-cipher --watch
 ```
 
-In another terminal, run Jest on whichever step you're working on.
-For example, to run tests for the first step in watch mode:
+In another terminal, run Jest via the `test` script on whichever step you're working on.
+For example, to start tests for the first step in watch mode:
 
 ```shell
-npm test -- 1 --watch
+npm run test -- 1 --watch
 ```
 
 ## Steps

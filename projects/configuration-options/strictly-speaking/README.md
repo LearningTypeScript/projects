@@ -20,15 +20,16 @@ You must restore strict type safety -`undefined` and all- that it may run justly
 
 ## Setup
 
-In a terminal, start the TypeScript compiler in watch mode:
+In your terminal, run the TypeScript compiler via the `tsc` script.
+For example, to start the TypeScript compiler in watch mode:
 
 ```shell
-tsc --watch
+npm run tsc -- --watch
 ```
 
 ## Files
 
-- `index.ts`: Add type annotation shere
+- `index.ts`: Add type annotations here
 - `index.solution.ts` Solution code
 
 ## Notes

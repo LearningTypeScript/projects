@@ -18,10 +18,11 @@ Now, our audience volunteer _-that's you!-_ will have to add those type annotati
 
 ## Setup
 
-In a terminal, start the TypeScript compiler in watch mode:
+In your terminal, run the TypeScript compiler via the `tsc` script.
+For example, to start the TypeScript compiler in watch mode:
 
 ```shell
-tsc --watch
+npm run tsc -- --watch
 ```
 
 ## Files

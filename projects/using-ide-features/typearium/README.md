@@ -2,7 +2,7 @@
 
 > A [Learning TypeScript > Using IDE Features](https://learning-typescript.com/using-ide-features) 🥗 appetizer project.
 
-Welcome to the Typearium: a combination acquarium/terrarium/vivarium that keeps animals in the form of TypeScript types.
+Welcome to the Typearium: a combination aquarium/terrarium/vivarium that keeps animals in the form of TypeScript types.
 We're quite niche.
 
 Because we're so niche, we haven't had the budget to invest in updating our (somewhat legacy) code.
@@ -10,17 +10,18 @@ It's a good thing we originally wrote it in TypeScript, because we're hoping you
 
 ## Setup
 
-In one terminal, start the TypeScript compiler in watch mode:
+In one terminal, run the TypeScript compiler via the `tsc` script within whichever step you're working on.
+For example, to start the TypeScript compiler on the first step in watch mode:
 
 ```shell
-tsc --watch
+npm run tsc -- --project 01-favorite-animals --watch
 ```
 
-In another terminal, run Jest on whichever step you're working on.
-For example, to run tests for the first step in watch mode:
+In another terminal, run Jest via the `test` script on whichever step you're working on.
+For example, to start tests for the first step in watch mode:
 
 ```shell
-npm test -- 1 --watch
+npm run test -- 1 --watch
 ```
 
 ## Steps

@@ -16,10 +16,11 @@ Can you fill out type annotations to make the map more usable?
 
 ## Setup
 
-In a terminal, start the TypeScript compiler in watch mode:
+In your terminal, run the TypeScript compiler via the `tsc` script.
+For example, to start the TypeScript compiler in watch mode:
 
 ```shell
-tsc --watch
+npm run tsc -- --watch
 ```
 
 ## Specification

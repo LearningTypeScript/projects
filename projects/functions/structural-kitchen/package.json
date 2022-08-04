@@ -1,7 +1,8 @@
 {
-	"name": "playlist-shuffling",
+	"name": "structural-kitchen",
 	"scripts": {
 		"test": "jest",
-		"test:solutions": "cross-env TEST_SOLUTIONS=1 jest"
+		"test:solutions": "cross-env TEST_SOLUTIONS=1 jest",
+		"tsc": "tsc"
 	}
 }

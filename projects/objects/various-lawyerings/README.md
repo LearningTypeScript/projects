@@ -9,10 +9,11 @@ As you can see, I require your assistance in developing TypeScript projects to m
 
 ## Setup
 
-Start the TypeScript compiler in watch mode:
+In your terminal, run the TypeScript compiler via the `tsc` script within whichever step you're working on.
+For example, to start the TypeScript compiler on the first step in watch mode:
 
 ```shell
-tsc --watch
+npm run tsc -- --project 01-aviary-classification --watch
 ```
 
 ## Steps
