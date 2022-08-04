@@ -1,5 +1,5 @@
 {
-	"name": "type-shenanigans",
+	"name": "template-literal-type-shenanigans",
 	"scripts": {
 		"test": "tsc",
 		"test:solutions": "tsc -p ./tsconfig.test.json"

@@ -1,5 +1,5 @@
 {
-	"name": "type-illusions",
+	"name": "strictly-speaking",
 	"scripts": {
 		"test": "tsc",
 		"test:solutions": "tsc ./src/*solution*.ts"
