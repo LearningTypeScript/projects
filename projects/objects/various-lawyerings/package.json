@@ -1,5 +1,5 @@
 {
-	"name": "vacation-planning",
+	"name": "various-lawyerings",
 	"scripts": {
 		"test": "tsc",
 		"test:solutions": "tsc ./*/solution.ts"
