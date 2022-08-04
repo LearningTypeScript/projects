@@ -27,7 +27,8 @@
 	"name": "learning-typescript-projects",
 	"scripts": {
 		"format": "prettier --write \"**/*\" --ignore-unknown",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"test": "jest test/"
 	},
 	"version": "0.0.1"
 }

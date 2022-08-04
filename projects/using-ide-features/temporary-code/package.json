@@ -1,0 +1,7 @@
+{
+	"name": "temporary-code",
+	"scripts": {
+		"test": "tsc",
+		"test:solutions": "tsc ./src/*solution*.ts"
+	}
+}
