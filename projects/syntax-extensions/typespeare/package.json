@@ -1,5 +1,5 @@
 {
-	"name": "doctor-syntax",
+	"name": "typespeare",
 	"scripts": {
 		"test": "tsc",
 		"test:solutions": "tsc ./*/*solution*.ts"

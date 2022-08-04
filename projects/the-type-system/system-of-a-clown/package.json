@@ -1,5 +1,5 @@
 {
-	"name": "systems-of-a-clown",
+	"name": "system-of-a-clown",
 	"scripts": {
 		"test": "tsc",
 		"test:solutions": "tsc ./*/solution.ts"

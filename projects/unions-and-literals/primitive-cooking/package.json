@@ -1,5 +1,5 @@
 {
-	"name": "dinner-party-primitives",
+	"name": "primitive-cooking",
 	"scripts": {
 		"test": "tsc",
 		"test:solutions": "tsc ./*/solution.ts"

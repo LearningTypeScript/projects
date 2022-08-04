@@ -11,10 +11,9 @@ for (const chapter of chapters) {
 		const chapterTitle = toTitle(chapter);
 
 		test("_category_.json", () => {
-			const categoryContents = fs
-				.readFileSync(`${chapterDirectory}/_category_.json`)
-				.toString();
-			const categoryData = JSON.parse(categoryContents);
+			const categoryData = readFileAsJSON(
+				`${chapterDirectory}/_category_.json`
+			);
 
 			expect(categoryData).toEqual({
 				label: expect.stringMatching(new RegExp(chapterTitle, "i")),
@@ -57,17 +56,11 @@ function testAppetizer(
 	contents: string[]
 ) {
 	const projectName = toTitle(project);
-	// it("contains the minimum expected files", () => {
-	// 	expect(contents).toContain("_category_.json");
-	// 	expect(contents).toContain("package.json");
-	// 	expect(contents).toContain("README.md");
-	// });
 
 	test("_category_.json", () => {
-		const categoryContents = fs
-			.readFileSync(`${chapterDirectory}/${project}/_category_.json`)
-			.toString();
-		const categoryData = JSON.parse(categoryContents);
+		const categoryData = readFileAsJSON(
+			`${chapterDirectory}/${project}/_category_.json`
+		);
 
 		expect(categoryData).toEqual({
 			label: expect.stringMatching(new RegExp(`🥗 ${projectName}`, "i")),
@@ -76,12 +69,26 @@ function testAppetizer(
 	});
 
 	test("package.json", () => {
-		// todo
+		const categoryData = readFileAsJSON(
+			`${chapterDirectory}/${project}/package.json`
+		);
+
+		expect(categoryData).toEqual({
+			name: project,
+			scripts: expect.objectContaining({
+				//
+			}),
+		});
 	});
 
 	test("README.json", () => {
 		// todo
 	});
+}
+
+function readFileAsJSON(path: string) {
+	const packageContents = fs.readFileSync(path).toString();
+	return JSON.parse(packageContents);
 }
 
 function testEntreeOrDessert(
