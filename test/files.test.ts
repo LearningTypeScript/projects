@@ -3,10 +3,12 @@ import * as fs from "fs";
 
 const chapters = fs.readdirSync("projects");
 
+const toTitle = (kebabCase: string) => kebabCase.replaceAll("-", " ");
+
 for (const chapter of chapters) {
 	describe(chapter, () => {
 		const chapterDirectory = `projects/${chapter}`;
-		const chapterContents = fs.readdirSync(chapterDirectory);
+		const chapterTitle = toTitle(chapter);
 
 		test("_category_.json", () => {
 			const categoryContents = fs
@@ -15,9 +17,7 @@ for (const chapter of chapters) {
 			const categoryData = JSON.parse(categoryContents);
 
 			expect(categoryData).toEqual({
-				label: expect.stringMatching(
-					new RegExp(chapter.replaceAll("-", " "), "i")
-				),
+				label: expect.stringMatching(new RegExp(chapterTitle, "i")),
 				position: expect.any(Number),
 			});
 		});
@@ -28,9 +28,7 @@ for (const chapter of chapters) {
 				.toString();
 
 			expect(readmeContents).toEqual(
-				expect.stringMatching(
-					new RegExp(`^# ${chapter.replaceAll("-", " ")}`, "i")
-				)
+				expect.stringMatching(new RegExp(`^# ${chapterTitle}`, "i"))
 			);
 		});
 
@@ -47,24 +45,49 @@ for (const chapter of chapters) {
 					? testEntreeOrDessert
 					: testAppetizer;
 
-				testGenerator(project, projectContents);
+				testGenerator(chapterDirectory, project, projectContents);
 			});
 		}
 	});
 }
 
-function testAppetizer(_project: string, contents: string[]) {
-	it("contains the minimum expected files", () => {
-		expect(contents).toContain("_category_.json");
-		expect(contents).toContain("package.json");
-		expect(contents).toContain("README.md");
-	});
+function testAppetizer(
+	chapterDirectory: string,
+	project: string,
+	contents: string[]
+) {
+	const projectName = toTitle(project);
+	// it("contains the minimum expected files", () => {
+	// 	expect(contents).toContain("_category_.json");
+	// 	expect(contents).toContain("package.json");
+	// 	expect(contents).toContain("README.md");
+	// });
 
 	test("_category_.json", () => {
-		//
+		const categoryContents = fs
+			.readFileSync(`${chapterDirectory}/${project}/_category_.json`)
+			.toString();
+		const categoryData = JSON.parse(categoryContents);
+
+		expect(categoryData).toEqual({
+			label: expect.stringMatching(new RegExp(`🥗 ${projectName}`, "i")),
+			position: expect.any(Number),
+		});
+	});
+
+	test("package.json", () => {
+		// todo
+	});
+
+	test("README.json", () => {
+		// todo
 	});
 }
 
-function testEntreeOrDessert(_project: string, _contents: string[]) {
+function testEntreeOrDessert(
+	_chapterDirectory: string,
+	_project: string,
+	_contents: string[]
+) {
 	test("todo", () => {});
 }
