@@ -2,6 +2,7 @@
 	"name": "system-of-a-clown",
 	"scripts": {
 		"test": "tsc",
-		"test:solutions": "tsc ./*/solution.ts"
+		"test:solutions": "tsc ./*/solution.ts",
+		"tsc": "tsc"
 	}
 }

@@ -8,17 +8,18 @@ Congrats on making it all the way through the book to the final chapter!
 Type operations are a ton of fun to play around with once you get the hang of them.
 
 These appetizer projects showcase a bunch of my favorite cool things you can do using array and/or tuple types with conditional types.
-Each gives a small into to the new thing because it can be tricky to find out the ways you can or cannot combine type operations.
+Each gives a small intro to the new thing because it can be tricky to find out the ways you can or cannot combine type operations.
 There's no silly theme, to help not distract from learning those new things.
 
 I hope you're enjoying the book and these projects! 💖
 
 ## Setup
 
-Start the TypeScript compiler in watch mode:
+In your terminal, run the TypeScript compiler via the `tsc` script within whichever step you're working on.
+For example, to start the TypeScript compiler on the first step in watch mode:
 
 ```shell
-tsc --watch
+npm run tsc -- --project 01-flat-filter --watch
 ```
 
 ## Steps

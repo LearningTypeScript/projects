@@ -16,10 +16,11 @@ You're my surprise clown celebration's last hope! 🤡
 
 ## Setup
 
-Start the TypeScript compiler in watch mode:
+In your terminal, run the TypeScript compiler via the `tsc` script within whichever step you're working on.
+For example, to start the TypeScript compiler on the first step in watch mode:
 
 ```shell
-tsc --watch
+npm run tsc -- --project 01-clowning-around --watch
 ```
 
 ## Steps

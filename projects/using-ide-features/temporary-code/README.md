@@ -24,6 +24,15 @@ Each of these should correspond to a refactor provided by TypeScript.
 > In life, there are but three certainties: death, taxes, and temporary code.
 > -Josh Goldberg, 2022
 
+## Setup
+
+In your terminal, run the TypeScript compiler via the `tsc` script.
+For example, to start the TypeScript compiler in watch mode:
+
+```shell
+npm run tsc -- --watch
+```
+
 ## Files
 
 - `src/index.ts`: Refactor the functions here

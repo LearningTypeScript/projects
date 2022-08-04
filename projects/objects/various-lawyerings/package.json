@@ -2,6 +2,7 @@
 	"name": "various-lawyerings",
 	"scripts": {
 		"test": "tsc",
-		"test:solutions": "tsc ./*/solution.ts"
+		"test:solutions": "tsc ./*/solution.ts",
+		"tsc": "tsc"
 	}
 }

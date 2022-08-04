@@ -1,14 +1,21 @@
-import { describe, expect, it, test } from "@jest/globals";
+import { describe, expect, test } from "@jest/globals";
+import { capitalCase } from "capital-case";
 import * as fs from "fs";
 
-const chapters = fs.readdirSync("projects");
+interface CategoryData {
+	label: string;
+	position: number;
+}
 
-const toTitle = (kebabCase: string) => kebabCase.replaceAll("-", " ");
+interface PackageData {
+	name: string;
+	scripts: Record<string, string>;
+}
 
-for (const chapter of chapters) {
-	describe(chapter, () => {
-		const chapterDirectory = `projects/${chapter}`;
-		const chapterTitle = toTitle(chapter);
+for (const chapterSlug of fs.readdirSync("projects")) {
+	describe(chapterSlug, () => {
+		const chapterDirectory = `projects/${chapterSlug}`;
+		const chapterTitle = toTitle(chapterSlug);
 
 		test("_category_.json", () => {
 			const categoryData = readFileAsJSON(
@@ -26,75 +33,180 @@ for (const chapter of chapters) {
 				.readFileSync(`${chapterDirectory}/README.md`)
 				.toString();
 
-			expect(readmeContents).toEqual(
-				expect.stringMatching(new RegExp(`^# ${chapterTitle}`, "i"))
-			);
+			expect(readmeContents).toMatch(new RegExp(`^# ${chapterTitle}`, "i"));
 		});
 
-		const projects = fs
-			.readdirSync(`projects/${chapter}`)
+		const projectSlugs = fs
+			.readdirSync(`projects/${chapterSlug}`)
 			.filter((fileName) => !fileName.includes("."));
 
-		for (const project of projects) {
-			describe(project, () => {
+		for (const projectSlug of projectSlugs) {
+			describe(projectSlug, () => {
 				const projectContents = fs.readdirSync(
-					`projects/${chapter}/${project}`
+					`projects/${chapterSlug}/${projectSlug}`
 				);
-				const testGenerator = projectContents.includes("src")
-					? testEntreeOrDessert
-					: testAppetizer;
+				const projectTitle = toTitle(projectSlug);
 
-				testGenerator(chapterDirectory, project, projectContents);
+				if (projectContents.includes("src")) {
+					testEntreeOrDessertProject();
+				} else {
+					testAppetizerProject();
+				}
+
+				function testAppetizerProject() {
+					testCategoryJson("🥗");
+
+					test("README.md", () => {
+						const contents = fs
+							.readFileSync(`${chapterDirectory}/${projectSlug}/README.md`)
+							.toString();
+
+						const stepSlugs = fs
+							.readdirSync(`${chapterDirectory}/${projectSlug}`)
+							.filter((fileName) => !fileName.includes("."));
+
+						expect(contents).toContain(`# ${projectTitle}`);
+						expect(contents).toContain(
+							`> A [Learning TypeScript > ${chapterTitle}](https://learning-typescript.com/${chapterSlug}) 🥗 appetizer project.`
+						);
+						expect(contents).toContain(`## Setup`);
+						expect(contents)
+							.toContain(`un the TypeScript compiler via the \`tsc\` script within whichever step you're working on.
+For example, to start the TypeScript compiler on the first step in watch mode:
+
+\`\`\`shell
+npm run tsc -- --project ${stepSlugs[0]} --watch
+\`\`\`
+`);
+
+						if (contents.includes("run Jest")) {
+							expect(contents).toContain(
+								"In one terminal, run the TypeScript compiler"
+							);
+							expect(contents).toContain(
+								`In another terminal, run Jest via the \`test\` script on whichever step you're working on.
+For example, to start tests for the first step in watch mode:
+
+\`\`\`shell
+npm run test -- 1 --watch
+\`\`\``
+							);
+						} else {
+							expect(contents).toContain("In your terminal, run the");
+						}
+					});
+				}
+
+				function testEntreeOrDessertProject() {
+					const categoryData = readFileAsJSON(
+						`${chapterDirectory}/${projectSlug}/_category_.json`
+					) as CategoryData;
+					const [mealEmoji, mealType] = categoryData.label.includes("🍲")
+						? ["🍲", "entree"]
+						: ["🍰", "dessert"];
+
+					testCategoryJson(mealEmoji);
+
+					testPackageJson();
+
+					test("README.md", () => {
+						const contents = fs
+							.readFileSync(`${chapterDirectory}/${projectSlug}/README.md`)
+							.toString();
+
+						expect(contents).toContain(`# ${projectTitle}`);
+						expect(contents).toContain(
+							`> A [Learning TypeScript > ${chapterTitle}](https://learning-typescript.com/${chapterSlug}) ${mealEmoji} ${mealType} project.`
+						);
+						expect(contents).toContain(`## Setup`);
+						expect(contents)
+							.toContain(`terminal, run the TypeScript compiler via the \`tsc\` script.
+For example, to start the TypeScript compiler in watch mode:
+
+\`\`\`shell
+npm run tsc -- --watch
+\`\`\`
+`);
+
+						if (contents.includes("run Jest")) {
+							expect(contents).toContain(
+								`In another terminal, run Jest via the \`test\` script.
+For example, to start tests in watch mode:
+
+\`\`\`shell
+npm run test -- --watch
+\`\`\``
+							);
+						} else {
+							expect(contents).toContain("In your terminal, run the");
+						}
+					});
+				}
+
+				function testCategoryJson(emoji: string) {
+					const categoryData = readFileAsJSON(
+						`${chapterDirectory}/${projectSlug}/_category_.json`
+					);
+
+					expect(categoryData).toEqual({
+						label: expect.stringMatching(
+							new RegExp(`${emoji} ${projectTitle}`, "i")
+						),
+						position: expect.any(Number),
+					});
+				}
+
+				function testPackageJson() {
+					test("package.json", () => {
+						const categoryData = readFileAsJSON(
+							`${chapterDirectory}/${projectSlug}/package.json`
+						) as PackageData;
+
+						expect(categoryData).toEqual({
+							name: projectSlug,
+							scripts: {
+								test: expect.any(String),
+								"test:solutions": expect.any(String),
+								tsc: "tsc",
+							},
+						});
+
+						const { test: testScript, "test:solutions": testSolutionsScript } =
+							categoryData.scripts;
+
+						const solutionScripts: Record<string, unknown> = {
+							tsc: expect.stringMatching(/^tsc /),
+							jest: "cross-env TEST_SOLUTIONS=1 jest",
+						};
+
+						expect(testSolutionsScript).toEqual(
+							solutionScripts[testScript] ?? "(unknown test script)"
+						);
+					});
+				}
 			});
 		}
 	});
 }
 
-function testAppetizer(
-	chapterDirectory: string,
-	project: string,
-	contents: string[]
-) {
-	const projectName = toTitle(project);
-
-	test("_category_.json", () => {
-		const categoryData = readFileAsJSON(
-			`${chapterDirectory}/${project}/_category_.json`
-		);
-
-		expect(categoryData).toEqual({
-			label: expect.stringMatching(new RegExp(`🥗 ${projectName}`, "i")),
-			position: expect.any(Number),
-		});
-	});
-
-	test("package.json", () => {
-		const categoryData = readFileAsJSON(
-			`${chapterDirectory}/${project}/package.json`
-		);
-
-		expect(categoryData).toEqual({
-			name: project,
-			scripts: expect.objectContaining({
-				//
-			}),
-		});
-	});
-
-	test("README.json", () => {
-		// todo
-	});
-}
-
-function readFileAsJSON(path: string) {
+function readFileAsJSON(path: string): unknown {
 	const packageContents = fs.readFileSync(path).toString();
 	return JSON.parse(packageContents);
 }
 
-function testEntreeOrDessert(
-	_chapterDirectory: string,
-	_project: string,
-	_contents: string[]
-) {
-	test("todo", () => {});
+function toTitle(kebabCase: string) {
+	return (
+		capitalCase(kebabCase.replaceAll("-", " "))
+			// If you need any acronyms to be all uppercase, add them here.
+			.replaceAll("Dna", "DNA")
+			.replace("Ide", "IDE")
+			.replace("Javascript", "JavaScript")
+			.replace("Typescript", "TypeScript")
+			// If you
+			.replaceAll(" A ", " a ")
+			.replaceAll(" And ", " and ")
+			.replaceAll(" Of ", " of ")
+			.replaceAll(" The ", " the ")
+			.replaceAll(" To ", " to ")
+	);
 }

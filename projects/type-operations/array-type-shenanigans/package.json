@@ -2,6 +2,7 @@
 	"name": "array-type-shenanigans",
 	"scripts": {
 		"test": "tsc",
-		"test:solutions": "tsc -p ./tsconfig.test.json"
+		"test:solutions": "tsc -p ./tsconfig.test.json",
+		"tsc": "tsc"
 	}
 }
