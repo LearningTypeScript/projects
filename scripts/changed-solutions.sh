@@ -2,9 +2,9 @@ root_dir=$(pwd)
 failed_tests=()
 
 function run_tests {
-	echo -e "\nRunning test for $1"
+	echo -e "\nRunning $2 for $1"
 	cd $1
-	npm run test:solutions || failed_tests+=("$1")
+	npm run $2 || failed_tests+=("$1")
 	cd $root_dir
 	return 0
 }
@@ -18,7 +18,7 @@ done
 
 echo ""
 for path in ${failed_tests[@]}; do
-	echo "Tests failed at $path"
+	echo "$2 failed at $path"
 done
 
 if [ ${#failed_tests[@]} -gt 0 ]; then

@@ -5,5 +5,6 @@
 		"declarationMap": true,
 		"sourceMap": true
 	},
-	"exclude": ["*.verify.*"]
+	"exclude": ["*.verify.*"],
+	"include": ["."]
 }

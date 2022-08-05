@@ -1,5 +1,6 @@
-import { describe, expect, test } from "@jest/globals";
 import { capitalCase } from "capital-case";
+import { describe, expect, test } from "@jest/globals";
+import { parse } from "comment-json";
 import * as fs from "fs";
 
 interface CategoryData {
@@ -54,16 +55,16 @@ for (const chapterSlug of fs.readdirSync("projects")) {
 				}
 
 				function testAppetizerProject() {
+					const stepSlugs = fs
+						.readdirSync(`${chapterDirectory}/${projectSlug}`)
+						.filter((fileName) => !fileName.includes("."));
+
 					testCategoryJson("🥗");
 
 					test("README.md", () => {
 						const contents = fs
 							.readFileSync(`${chapterDirectory}/${projectSlug}/README.md`)
 							.toString();
-
-						const stepSlugs = fs
-							.readdirSync(`${chapterDirectory}/${projectSlug}`)
-							.filter((fileName) => !fileName.includes("."));
 
 						expect(contents).toContain(`# ${projectTitle}`);
 						expect(contents).toContain(
@@ -95,6 +96,20 @@ npm run test -- 1 --watch
 							expect(contents).toContain("In your terminal, run the");
 						}
 					});
+
+					for (const stepSlug of stepSlugs) {
+						describe(stepSlug, () => {
+							test("tsconfig.json", () => {
+								const tsconfigData = readFileAsJSON(
+									`${chapterDirectory}/${projectSlug}/${stepSlug}/tsconfig.json`
+								);
+
+								expect(tsconfigData).toEqual({
+									include: ["."],
+								});
+							});
+						});
+					}
 				}
 
 				function testEntreeOrDessertProject() {
@@ -140,6 +155,16 @@ npm run test -- --watch
 						} else {
 							expect(contents).toContain("In your terminal, run the");
 						}
+					});
+
+					test("tsconfig.json", () => {
+						const tsconfigData = readFileAsJSON(
+							`${chapterDirectory}/${projectSlug}/tsconfig.json`
+						);
+
+						expect(tsconfigData).toEqual({
+							include: ["src"],
+						});
 					});
 				}
 
@@ -191,7 +216,7 @@ npm run test -- --watch
 
 function readFileAsJSON(path: string): unknown {
 	const packageContents = fs.readFileSync(path).toString();
-	return JSON.parse(packageContents);
+	return parse(packageContents);
 }
 
 function toTitle(kebabCase: string) {
