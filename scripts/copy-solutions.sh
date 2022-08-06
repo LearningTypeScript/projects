@@ -3,7 +3,7 @@
 find projects -type f -name "*.test.*" -print0 | xargs -0 sed -i '' -e 's/\? solution/\? index/g'
 
 for solutionPath in $(find projects -name \*solution\*); do
-	if [[ $solutionPath == */solution.t* ]]; then
+	if [[ $solutionPath == */solution.* ]]; then
 		replacedPath=${solutionPath//"solution"/"index"}
 	else
 		replacedPath=${solutionPath//".solution"/""}
