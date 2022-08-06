@@ -27,7 +27,7 @@ npm run test -- 1 --watch
 ## Steps
 
 - [1. Favorite Animals](./01-favorite-animals)
-- [2. Species Trees](./02-species-trees)
+- [2. Species Collections](./02-species-collections)
 
 ## Notes
 
