@@ -55,7 +55,10 @@ describe(groupRestaurants, () => {
 				Albany: ["Bombers"],
 			},
 		],
-	])("%j", (city: solution.Landmark[], grouped: solution.GroupedLandmarks) => {
-		expect(groupRestaurants(city)).toEqual(grouped);
-	});
+	])(
+		"%j",
+		(city: solution.Restaurant[], grouped: solution.GroupedRestaurants) => {
+			expect(groupRestaurants(city)).toEqual(grouped);
+		}
+	);
 });
