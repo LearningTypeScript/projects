@@ -106,7 +106,7 @@ npm run test -- 1 --watch
 							expect(tsconfigData).toMatchObject({
 								...(chapterSlug === "configuration-options"
 									? {}
-									: { extends: "../../../tsconfig.base.json" }),
+									: { extends: "../../../tsconfig.json" }),
 								include: ["."],
 							});
 						});
@@ -122,7 +122,7 @@ npm run test -- 1 --watch
 								expect(tsconfigData).toMatchObject({
 									...(chapterSlug === "configuration-options"
 										? {}
-										: { extends: "../../../../tsconfig.base.json" }),
+										: { extends: "../../../../tsconfig.json" }),
 									include: ["."],
 								});
 							});
@@ -181,7 +181,7 @@ npm run test -- --watch
 						);
 
 						expect(tsconfigData).toMatchObject({
-							extends: "../../../tsconfig.base.json",
+							extends: "../../../tsconfig.json",
 							include: ["src"],
 						});
 					});
