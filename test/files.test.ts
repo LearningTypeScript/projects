@@ -97,6 +97,21 @@ npm run test -- 1 --watch
 						}
 					});
 
+					if (chapterSlug !== "type-operations") {
+						test("tsconfig.json", () => {
+							const tsconfigData = readFileAsJSON(
+								`${chapterDirectory}/${projectSlug}//tsconfig.json`
+							);
+
+							expect(tsconfigData).toMatchObject({
+								...(chapterSlug === "configuration-options"
+									? {}
+									: { extends: "../../../tsconfig.base.json" }),
+								include: ["."],
+							});
+						});
+					}
+
 					for (const stepSlug of stepSlugs) {
 						describe(stepSlug, () => {
 							test("tsconfig.json", () => {
@@ -104,7 +119,10 @@ npm run test -- 1 --watch
 									`${chapterDirectory}/${projectSlug}/${stepSlug}/tsconfig.json`
 								);
 
-								expect(tsconfigData).toEqual({
+								expect(tsconfigData).toMatchObject({
+									...(chapterSlug === "configuration-options"
+										? {}
+										: { extends: "../../../../tsconfig.base.json" }),
 									include: ["."],
 								});
 							});
@@ -162,7 +180,8 @@ npm run test -- --watch
 							`${chapterDirectory}/${projectSlug}/tsconfig.json`
 						);
 
-						expect(tsconfigData).toEqual({
+						expect(tsconfigData).toMatchObject({
+							extends: "../../../tsconfig.base.json",
 							include: ["src"],
 						});
 					});

@@ -1,4 +1,4 @@
-name: Solutions
+name: TypeScript Compile
 
 on:
   push:

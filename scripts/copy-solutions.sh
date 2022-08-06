@@ -9,6 +9,10 @@ for solutionPath in $(find projects -name \*solution\*); do
 		replacedPath=${solutionPath//".solution"/""}
 	fi
 
-	echo "Copying from \"$solutionPath\" to \"$replacedPath\"."
-	cp $solutionPath $replacedPath
+	if [[ "$solutionPath" == "$replacedPath" ]]; then
+		echo "Skipping \"$solutionPath\" (no replacement found)."
+	else
+		echo "Copying from \"$solutionPath\" to \"$replacedPath\"."
+		cp $solutionPath $replacedPath
+	fi
 done
