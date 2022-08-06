@@ -3,18 +3,21 @@
 Lovely, now we can log our favorite animals much more easily!
 Thank you!
 
-...
+Next up, I'll need you to clean up the internals of our `getEverything` function.
+It's meant to be used to get a list of the plants and animals someone might want to see on a visit.
 
-right click to move to new file
+Over time we've found ourselves writing a lot of functions used by `getEverything`.
+We'd like to move those functions into their own files.
+For each function in `index.ts` other than `getEverything`, could you please use your IDE to move it and its corresponding `*Settings` interface to a new file?
 
-add nesting for fauna/\*, flora/\*
+Please also nest the files as appropriate:
 
-typescript names the files like "MammalsSettings.ts" - change name to just "fauna/mammals.ts"
-
-...
+- `./fauna.ts` and `./flora.ts` for one `get*` function each
+- `./fauna/*.ts` and `./flora/*.ts` for the functions used by their respective `get*` function
+- `./utils/*.ts` for any standalone utility function
 
 :::tip
-once you're done, use find-all-references on `onlyTruthy` and the various settings interfaces to practice navigating with IDE features.
+Once you're done, use find-all-references on `onlyTruthy` and the various settings interfaces to practice navigating with IDE features.
 :::
 
 ## Files
