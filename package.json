@@ -4,6 +4,7 @@
 		"@swc/core": "^1.2.197",
 		"@swc/jest": "^0.2.21",
 		"capital-case": "^1.0.4",
+		"comment-json": "^4.2.2",
 		"commitlint-config-gitmoji": "^2.2.5",
 		"cross-env": "7.0.3",
 		"husky": "^8.0.0",

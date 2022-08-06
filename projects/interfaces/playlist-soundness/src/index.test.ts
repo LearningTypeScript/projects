@@ -1,4 +1,4 @@
-import { describe, expect, jest, test } from "@jest/globals";
+import { describe, expect, test } from "@jest/globals";
 
 import * as index from "./index";
 import * as solution from "./solution";
@@ -270,7 +270,7 @@ describe(unrollPlaylist, () => {
 				time: 786,
 			},
 		],
-	])("%j %j", (input: solution.PlaylistItem, expected: unknown) => {
+	])("%j %j", (input: solution.PlaylistItem[], expected: unknown) => {
 		expect(unrollPlaylist(input)).toEqual(expected);
 	});
 });

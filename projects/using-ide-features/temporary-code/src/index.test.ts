@@ -1,14 +1,12 @@
-import { describe, expect, it, test } from "@jest/globals";
+import { describe, expect, it } from "@jest/globals";
 
 import * as index from "./index";
 import * as solution from "./index.solution";
 
-const { examplePersons, describePerson } = process.env.TEST_SOLUTIONS
-	? solution
-	: index;
+const { announceExamplePeople } = process.env.TEST_SOLUTIONS ? solution : index;
 
-describe(logFavoritePersons, () => {
+describe(announceExamplePeople, () => {
 	it("does not include its own list of persons", () => {
-		expect(logFavoritePersons.toString()).not.toMatch(/parakeet/);
+		expect(announceExamplePeople.toString()).not.toMatch(/historian/);
 	});
 });

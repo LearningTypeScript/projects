@@ -1,4 +1,4 @@
-import { describe, expect, it, jest, test } from "@jest/globals";
+import { describe, expect, it } from "@jest/globals";
 
 import * as index from "./index";
 import * as solution from "./solution";

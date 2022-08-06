@@ -1,11 +1,11 @@
 root_dir=$(pwd)
 failed_tests=()
 
-for path in $(find projects/ -depth); do
+for path in $(find projects -depth); do
 	if [ -e $path/package.json ]; then
-		echo -e "\nRunning test for $path"
+		echo -e "\nRunning $1 for $path"
 		cd $path
-		npm run test:solutions
+		npm run $1
 		exit_code=$?
 
 		if [ $exit_code -ne 0 ]; then
@@ -17,7 +17,7 @@ done
 
 echo ""
 for path in ${failed_tests[@]}; do
-	echo "Tests failed at $path"
+	echo "$1 failed at $path"
 done
 
 if [ ${#failed_tests[@]} -gt 0 ]; then

@@ -8,7 +8,11 @@ const { createKitchen } = process.env.TEST_SOLUTIONS ? solution : index;
 describe(createKitchen, () => {
 	describe("announce", () => {
 		it("announces the starting state", () => {
-			const kitchen = createKitchen(123, jest.fn(), jest.fn());
+			const kitchen = createKitchen(
+				123,
+				jest.fn<index.Cleaner>(),
+				jest.fn<index.Supplier>()
+			);
 
 			const result = kitchen.announce();
 
@@ -21,7 +25,7 @@ describe(createKitchen, () => {
 	describe("clean", () => {
 		it("sets dirt to the new amount", () => {
 			const cleaner = jest.fn(() => 10);
-			const kitchen = createKitchen(0, cleaner, jest.fn());
+			const kitchen = createKitchen(0, cleaner, jest.fn<index.Supplier>());
 			const time = 123;
 
 			kitchen.clean(time);
@@ -33,7 +37,11 @@ describe(createKitchen, () => {
 
 	describe("purchase", () => {
 		it("returns false without changing stock when expense is greater than budget", () => {
-			const kitchen = createKitchen(1, jest.fn(), jest.fn());
+			const kitchen = createKitchen(
+				1,
+				jest.fn<index.Cleaner>(),
+				jest.fn<index.Supplier>()
+			);
 
 			const result = kitchen.purchase(2);
 
@@ -50,7 +58,7 @@ describe(createKitchen, () => {
 				sauces: expense * 3,
 				vegetables: expense * 4,
 			}));
-			const kitchen = createKitchen(5, jest.fn(), supplier);
+			const kitchen = createKitchen(5, jest.fn<index.Cleaner>(), supplier);
 
 			const result = kitchen.purchase(3);
 
@@ -67,7 +75,7 @@ describe(createKitchen, () => {
 				sauces: expense * 3,
 				vegetables: expense * 4,
 			}));
-			const kitchen = createKitchen(5, jest.fn(), supplier);
+			const kitchen = createKitchen(5, jest.fn<index.Cleaner>(), supplier);
 			kitchen.purchase(3);
 
 			const result = kitchen.purchase(3);
@@ -85,7 +93,7 @@ describe(createKitchen, () => {
 				sauces: expense * 3,
 				vegetables: expense * 4,
 			}));
-			const kitchen = createKitchen(5, jest.fn(), supplier);
+			const kitchen = createKitchen(5, jest.fn<index.Cleaner>(), supplier);
 
 			kitchen.purchase(3);
 			const result = kitchen.purchase(2);
@@ -99,7 +107,11 @@ describe(createKitchen, () => {
 
 	describe("prepare", () => {
 		it("returns true and decreases stock when dirt is below 100 and the recipe succeeds", () => {
-			const kitchen = createKitchen(0, jest.fn(), jest.fn());
+			const kitchen = createKitchen(
+				0,
+				jest.fn<index.Cleaner>(),
+				jest.fn<index.Supplier>()
+			);
 			const recipe = jest.fn(() => ({
 				newStock: {
 					breads: 1,
@@ -125,7 +137,11 @@ describe(createKitchen, () => {
 		});
 
 		it("returns false and does not change stock when dirt is below 100 and the recipe fails", () => {
-			const kitchen = createKitchen(0, jest.fn(), jest.fn());
+			const kitchen = createKitchen(
+				0,
+				jest.fn<index.Cleaner>(),
+				jest.fn<index.Supplier>()
+			);
 			const recipe = jest.fn(() => ({
 				newStock: {
 					breads: 1,
@@ -151,7 +167,11 @@ describe(createKitchen, () => {
 		});
 
 		it("returns false and does not call recipe when dirt is 100", () => {
-			const kitchen = createKitchen(0, jest.fn(), jest.fn());
+			const kitchen = createKitchen(
+				0,
+				jest.fn<index.Cleaner>(),
+				jest.fn<index.Supplier>()
+			);
 			const recipe = jest.fn(() => ({
 				newStock: {
 					breads: 1,
