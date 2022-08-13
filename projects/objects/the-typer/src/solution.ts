@@ -1,51 +1,51 @@
 // Write your types here! ✨
 
-type PlaceBase = {
+export type PlaceBase = {
 	name: string;
 	proximity: number;
 	treasure?: string;
 };
 
-type Clearing = PlaceBase & {
+export type Clearing = PlaceBase & {
 	through?: Place;
 	type: "clearing";
 };
 
-type Path = PlaceBase & {
+export type Path = PlaceBase & {
 	shortcut?: Place;
 	through: Place;
 	type: "path";
 };
 
-type Town = PlaceBase & {
+export type Town = PlaceBase & {
 	around?: Place;
 	through?: Place;
 	type: "town";
 };
 
-type StreamBase = PlaceBase & {
+export type StreamBase = PlaceBase & {
 	type: "stream";
 };
 
-type StreamEnd = StreamBase & {
+export type StreamEnd = StreamBase & {
 	area: "end";
 	upstream: Place;
 };
 
-type StreamBegin = StreamBase & {
+export type StreamBegin = StreamBase & {
 	area: "begin";
 	downstream: Place;
 };
 
-type StreamMiddle = StreamBase & {
+export type StreamMiddle = StreamBase & {
 	area: "middle";
 	downstream: Place;
 	upstream: Place;
 };
 
-type Stream = StreamBegin | StreamEnd | StreamMiddle;
+export type Stream = StreamBegin | StreamEnd | StreamMiddle;
 
-type Place = Clearing | Town | Path | Stream;
+export type Place = Clearing | Town | Path | Stream;
 
 let current: Place | undefined = {
 	name: "Woesong Bridge",

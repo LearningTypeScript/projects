@@ -1,0 +1,8 @@
+{
+	"name": "the-narrow-trail",
+	"scripts": {
+		"test": "jest",
+		"test:solutions": "cross-env TEST_SOLUTIONS=1 jest",
+		"tsc": "tsc"
+	}
+}

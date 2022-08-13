@@ -14,10 +14,11 @@ Could you please correct the type annotations in my files -- and maybe a couple 
 
 ## Setup
 
-Start the TypeScript compiler in watch mode:
+In your terminal, run the TypeScript compiler via the `tsc` script within whichever step you're working on.
+For example, to start the TypeScript compiler on the first step in watch mode:
 
 ```shell
-tsc --watch
+npm run tsc -- --project 01-ingredients --watch
 ```
 
 ## Steps

@@ -15,10 +15,11 @@ We have some files we'd like your assistance with.
 
 ## Setup
 
-Start the TypeScript compiler in watch mode:
+In your terminal, run the TypeScript compiler via the `tsc` script within whichever step you're working on.
+For example, to start the TypeScript compiler on the first step in watch mode:
 
 ```shell
-tsc --watch
+npm run tsc -- --project 01-passport-declarations --watch
 ```
 
 ## Steps

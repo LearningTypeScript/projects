@@ -52,7 +52,7 @@ export function runCommands() {
 		food -= 1;
 		water -= 1;
 
-		if (food < 0 || water < 0) {
+		if (food === 0 || water === 0) {
 			return false;
 		}
 	}

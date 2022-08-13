@@ -1,4 +1,4 @@
-# Narrow Trail
+# The Narrow Trail
 
 > A [Learning TypeScript > Unions and Literals](https://learning-typescript.com/unions-and-literals) 🍲 entree project.
 
@@ -8,7 +8,7 @@ This legendary path winds takes a week to cross but is notoriously difficult to 
 Choose your actions on the trail wisely -- or perish.
 
 ...or at least, that's the marketing material for our in-development video game.
-This project will have you implementing game function in TypeScript to help us get to our first demo.
+This project will have you implementing a game function in TypeScript to help us get to our first demo.
 We'd do it ourselves, except we need someone who's learned about how unions, literals, and type narrowing work in TypeScript.
 That's you!
 
@@ -19,17 +19,18 @@ You can still use `number` if you want for numeric values.
 
 ## Setup
 
-In one terminal, start the TypeScript compiler in watch mode:
+In one terminal, run the TypeScript compiler via the `tsc` script.
+For example, to start the TypeScript compiler in watch mode:
 
 ```shell
-tsc --watch
+npm run tsc -- --watch
 ```
 
 In another terminal, run Jest via the `test` script.
-For example, to run tests in watch mode:
+For example, to start tests in watch mode:
 
 ```shell
-npm test -- --watch
+npm run test -- --watch
 ```
 
 ## Specification

@@ -1,6 +1,6 @@
 # Secret Messages
 
-> A [Learning TypeScript > Declaration Files](https://learning-typescript.com/declaration-files) 🥗 appetizer project.
+> A [Learning TypeScript > Configuration Options](https://learning-typescript.com/configuration-options) 🥗 appetizer project.
 > You'll practice using aliased object types to represent shapes of data.
 
 _Psst!_
@@ -19,10 +19,11 @@ Don't ask any questions - just go along with it.
 
 ## Setup
 
-Start the TypeScript compiler in watch mode:
+In your terminal, run the TypeScript compiler via the `tsc` script within whichever step you're working on.
+For example, to start the TypeScript compiler on the first step in watch mode:
 
 ```shell
-tsc --watch
+npm run tsc -- --project 01-encoded-outputs --watch
 ```
 
 ## Steps

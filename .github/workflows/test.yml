@@ -1,0 +1,34 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+          cache: "npm"
+      - run: npm ci
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v22
+        with:
+          files: projects
+      - name: Copy solution files into index files
+        run: ./scripts/copy-solutions.sh
+        shell: bash
+      - name: Run test in project directories
+        if: ${{ steps.changed-files.outputs.all_changed_files != '' }}
+        run: ./scripts/changed-solutions.sh ${{ steps.changed-files.outputs.all_changed_files }} "test"
+        shell: bash
+      - name: Run test in all project directories
+        if: ${{ steps.changed-files.outputs.all_changed_files == '' }}
+        run: ./scripts/check-solutions.sh "test"
+        shell: bash

@@ -5,5 +5,5 @@
 			"~/index": ["./solution.ts"]
 		}
 	},
-	"include": ["./index.test.ts"]
+	"include": ["./index.test.ts", "./solution.ts"]
 }

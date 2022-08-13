@@ -47,6 +47,7 @@ Be sure to fill out the pull request template's requested information -- otherwi
 PRs are also expected to have a title that adheres to [commitlint](https://github.com/conventional-changelog/commitlint) and uses a [gitmoji emoji](https://gitmoji.dev).
 Only PR titles need to be in that format, not individual commits.
 Don't worry if you get this wrong: you can always change the PR title after sending it.
+Check [previously merged PRs](https://github.com/LearningTypeScript/projects/pulls?q=is%3Apr+is%3Amerged+-label%3Adependencies+) for reference.
 
 Please try not to force-push commits to PRs that have already been reviewed.
 Doing so makes it harder to review the changes.

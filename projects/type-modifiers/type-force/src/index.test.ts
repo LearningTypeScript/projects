@@ -172,7 +172,7 @@ describe(duel, () => {
 				"%j results in %o",
 				(fighter: solution.Fighter, character: solution.Character) => {
 					expect(duel(fighter, patsy)[1]).toEqual(
-						expect.objectContaining(character)
+						expect.objectContaining(character as any)
 					);
 				}
 			);
