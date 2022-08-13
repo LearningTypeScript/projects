@@ -20,7 +20,7 @@ For example, this `
 Write a `FilteredArrayItems` type that takes in two type parameters:
 
 1. `T`
-2. `Filter
+2. `Filter`
 
 It should result in a flattened array or tuple type of items that only `extend Filter`.
 
