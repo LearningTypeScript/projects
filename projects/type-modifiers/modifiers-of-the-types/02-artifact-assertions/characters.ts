@@ -6,7 +6,7 @@ export const characters = [
     }`,
 	`{
         "name": "Evil-Lyn",
-        "powers": ["magic", "mind control", "teleporation"],
+        "powers": ["magic", "mind control", "teleportation"],
         "side": "evil"
     }`,
 	`{
@@ -21,7 +21,7 @@ export const characters = [
     }`,
 	`{
         "name": "Teela Na",
-        "powers": ["telekenesis", "telepathy", "teleportation"],
+        "powers": ["telekinesis", "telepathy", "teleportation"],
         "side": "good"
     }`,
 ];

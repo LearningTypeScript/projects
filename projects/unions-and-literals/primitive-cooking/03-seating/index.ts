@@ -9,7 +9,7 @@ if (Math.random() > 0.5) {
 	adjacentLeft = "Chuckie";
 	adjacentRight = "Tommy";
 } else {
-	adjacentLeft = "Tomy";
+	adjacentLeft = "Tommy";
 	adjacentRight = "Chuckie";
 }
 
