@@ -1,7 +1,7 @@
 {
 	"devDependencies": {
 		"@commitlint/cli": "^17.0.2",
-		"@swc/core": "^1.2.197",
+		"@swc/core": "^1.2.233",
 		"@swc/jest": "^0.2.21",
 		"capital-case": "^1.0.4",
 		"comment-json": "^4.2.2",
