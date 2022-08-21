@@ -5,7 +5,6 @@
 		"@swc/jest": "^0.2.21",
 		"capital-case": "^1.0.4",
 		"comment-json": "^4.2.2",
-		"commitlint-config-gitmoji": "^2.2.5",
 		"cross-env": "7.0.3",
 		"cspell": "^6.1.2",
 		"husky": "^8.0.0",
@@ -34,5 +33,8 @@
 		"prepare": "husky install",
 		"test": "jest test/"
 	},
-	"version": "0.0.1"
+	"version": "0.0.1",
+	"dependencies": {
+		"@commitlint/config-conventional": "^17.0.3"
+	}
 }
