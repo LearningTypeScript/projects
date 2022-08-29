@@ -8,7 +8,7 @@ Congrats on making it all the way through the book to the final chapter!
 Type operations are a ton of fun to play around with once you get the hang of them.
 
 These appetizer projects showcase a bunch of my favorite cool things you can do using template literal types with conditional types.
-Each gives a small into to the new thing because it can be tricky to find out the ways you can or cannot combine type operations.
+Each gives a small intro to the new thing because it can be tricky to find out the ways you can or cannot combine type operations.
 There's no silly theme, to help not distract from learning those new things.
 
 I hope you're enjoying the book and these projects! 💖

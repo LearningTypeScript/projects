@@ -1,36 +1,26 @@
-# Step 1: Flat Filter
+# Step 3: Split On
 
-_Learning TypeScript_ introduced a generic `ArrayItemsRecursive` type that retrieves the nested elements from any input array type.
-It works by using an inferred conditional type to check if the input is an array, and recursing if so:
-
-```ts
-type ArrayItemsRecursive<T> = T extends (infer Item)[]
-	? ArrayItemsRecursive<Item>
-	: T;
-
-// Type: string
-type String2DItem = ArrayItemsRecursive<string[][]>;
-```
-
-Another trick you can do with generic type parameters is using `extends` to check if the parameter matches some other type.
-For example, this `
+Recursive template literal types can result in types other than other template literal types too.
+For instance, they can be used to process an input template literal type into some other format, such as an array.
 
 ## Specification
 
-Write a `FilteredArrayItems` type that takes in two type parameters:
+Write a `SplitOn` type that takes in two type parameters:
 
-1. `T`
-2. `Filter
+1. `Text`: original text; must be a `string`
+2. `On`: substring to be replaced; must be a `string`
+3. `Replacement`: new values to replace `Original`; must be a `string`
 
-It should result in a flattened array or tuple type of items that only `extend Filter`.
+It should result in an array of template literal types, similar to how strings' `.split` splits a string.
 
-## Examples
+### Examples
 
-- `FilteredArrayItems<number[], string>` -> `number`
-- `FilteredArrayItems<(number | string)[], number>` -> `number`
-- `FilteredArrayItems<["a", 1, "b", 2], string>` -> `"a" | "b"`
+- `SplitOn<"", "">` -> `[""]`
+- `SplitOn<"baby", "a">` -> `["b", "by"]`
+- `SplitOn<"hello my baby", " ">` -> `["hello", "my", "baby"]`
 
 ## Files
 
-- `index.ts`:
+- `index.ts`: Write your `SplitOn` type here
+- `index.test.ts`: Tests verifying your type
 - `solution.ts`: Solution code
