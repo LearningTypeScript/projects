@@ -1,36 +1,26 @@
-# Step 1: Flat Filter
+# Step 2: Word Replace
 
-_Learning TypeScript_ introduced a generic `ArrayItemsRecursive` type that retrieves the nested elements from any input array type.
-It works by using an inferred conditional type to check if the input is an array, and recursing if so:
-
-```ts
-type ArrayItemsRecursive<T> = T extends (infer Item)[]
-	? ArrayItemsRecursive<Item>
-	: T;
-
-// Type: string
-type String2DItem = ArrayItemsRecursive<string[][]>;
-```
-
-Another trick you can do with generic type parameters is using `extends` to check if the parameter matches some other type.
-For example, this `
+SpOnGeCaSiNg a word is fun, but not likely to be useful in any real project.
+Being able to replace text akin to strings' `.replaceAll` is a little more useful.
 
 ## Specification
 
-Write a `FilteredArrayItems` type that takes in two type parameters:
+Write a `WordReplace` type that takes in two type parameters:
 
-1. `T`
-2. `Filter
+1. `Text`: original text; must be a `string`
+2. `Original`: substring to be replaced; must be a `string`
+3. `Replacement`: new values to replace `Original`; must be a `string`
 
-It should result in a flattened array or tuple type of items that only `extend Filter`.
+It should result in a version of the original `Text` where all instances of `Original` are replaced with `Replacement.
 
-## Examples
+### Examples
 
-- `FilteredArrayItems<number[], string>` -> `number`
-- `FilteredArrayItems<(number | string)[], number>` -> `number`
-- `FilteredArrayItems<["a", 1, "b", 2], string>` -> `"a" | "b"`
+- `WordReplace<"", "", "">` -> `""`
+- `WordReplace<"apple", "p", "!">` -> `"a!!le"`
+- `WordReplace<"banana!", "na", "NA">` -> `"baNANA!"`
 
 ## Files
 
-- `index.ts`:
+- `index.ts`: Write your `WordReplace` type here
+- `index.test.ts`: Tests verifying your type
 - `solution.ts`: Solution code
