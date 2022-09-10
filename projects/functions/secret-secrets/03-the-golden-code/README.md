@@ -37,6 +37,6 @@ Return: a function with:
 
 ## Files
 
-- `index.ts`: Write your `createCipher` function here
-- `index.test.ts`: Tests verifying `createCipher`
+- `index.ts`: Write your `createCodeCracker` function here
+- `index.test.ts`: Tests verifying `createCodeCracker`
 - `solution.ts`: Solution code
