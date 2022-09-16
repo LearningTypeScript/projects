@@ -32,6 +32,6 @@ Return: a function with:
 
 ## Files
 
-- `index.ts`: Write your `createCipher` function here
-- `index.test.ts`: Tests verifying `createCipher`
+- `index.ts`: Write your `createAdvancedCipher` function here
+- `index.test.ts`: Tests verifying `createAdvancedCipher`
 - `solution.ts`: Solution code

@@ -2,7 +2,7 @@ const headOfTable = "Me!";
 let adjacentLeft: "Chuckie" | "Tommy";
 let adjacentRight: "Chuckie" | "Tommy";
 let furtherLeft: "Angelica" | "Susie" | undefined;
-let furtherRight: "Susie" | "Kimi" | "Edwin" | undefined;
+let furtherRight: "Susie" | "Kimi" | "Timmy" | undefined;
 
 // I always invite Chuckie and Tommy! ♥
 if (Math.random() > 0.5) {
@@ -34,9 +34,9 @@ if (furtherLeft === "Angelica" && furtherRight !== "Susie") {
 	furtherRight = "Kimi";
 }
 
-// If I invited Susie but not Angelica, I'll invite Edwin. They get along well with Susie but not Angelica.
+// If I invited Susie but not Angelica, I'll invite Timmy. They get along well with Susie but not Angelica.
 if (furtherLeft === "Susie") {
-	furtherRight = "Edwin";
+	furtherRight = "Timmy";
 }
 
 console.log(`At the head of the table is... ${headOfTable}`);
@@ -44,7 +44,7 @@ console.log(`At the head of the table is... ${headOfTable}`);
 console.log(`Adjacent to the left is: ${adjacentLeft}`);
 console.log(`Adjacent to the right is: ${adjacentRight}`);
 
-console.log(`Further down on the left is: ${adjacentLeft ?? "nobody"}`);
-console.log(`Further down on the right is: ${adjacentRight ?? "nobody"}`);
+console.log(`Further down on the left is: ${furtherLeft ?? "nobody"}`);
+console.log(`Further down on the right is: ${furtherRight ?? "nobody"}`);
 
 export {};

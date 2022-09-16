@@ -1,36 +1,40 @@
-# Step 1: Flat Filter
+# Step 1: Sponge Case
 
-_Learning TypeScript_ introduced a generic `ArrayItemsRecursive` type that retrieves the nested elements from any input array type.
-It works by using an inferred conditional type to check if the input is an array, and recursing if so:
+_SpOnGeCaSe_ is a text casing based on the [Mocking Spongebob meme](https://knowyourmeme.com/memes/mocking-spongebob).
+It involves alternating lowercase and uppercase characters in a string, and is a natural fit for recursive template literal types!
+
+Generic template literal types are able to be made recursive in a similar way to how other types may be made recursive.
+They may take in a type parameter and use the `infer` keyword in a conditional check.
+Conditional checks may check whether the type parameter matches a more specific template literal type.
+
+For example, this `AddBangs` type adds a `!` after every character by checking whether the `T` type parameter consists of a single character, `Prefix`, before any length string, `Suffix`:
 
 ```ts
-type ArrayItemsRecursive<T> = T extends (infer Item)[]
-	? ArrayItemsRecursive<Item>
+type AddBangs<T> = T extends `${infer Prefix}${infer Suffix}`
+	? `${Prefix}!${AddBangs<Suffix>}`
 	: T;
 
-// Type: string
-type String2DItem = ArrayItemsRecursive<string[][]>;
+// Type: "H!e!l!l!o!,! !w!o!r!l!d!!!"
+type Message = AddBangs<"Hello, world!">;
 ```
-
-Another trick you can do with generic type parameters is using `extends` to check if the parameter matches some other type.
-For example, this `
 
 ## Specification
 
-Write a `FilteredArrayItems` type that takes in two type parameters:
+Write a `SpOnGeCaSe` type that takes in two type parameters:
 
-1. `T`
-2. `Filter`
+1. `Text`
+2. `FirstTransform`: either `"upper"` or `"lower"`; by default, `"upper"`
 
-It should result in a flattened array or tuple type of items that only `extend Filter`.
+It should result in the `SpOnGeCaSe` equivalent of the string.
 
-## Examples
+### Examples
 
-- `FilteredArrayItems<number[], string>` -> `number`
-- `FilteredArrayItems<(number | string)[], number>` -> `number`
-- `FilteredArrayItems<["a", 1, "b", 2], string>` -> `"a" | "b"`
+- `SpOnGeCaSe<"">` -> `""`
+- `SpOnGeCaSe<"abc def">` -> `"AbC DeF"`
+- `SpOnGeCaSe<"hello", "lower">` -> `"hElLo"`
 
 ## Files
 
-- `index.ts`:
+- `index.ts`: Write your `SpOnGeCaSe` type here
+- `index.test.ts`: Tests verifying your type
 - `solution.ts`: Solution code
