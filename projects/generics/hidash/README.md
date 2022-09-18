@@ -39,7 +39,7 @@ npm run test -- 1 --watch
 - [1. Unique](./01-unique)
 - [2. Zip](./02-zip)
 - [3. Pick](./03-pick)
-- [4. Pick Many](./04-pickMany)
+- [4. Pick Many](./04-pickmany)
 
 ## Notes
 
