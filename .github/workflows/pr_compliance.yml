@@ -17,4 +17,3 @@ jobs:
             - dependabot
             - dependabot[bot]
             - all-contributors[bot]
-          title-check-enable: true
