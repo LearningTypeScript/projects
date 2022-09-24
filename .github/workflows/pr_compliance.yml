@@ -1,0 +1,19 @@
+name: PR Compliance
+
+on:
+  pull_request_target:
+    types: [opened, edited, reopened]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  pr-compliance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: mtfoley/pr-compliance-action@main
+        with:
+          ignore-authors:
+            - dependabot
+            - dependabot[bot]
+            - all-contributors[bot]
