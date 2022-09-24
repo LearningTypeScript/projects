@@ -22,7 +22,7 @@ describe(alignTexts, () => {
 		});
 	});
 
-	test.each([
+	const cases: [string[], index.AlignmentOptions, string[][]][] = [
 		[[""], { width: 0 }, [[""]]],
 		[["", ""], { width: 0 }, [[""], [""]]],
 		[[""], { width: 2 }, [["  "]]],
@@ -113,7 +113,9 @@ describe(alignTexts, () => {
 				["  abc", "  def", "  ghi"],
 			],
 		],
-	])("%j %o", (lines, options, aligned) => {
+	];
+
+	test.each(cases)("%j %o", (lines, options, aligned) => {
 		expect(alignTexts(lines, options)).toEqual(aligned);
 	});
 });
