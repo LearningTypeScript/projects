@@ -27,6 +27,6 @@ describe(pick, () => {
 		[{ a: 1, b: false }, "b", false],
 		[{ a: 1, b: undefined }, "b", undefined],
 	])("%o %j", (a, b, result) => {
-		expect(pick(a, b)).toEqual(result);
+		expect(pick(a, b as keyof typeof a)).toEqual(result);
 	});
 });
