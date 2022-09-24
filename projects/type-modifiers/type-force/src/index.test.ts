@@ -4,7 +4,7 @@ import { expectType } from "tsd";
 import * as index from "./index";
 import * as solution from "./solution";
 
-const { duel } = process.env.TEST_SOLUTIONS ? solution : index;
+const { duel } = process.env.TEST_SOLUTIONS ? index : index;
 
 describe(duel, () => {
 	describe("types", () => {
@@ -59,7 +59,7 @@ describe(duel, () => {
 		});
 
 		describe("mutations", () => {
-			test.each([
+			test.each<[solution.Fighter, solution.Character]>([
 				[
 					{
 						mutations: [],
@@ -168,14 +168,11 @@ describe(duel, () => {
 						toughness: 1.25,
 					},
 				],
-			])(
-				"%j results in %o",
-				(fighter: solution.Fighter, character: solution.Character) => {
-					expect(duel(fighter, patsy)[1]).toEqual(
-						expect.objectContaining(character as any)
-					);
-				}
-			);
+			])("%j results in %o", (fighter, character) => {
+				expect(duel(fighter, patsy)[1]).toEqual(
+					expect.objectContaining(character as any)
+				);
+			});
 		});
 	});
 });

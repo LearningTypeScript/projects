@@ -3,7 +3,7 @@ import { describe, expect, test } from "@jest/globals";
 import * as index from "./index";
 import * as solution from "./solution";
 
-const { unique } = process.env.TEST_SOLUTIONS ? solution : index;
+const { unique } = process.env.TEST_SOLUTIONS ? index : index;
 
 describe(unique, () => {
 	test.each([
@@ -104,7 +104,7 @@ describe(unique, () => {
 			],
 			["a", "b", "c", "d"],
 		],
-	])("%j", (items, result) => {
+	])("%j", (items: unknown[][], result: unknown) => {
 		expect(unique(...items)).toEqual(result);
 	});
 });

@@ -3,10 +3,10 @@ import { describe, expect, test } from "@jest/globals";
 import * as index from "./index";
 import * as solution from "./solution";
 
-const { unrollPlaylist } = process.env.TEST_SOLUTIONS ? solution : index;
+const { unrollPlaylist } = process.env.TEST_SOLUTIONS ? index : index;
 
 describe(unrollPlaylist, () => {
-	test.each([
+	test.each<[solution.PlaylistItem[], unknown]>([
 		[[], { artists: {}, songs: [], time: 0 }],
 		[
 			[{ artist: [], length: 1, name: "", type: "song" }],
@@ -270,7 +270,7 @@ describe(unrollPlaylist, () => {
 				time: 786,
 			},
 		],
-	])("%j %j", (input: solution.PlaylistItem[], expected: unknown) => {
+	])("%j %j", (input, expected) => {
 		expect(unrollPlaylist(input)).toEqual(expected);
 	});
 });

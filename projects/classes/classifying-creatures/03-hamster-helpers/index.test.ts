@@ -3,7 +3,7 @@ import { describe, expect, it } from "@jest/globals";
 import * as index from "./index";
 import * as solution from "./solution";
 
-const { Gerbil, Hamster } = process.env.TEST_SOLUTIONS ? solution : index;
+const { Gerbil, Hamster } = process.env.TEST_SOLUTIONS ? index : index;
 
 describe(Gerbil, () => {
 	describe("species", () => {
@@ -28,21 +28,18 @@ describe(Gerbil, () => {
 	describe("eats", () => {
 		const pet = new Gerbil();
 
-		it.each([
+		it.each<[boolean, solution.SmallPetFood]>([
 			[false, "bugs"],
 			[false, "fruits"],
 			[true, "insects"],
 			[true, "plants"],
 			[true, "seeds"],
 			[true, "vegetables"],
-		])(
-			"returns %p for %s",
-			(expected: boolean, food: solution.SmallPetFood) => {
-				const actual = pet.eats(food);
+		])("returns %p for %s", (expected, food) => {
+			const actual = pet.eats(food);
 
-				expect(actual).toBe(expected);
-			}
-		);
+			expect(actual).toBe(expected);
+		});
 	});
 
 	describe("isHappy", () => {
