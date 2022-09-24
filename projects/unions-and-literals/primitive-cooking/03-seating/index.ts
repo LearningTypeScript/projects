@@ -1,8 +1,8 @@
 const headOfTable = "Me!";
-let adjacentLeft;
-let adjacentRight;
-let furtherLeft;
-let furtherRight;
+let adjacentLeft: "Chuckie" | "Tommy";
+let adjacentRight: "Chuckie" | "Tommy";
+let furtherLeft: "Angelica" | "Susie" | undefined;
+let furtherRight: "Susie" | "Kimi" | "Timmy" | undefined;
 
 // I always invite Chuckie and Tommy! ♥
 if (Math.random() > 0.5) {

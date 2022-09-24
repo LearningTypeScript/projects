@@ -1,16 +1,38 @@
-import answer from "./answer.js";
-import * as guesses from "./guesses.json";
+// Write your types here! ✨
 
-export function decodeMessage(message: string) {
-	let output = "";
-
-	for (let i = 0; i < message.length; i += 1) {
-		output += String.fromCodePoint((message.codePointAt(i) - i) ** 0.5);
+declare global {
+	interface Window {
+		passports: Passports;
 	}
-
-	return output;
 }
 
-for (const message of [answer, ...guesses]) {
-	console.log(decodeMessage(message));
+interface Passports {
+	[i: string]: Passport | undefined;
+}
+
+interface Passport {
+	expires: Date;
+	name: string;
+}
+
+export function checkPassport(id: string) {
+	const passport = window.passports[id];
+
+	if (!passport) {
+		return {
+			allowed: false,
+			reason: "No passport found.",
+		};
+	}
+
+	if (passport.expires.getTime() < new Date().getTime()) {
+		return {
+			allowed: false,
+			reason: `Passport for ${passport.name} has expired.`,
+		};
+	}
+
+	return {
+		allowed: true,
+	};
 }

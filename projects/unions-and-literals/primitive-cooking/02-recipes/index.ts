@@ -1,6 +1,6 @@
 // Please clarify any overly wide (permissive) type annotations here! ✨
-let difficulty: number;
-let group: string;
+let difficulty: 1 | 2 | 3;
+let group: "appetizer" | "entree" | "dessert";
 let title: string;
 
 // Start with something quick and painless to prepare...

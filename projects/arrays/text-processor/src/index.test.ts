@@ -4,7 +4,7 @@ import { expectType } from "tsd";
 import * as index from "./index";
 import * as solution from "./solution";
 
-const { alignTexts } = process.env.TEST_SOLUTIONS ? solution : index;
+const { alignTexts } = process.env.TEST_SOLUTIONS ? index : index;
 
 describe(alignTexts, () => {
 	describe("types", () => {

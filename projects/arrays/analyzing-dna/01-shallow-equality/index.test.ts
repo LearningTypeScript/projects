@@ -3,7 +3,7 @@ import { describe, expect, test } from "@jest/globals";
 import * as index from "./index";
 import * as solution from "./solution";
 
-const { shallowEquality } = process.env.TEST_SOLUTIONS ? solution : index;
+const { shallowEquality } = process.env.TEST_SOLUTIONS ? index : index;
 
 describe(shallowEquality, () => {
 	test.each([

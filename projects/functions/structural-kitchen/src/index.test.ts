@@ -3,7 +3,7 @@ import { describe, expect, it, jest } from "@jest/globals";
 import * as index from "./index";
 import * as solution from "./solution";
 
-const { createKitchen } = process.env.TEST_SOLUTIONS ? solution : index;
+const { createKitchen } = process.env.TEST_SOLUTIONS ? index : index;
 
 describe(createKitchen, () => {
 	describe("announce", () => {
