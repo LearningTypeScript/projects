@@ -1,11 +1,3 @@
-export type Bird = {
-	dangerous?: boolean;
-	diet: "carnivore" | "omnivore";
-	intelligent?: boolean;
-	name: string;
-	noisy?: boolean;
-};
-
 export const birds: Bird[] = [
 	{
 		dangerous: true,

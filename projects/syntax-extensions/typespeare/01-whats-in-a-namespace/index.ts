@@ -1,5 +1,5 @@
-import { schemesInOrder } from "./poetry.solution";
-
-export function verifyProse(prose: string[]) {
-	return schemesInOrder.find((scheme) => scheme.verify(prose))?.name;
+namespace TheBard {
+	export function verifyProse(prose: string[]) {
+		return Poetry.schemesInOrder.find((scheme) => scheme.verify(prose))?.name;
+	}
 }

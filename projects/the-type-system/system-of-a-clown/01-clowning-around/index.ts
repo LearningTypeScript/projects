@@ -3,9 +3,9 @@ let remainingGuests = 20;
 while (true) {
 	// Each group of guests will be size 5-10
 	const guestsToAssign = Math.floor(Math.random() * 5) + 5;
-	let activity: string;
-	let capacity: number;
-	let requiresSupplies: boolean;
+	let activity;
+	let capacity;
+	let requiresSupplies;
 
 	switch (Math.floor(Math.random() * 5)) {
 		case 0:
@@ -15,7 +15,7 @@ while (true) {
 			break;
 		case 1:
 			activity = "face painting";
-			capacity = 1;
+			capacity = "1";
 			requiresSupplies = true;
 			break;
 		case 2:
