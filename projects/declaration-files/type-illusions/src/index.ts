@@ -1,19 +1,12 @@
-import {
-	Act,
-	AudienceMember,
-	getAudienceMemberFor,
-	Illusion,
-	isTrick,
-	isVolunteerIllusion,
-	Trick,
-	VolunteerIllusion,
-} from "./show.solution";
+// Add back imports and type annotations here! ✨
 
-function showTrick(trick: Trick) {
+import { getAudienceMemberFor, isTrick, isVolunteerIllusion } from "./show";
+
+function showTrick(trick) {
 	console.log(`💨 Voila! ${trick.gimmick}`);
 }
 
-function showIllusion(illusion: Illusion) {
+function showIllusion(illusion) {
 	console.log("This is not a trick...");
 	console.log(`\t${illusion.introduction()}`);
 
@@ -24,10 +17,7 @@ function showIllusion(illusion: Illusion) {
 	console.log(`\t${illusion.payoff()}`);
 }
 
-async function showVolunteerIllusion(
-	audienceMember: AudienceMember,
-	illusion: VolunteerIllusion
-) {
+async function showVolunteerIllusion(audienceMember, illusion) {
 	console.log(
 		`Let's give a big round of applause for ${audienceMember.name}! 👏`
 	);
@@ -41,7 +31,7 @@ async function showVolunteerIllusion(
 	showIllusion(illusion);
 }
 
-export async function runShow(act: Act) {
+export async function runShow(act) {
 	console.log(`Hello! I am the amazing ${act.performer}, and this...`);
 	console.log(`...is ${act.name}! ✨`);
 
