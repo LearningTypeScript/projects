@@ -46,6 +46,6 @@ describe(pickMany, () => {
 		[{ a: 1, b: false }, ["a", "b"], [1, false]],
 		[{ a: 1, b: undefined }, ["b"], [undefined]],
 	])("%o %j", (a, b, result) => {
-		expect(pickMany(a, b)).toEqual(result);
+		expect(pickMany(a, b as (keyof typeof a)[])).toEqual(result);
 	});
 });

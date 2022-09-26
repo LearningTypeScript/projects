@@ -23,7 +23,7 @@ console.log(`[${group}] ${title}: ${difficulty}/3 difficulty`);
 
 // Send everyone off with a nice closer.
 difficulty = 1;
-group = "dessert";
+group = "desert";
 title = "Biscuits and Coffee";
 console.log(`[${group}] ${title}: ${difficulty}/3 difficulty`);
 

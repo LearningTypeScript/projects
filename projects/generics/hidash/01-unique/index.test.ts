@@ -104,7 +104,7 @@ describe(unique, () => {
 			],
 			["a", "b", "c", "d"],
 		],
-	])("%j", (items, result) => {
+	])("%j", (items: unknown[][], result: unknown) => {
 		expect(unique(...items)).toEqual(result);
 	});
 });

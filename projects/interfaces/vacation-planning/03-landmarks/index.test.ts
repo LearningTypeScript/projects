@@ -9,7 +9,7 @@ const dedent = (text: TemplateStringsArray) =>
 	text[0].replaceAll(/\n\s*/g, "\n").trim();
 
 describe(describeLandmark, () => {
-	test.each([
+	test.each<[solution.Landmark, string]>([
 		[
 			{
 				name: "Fort Brewerton",
@@ -87,7 +87,7 @@ describe(describeLandmark, () => {
         It is 90 feet high.
       `,
 		],
-	])("%p", (landmark: solution.Landmark[], description: string) => {
+	])("%p", (landmark, description) => {
 		expect(describeLandmark(landmark)).toEqual(description);
 	});
 });

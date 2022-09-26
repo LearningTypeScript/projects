@@ -16,18 +16,15 @@ describe(getArtifactType, () => {
 	});
 
 	describe("return", () => {
-		it.each([
+		it.each<[string, solution.ArtifactName]>([
 			["magic", "Black Garnet"],
 			["fortress", "Castle TypeScript"],
 			["device", "Cosmic Key"],
 			["sword", "Power Sword"],
 			["magic", "Starseed"],
 			["sword", "Sword of the Ancients"],
-		])(
-			"returns %j when the name is %j",
-			(expected: string, name: solution.ArtifactName) => {
-				expect(getArtifactType(name)).toBe(expected);
-			}
-		);
+		])("returns %j when the name is %j", (expected, name) => {
+			expect(getArtifactType(name)).toBe(expected);
+		});
 	});
 });

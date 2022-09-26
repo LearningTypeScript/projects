@@ -1,15 +1,17 @@
-root_dir=$(pwd)
+command=${@:$#}
 failed_tests=()
+root_dir=$(pwd)
 
 function run_tests {
-	echo -e "\nRunning $2 for $1"
-	cd $1
-	npm run $2 || failed_tests+=("$1")
+	echo -e "\nRunning $command for $1"
+	cd $1/..
+	npm run $command || failed_tests+=("$1")
 	cd $root_dir
 	return 0
 }
 
-for file in $1; do
+for ((i = 1; i <= $# - 1; i++)); do
+	file="${!i}"
 	dir=$(dirname $file)
 	if [ -e $dir/package.json ] || [ -e $dir/solution.ts ] || [ -e $dir/solution.js ]; then
 		run_tests $dir

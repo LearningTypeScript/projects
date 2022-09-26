@@ -9,7 +9,7 @@ const dedent = (text: TemplateStringsArray) =>
 	text[0].replaceAll(/\n\s*/g, "\n").trim();
 
 describe(describeCity, () => {
-	test.each([
+	test.each<[solution.City, string]>([
 		[
 			{
 				coordinates: {
@@ -51,7 +51,7 @@ describe(describeCity, () => {
         * Located at 42°43'54"N 73°41'33"W
       `,
 		],
-	])("%p", (city: solution.City, description: string) => {
+	])("%p", (city, description) => {
 		expect(describeCity(city)).toEqual(description);
 	});
 });
