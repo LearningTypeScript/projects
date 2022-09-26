@@ -1,5 +1,5 @@
-import type { Conflict } from "./conflict";
-import type { Setup } from "./setup";
+import { Conflict } from "./conflict";
+import { Setup } from "./setup";
 
 export interface Resolution {
 	description: string;
