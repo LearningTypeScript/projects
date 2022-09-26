@@ -4,7 +4,7 @@ import { expectType } from "tsd";
 import * as index from "./index";
 import * as solution from "./solution";
 
-const { zip } = process.env.TEST_SOLUTIONS ? index : index;
+const { zip } = process.env.TEST_SOLUTIONS ? solution : index;
 
 describe(zip, () => {
 	test("types", () => {

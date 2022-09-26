@@ -3,7 +3,7 @@ import { beforeEach, describe, expect, it, jest } from "@jest/globals";
 import * as index from "./index";
 import * as solution from "./solution";
 
-const { Parrot } = process.env.TEST_SOLUTIONS ? index : index;
+const { Parrot } = process.env.TEST_SOLUTIONS ? solution : index;
 
 const mockRandom = jest.spyOn(Math, "random");
 

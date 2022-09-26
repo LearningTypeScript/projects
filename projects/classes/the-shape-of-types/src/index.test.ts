@@ -3,7 +3,9 @@ import { describe, expect, it } from "@jest/globals";
 import * as index from "./index";
 import * as solution from "./solution";
 
-const { Demon, Horror, Sorcerer } = process.env.TEST_SOLUTIONS ? index : index;
+const { Demon, Horror, Sorcerer } = process.env.TEST_SOLUTIONS
+	? solution
+	: index;
 
 class MockHorror extends Horror {
 	name = "";
