@@ -1,7 +1,11 @@
 // Write your types here! ✨
 
 export function encodeMessage(message: string) {
-	return message
-		.split("")
-		.map((character) => String.fromCharCode(character.charCodeAt(0) + 13));
+	let output = "";
+
+	for (let i = 0; i < message.length; i += 1) {
+		output += String.fromCharCode(message.codePointAt(i)! + i + message.length);
+	}
+
+	return output;
 }
