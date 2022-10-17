@@ -1,28 +1,38 @@
 {
-	"files": [
-		"README.md"
-	],
-	"imageSize": 100,
-	"commit": false,
-	"badgeTemplate": "\t<a href=\"#contributors-\">\n\t\t<img alt=\"All Contributors\" src=\"https://img.shields.io/badge/all_contributors-<%= contributors.length %>-14cc21.svg\" />\n\t</a>",
-	"contributors": [
-		{
-			"login": "fuadop",
-			"name": "Fuad Olatunji",
-			"avatar_url": "https://avatars.githubusercontent.com/u/65264054?v=4",
-			"profile": "http://fuadolatunji.me",
-			"contributions": [
-				"infra",
-				"doc",
-				"bug",
-				"security"
-			]
-		}
-	],
-	"contributorsPerLine": 7,
-	"projectName": "projects",
-	"projectOwner": "LearningTypeScript",
-	"repoType": "github",
-	"repoHost": "https://github.com",
-	"skipCi": true
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "badgeTemplate": "\t<a href=\"#contributors-\">\n\t\t<img alt=\"All Contributors\" src=\"https://img.shields.io/badge/all_contributors-<%= contributors.length %>-14cc21.svg\" />\n\t</a>",
+  "contributors": [
+    {
+      "login": "fuadop",
+      "name": "Fuad Olatunji",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65264054?v=4",
+      "profile": "http://fuadolatunji.me",
+      "contributions": [
+        "infra",
+        "doc",
+        "bug",
+        "security"
+      ]
+    },
+    {
+      "login": "bobrossrtx",
+      "name": "Owen Boreham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73446766?v=4",
+      "profile": "http://owenboreham.tech",
+      "contributions": [
+        "content"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "projects",
+  "projectOwner": "LearningTypeScript",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true,
+  "commitConvention": "angular"
 }
