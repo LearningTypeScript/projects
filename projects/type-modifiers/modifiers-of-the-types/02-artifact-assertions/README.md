@@ -5,7 +5,7 @@ We now understand the plots of the evil forces and are prepared to do battle.
 Our next reconnaissance mission is to understand the mystical artifacts left in our lands by the ancients.
 
 See the `artifacts` variable already written for you.
-You must give us both an `ArtifactName` type describing the names of those object, and an `getArtifactType` function that takes in a name and returns one of the four possible types.
+You must give us both an `ArtifactName` type describing the names of those object, and a `getArtifactType` function that takes in a name and returns one of the four possible types.
 
 ## Specification
 
