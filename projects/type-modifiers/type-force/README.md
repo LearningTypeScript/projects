@@ -12,7 +12,7 @@ How wondrously useful.
 We need you to develop a prediction engine that harnesses your abilities for good.
 We've started what we can with a variable and a function, but sadly do not have type system expertise ourselves.
 Your task is to create a `duel` function that takes in descriptions of two fighters as tuples, and returns a tuple describing the victor.
-You'll also need to fill in type annotations in the existing
+You'll also need to fill in type annotations in the existing code.
 
 ## Setup
 
