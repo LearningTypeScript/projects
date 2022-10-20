@@ -1,38 +1,56 @@
 {
-  "files": [
-    "README.md"
-  ],
-  "imageSize": 100,
-  "commit": false,
-  "badgeTemplate": "\t<a href=\"#contributors-\">\n\t\t<img alt=\"All Contributors\" src=\"https://img.shields.io/badge/all_contributors-<%= contributors.length %>-14cc21.svg\" />\n\t</a>",
-  "contributors": [
-    {
-      "login": "fuadop",
-      "name": "Fuad Olatunji",
-      "avatar_url": "https://avatars.githubusercontent.com/u/65264054?v=4",
-      "profile": "http://fuadolatunji.me",
-      "contributions": [
-        "infra",
-        "doc",
-        "bug",
-        "security"
-      ]
-    },
-    {
-      "login": "bobrossrtx",
-      "name": "Owen Boreham",
-      "avatar_url": "https://avatars.githubusercontent.com/u/73446766?v=4",
-      "profile": "http://owenboreham.tech",
-      "contributions": [
-        "content"
-      ]
-    }
-  ],
-  "contributorsPerLine": 7,
-  "projectName": "projects",
-  "projectOwner": "LearningTypeScript",
-  "repoType": "github",
-  "repoHost": "https://github.com",
-  "skipCi": true,
-  "commitConvention": "angular"
+	"files": [
+		"README.md"
+	],
+	"imageSize": 100,
+	"commit": false,
+	"badgeTemplate": "\t<a href=\"#contributors-\">\n\t\t<img alt=\"All Contributors\" src=\"https://img.shields.io/badge/all_contributors-<%= contributors.length %>-14cc21.svg\" />\n\t</a>",
+	"contributors": [
+		{
+			"login": "fuadop",
+			"name": "Fuad Olatunji",
+			"avatar_url": "https://avatars.githubusercontent.com/u/65264054?v=4",
+			"profile": "http://fuadolatunji.me",
+			"contributions": [
+				"infra",
+				"doc",
+				"bug",
+				"security"
+			]
+		},
+		{
+			"login": "xavdid",
+			"name": "David Brownman",
+			"avatar_url": "https://avatars.githubusercontent.com/u/1231935?v=4",
+			"profile": "https://xavd.id",
+			"contributions": [
+				"content"
+			]
+		},
+		{
+			"login": "agmyintmyatoo",
+			"name": "agmyintmyatoo",
+			"avatar_url": "https://avatars.githubusercontent.com/u/37968696?v=4",
+			"profile": "http://agmyintmyatoo.github.io",
+			"contributions": [
+				"content"
+			]
+		},
+		{
+			"login": "bobrossrtx",
+			"name": "Owen Boreham",
+			"avatar_url": "https://avatars.githubusercontent.com/u/73446766?v=4",
+			"profile": "http://owenboreham.tech",
+			"contributions": [
+				"content"
+			]
+		}
+	],
+	"contributorsPerLine": 7,
+	"projectName": "projects",
+	"projectOwner": "LearningTypeScript",
+	"repoType": "github",
+	"repoHost": "https://github.com",
+	"skipCi": true,
+	"commitConvention": "angular"
 }
