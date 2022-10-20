@@ -52,3 +52,8 @@ Check [previously merged PRs](https://github.com/LearningTypeScript/projects/pul
 Please try not to force-push commits to PRs that have already been reviewed.
 Doing so makes it harder to review the changes.
 We squash merge all commits so there's no need to try to preserve Git history within a PR branch.
+
+### Contribution Credits
+
+After your PR is merged, you should be added to the [#Contributors ✨](https://github.com/LearningTypeScript/projects/#contributors-) section in the README.md.
+If it doesn't happen within a day, ping @JoshuaKGoldberg.

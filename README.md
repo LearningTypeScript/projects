@@ -10,9 +10,9 @@
 	</a>
 	<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 	<a href="#contributors-">
-		<img alt="All Contributors" src="https://img.shields.io/badge/all_contributors-1-14cc21.svg" />
+  		<img alt="All Contributors" src="https://img.shields.io/badge/all_contributors-2-14cc21.svg" />
 	</a>
-	<!-- ALL-CONTRIBUTORS-BADGE:END -->
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 </p>
 
 <img align="right" alt="Learning TypeScript title with a sun conure and O'Reilly logo" height="176px" src="./cover-conure.png" width="176px">
@@ -57,9 +57,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-	<td align="center"><a href="http://fuadolatunji.me"><img src="https://avatars.githubusercontent.com/u/65264054?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Fuad Olatunji</b></sub></a><br /><a href="#infra-fuadop" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/LearningTypeScript/projects/commits?author=fuadop" title="Documentation">📖</a> <a href="https://github.com/LearningTypeScript/projects/issues?q=author%3Afuadop" title="Bug reports">🐛</a> <a href="#security-fuadop" title="Security">🛡️</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center"><a href="http://fuadolatunji.me"><img src="https://avatars.githubusercontent.com/u/65264054?v=4?s=100" width="100px;" alt="Fuad Olatunji"/><br /><sub><b>Fuad Olatunji</b></sub></a><br /><a href="#infra-fuadop" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/LearningTypeScript/projects/commits?author=fuadop" title="Documentation">📖</a> <a href="https://github.com/LearningTypeScript/projects/issues?q=author%3Afuadop" title="Bug reports">🐛</a> <a href="#security-fuadop" title="Security">🛡️</a></td>
+      <td align="center"><a href="http://agmyintmyatoo.github.io"><img src="https://avatars.githubusercontent.com/u/37968696?v=4?s=100" width="100px;" alt="agmyintmyatoo"/><br /><sub><b>agmyintmyatoo</b></sub></a><br /><a href="#content-agmyintmyatoo" title="Content">🖋</a></td>
+    </tr>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->
