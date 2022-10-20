@@ -5,7 +5,7 @@ export function decodeMessage(message: string) {
 	let output = "";
 
 	for (let i = 0; i < message.length; i += 1) {
-		output += String.fromCodePoint((message.codePointAt(i) - i) ** 0.5);
+		output += String.fromCharCode(message.codePointAt(i) - i - message.length);
 	}
 
 	return output;
