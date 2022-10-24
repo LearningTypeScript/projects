@@ -37,6 +37,6 @@ There should be four exports in your file:
 
 ## Files
 
-- `index.ts`: Write your `Puppy` class here
-- `index.test.ts`: Tests verifying `Puppy`
+- `index.ts`: Write your types and classes here
+- `index.test.ts`: Tests verifying the classes∂
 - `solution.ts`: Solution code
