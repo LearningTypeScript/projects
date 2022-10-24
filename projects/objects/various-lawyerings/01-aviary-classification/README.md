@@ -3,7 +3,7 @@
 As a world-renowned expert in bird law, it is my duty to properly educate the court on the characteristics of various birds and related bird information.
 I cannot uphold my critical task if my bird files are not in proper order.
 
-I require you to write an object types describing a `Bird` type for my arrays of birds.
+I require you to write an object type describing a `Bird` type for my array of birds.
 Please be as specific as possible for types when possible.
 Any property other than `name` whose values are strings should be a union of unions of string literals.
 
