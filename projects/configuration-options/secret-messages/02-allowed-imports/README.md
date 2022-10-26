@@ -9,7 +9,7 @@ Can you apply your skills to this second TSConfig file so compiles without type 
 
 ## Files
 
-- `answer.js`, `alternates.json`, and `index.ts`: Existing source code fie
+- `answer.js`, `guesses.json`, and `index.ts`: Existing source code fie
 - `tsconfig.json`: Set up your configuration options here
 - `solution.test.ts`: Tests verifying your configuration options
 - `tsconfig.solution.json`: Solution configuration options
