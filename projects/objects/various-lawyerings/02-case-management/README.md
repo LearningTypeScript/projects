@@ -4,7 +4,7 @@ Very good, very good.
 My birds are classified correctly.
 I thank you.
 
-Next, I have a the opposite type of task for you to tackle.
+Next, I have the opposite type of task for you to tackle.
 I have created a `Case` type for you and have a `cases` array.
 But, the elements in `cases` vary in format and do not always match up with the `Case` type.
 Please correct `cases` -- without changing the `Case` type.
