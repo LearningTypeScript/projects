@@ -1,4 +1,4 @@
-# Step 2: Restaurants
+# Step 3: Landmarks
 
 Hooray!
 

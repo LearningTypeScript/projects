@@ -38,5 +38,5 @@ There should be four exports in your file:
 ## Files
 
 - `index.ts`: Write your types and classes here
-- `index.test.ts`: Tests verifying the classes∂
+- `index.test.ts`: Tests verifying the classes
 - `solution.ts`: Solution code

@@ -1,4 +1,4 @@
-# Step 2: Deep Differences
+# Step 4: Deep Differences
 
 You're doing even more great work, scientist!
 The lab is even more impressed with your work.
@@ -27,6 +27,6 @@ Return: For each index `i` in the two input arrays:
 
 ## Files
 
-- `index.ts`: Write your `deepEquality` function here
-- `index.test.ts`: Tests verifying `deepEquality`
+- `index.ts`: Write your `deepDifferences` function here
+- `index.test.ts`: Tests verifying `deepDifferences`
 - `solution.ts`: Solution code

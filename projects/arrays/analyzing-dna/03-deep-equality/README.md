@@ -1,4 +1,4 @@
-# Step 2: Deep Equality
+# Step 3: Deep Equality
 
 You're doing great work, scientist!
 The lab is impressed with the accuracy and speed of your functions.

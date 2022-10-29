@@ -53,7 +53,7 @@ Each `Buried` object can be one of three things:
 The `collectTreasure` function should return an object with three properties:
 
 - `fake`: Array of found `Fake` items
-- `real`: Array of found `Feal` items
+- `real`: Array of found `Real` items
 - `scrap`: Array of all other items
 
 ## Notes
