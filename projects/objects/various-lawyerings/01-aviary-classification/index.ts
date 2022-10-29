@@ -1,3 +1,5 @@
+// Write your Bird type here! ✨
+
 export const birds: Bird[] = [
 	{
 		dangerous: true,
