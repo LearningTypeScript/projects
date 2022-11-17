@@ -12,7 +12,7 @@ function speak(knownEmotions, newEmotion, phrase, callback) {
 		} else {
 			callback(
 				undefined,
-				new Error(`Does not compute. I do not understand ${newEmotion}`)
+				new Error(`Does not compute. I do not understand ${newEmotion}.`)
 			);
 		}
 	});
