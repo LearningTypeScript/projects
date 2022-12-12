@@ -15,5 +15,4 @@ Convert the code in `index.ts`, `poetry.ts`, and `rhymes.ts` from namespaces to 
 ## Files
 
 - `index.ts`, `poetry.ts`, and `rhymes.ts`: Modify code here.
-- `index.test.ts`, `poetry.test.ts`, and `rhymes.test.ts`: Tests verifying your modules
-- `index.solution.ts`, `poetry.solution.ts`, and `rhymes.solution.ts`: Solution code
+- `index.solution.ts`, `poetry.solution.ts`, and `rhymes.solution.ts`: Solution code.

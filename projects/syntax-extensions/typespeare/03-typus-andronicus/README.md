@@ -15,4 +15,4 @@ Convert the code in `index.ts`, `conflict.ts`, `resolution.ts`, and `setup.ts` t
 ## Files
 
 - `index.ts`, `conflict.ts`, `resolution.ts`, and `setup.ts`: Modify code here.
-- `index.solution.ts`, `conflict.solution.ts`, `resolution.solution.ts`, and `setup.solution.ts`: Solution code
+- `index.solution.ts`, `conflict.solution.ts`, `resolution.solution.ts`, and `setup.solution.ts`: Solution code.
