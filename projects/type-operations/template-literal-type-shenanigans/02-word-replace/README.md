@@ -5,7 +5,7 @@ Being able to replace text akin to strings' `.replaceAll` is a little more usefu
 
 ## Specification
 
-Write a `WordReplace` type that takes in two type parameters:
+Write a `WordReplace` type that takes in three type parameters:
 
 1. `Text`: original text; must be a `string`
 2. `Original`: substring to be replaced; must be a `string`
