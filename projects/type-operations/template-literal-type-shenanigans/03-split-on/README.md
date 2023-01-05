@@ -9,7 +9,6 @@ Write a `SplitOn` type that takes in two type parameters:
 
 1. `Text`: original text; must be a `string`
 2. `On`: substring to be replaced; must be a `string`
-3. `Replacement`: new values to replace `Original`; must be a `string`
 
 It should result in an array of template literal types, similar to how strings' `.split` splits a string.
 

@@ -10,10 +10,9 @@ Please switch to enum of similar name.
 
 ## Specification
 
-Convert the code in `index.ts` and `colors.ts` from namespaces to ECMAScript modules.
+Convert the code in `index.ts` and `colors.ts` from to use Typescript enums.
 
 ## Files
 
-- `index.ts` and `colors.ts`: Modify code here.
-- `index.test.ts` and `colors.test.ts`: Tests verifying your enum
-- `index.solution.ts` and `colors.solution.ts`: Solution code
+- `index.ts`, `colors.ts`, and `rhymes.ts`: Modify code here.
+- `index.solution.ts`,`colors.solution.ts`, and `rhymes.solution.ts`: Solution code.
