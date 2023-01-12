@@ -38,16 +38,16 @@ The `collectTreasure` function should have three runtime parameters:
 - `isFake`: A type predicate function that takes in a `datum` and returns whether it is `Fake`
 - `isReal`: A type predicate function that takes in a `datum` and returns whether it is `Real`
 
-Also create and export a `Buried` interface with a single type parameter.
+Also create and export a `Buried` type with a single type parameter.
 Each `Buried` object can be one of three things:
 
 - An array of the same type of `Buried` objects
 - A `NextArea` object, which can be either:
   - A `Catacomb` shape, with properties:
-    - `contents`: A `Buried` object of the same type
+    - `inside`: A `Buried` object of the same type
     - `type`: `"catacomb"`
   - A `TunnelSystem` shape, with properties:
-    - `tunnels`: An array of `Buried` objects of the same type
+    - `entrances`: An array of `Buried` objects of the same type
     - `type`: `"tunnels"`
 
 The `collectTreasure` function should return an object with three properties:
