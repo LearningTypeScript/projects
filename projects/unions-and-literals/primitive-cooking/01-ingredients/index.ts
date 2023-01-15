@@ -31,7 +31,7 @@ if (arugula) {
 }
 
 if (lettuce) {
-	console.log(`This time, there are ${arugula} arugula serving(s).`);
+	console.log(`This time, there are ${lettuce} lettuce serving(s).`);
 }
 
 export {};
