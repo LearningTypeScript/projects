@@ -1,6 +1,7 @@
 # Array Type Shenanigans
 
 > A [Learning TypeScript > Type Operations](https://learning-typescript.com/type-operations) 🥗 appetizer project.
+> You'll practice using type operations to manipulate array and tuple types.
 
 Hi!
 This is Josh, author of _Learning TypeScript_.

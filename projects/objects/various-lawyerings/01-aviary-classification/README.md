@@ -12,3 +12,7 @@ Any property other than `name` whose values are strings should be a union of uni
 - `index.ts`: Add your object types and type annotations here
 - `index.test.ts`: Tests verifying your object types and type annotations
 - `solution.ts`: Solution code
+
+## Notes
+
+- Some of the errors presented by TypeScript may use symbols or terms not you haven't covered yet. That's ok! Do your best with what you know so far.

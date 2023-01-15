@@ -1,41 +1,42 @@
+// Please fill in any missing type annotations here...
 const headOfTable = "Me!";
 let adjacentLeft;
 let adjacentRight;
 let furtherLeft;
 let furtherRight;
 
-// I always invite Chuckie and Tommy! ♥
+// I always invite Susie and Tommy! ♥
 if (Math.random() > 0.5) {
-	adjacentLeft = "Chuckie";
+	adjacentLeft = "Susie";
 	adjacentRight = "Tommy";
 } else {
 	adjacentLeft = "Tommy";
-	adjacentRight = "Chuckie";
+	adjacentRight = "Susie";
 }
 
-// I invite Angelica about half of the time. We're not as close as Chuckie and Tommy. It's a long story.
+// I invite Angelica about half of the time. We're not as close as Susie and Tommy. It's a long story.
 // I try to fill `furtherLeft` first...
 if (Math.random() > 0.5) {
 	furtherLeft = "Angelica";
 }
 
-// Same with Susie. I like them, but do I *really* like hanging out with them? Only sometimes.
+// Same with Chuckie. I like them, but do I *really* like hanging out with them? Only sometimes.
 // ...then after that `furtherRight`
 if (Math.random() > 0.5) {
 	if (furtherLeft) {
-		furtherRight = "Susie";
+		furtherRight = "Chuckie";
 	} else {
-		furtherLeft = "Susie";
+		furtherLeft = "Chuckie";
 	}
 }
 
-// If I invited Angelica but not Susie, I'll invite Kimi. They get along well with Angelica but not Susie.
-if (furtherLeft === "Angelica" && furtherRight !== "Susie") {
+// If I invited Angelica but not Chuckie, I'll invite Kimi. They get along well with Angelica but not Chuckie.
+if (furtherLeft === "Angelica" && furtherRight !== "Chuckie") {
 	furtherRight = "Kimi";
 }
 
-// If I invited Susie but not Angelica, I'll invite Timmy. They get along well with Susie but not Angelica.
-if (furtherLeft === "Susie") {
+// If I invited Chuckie but not Angelica, I'll invite Timmy. They get along well with Chuckie but not Angelica.
+if (furtherLeft === "Chuckie") {
 	furtherRight = "Timmy";
 }
 

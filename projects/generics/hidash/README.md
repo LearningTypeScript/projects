@@ -1,6 +1,7 @@
 # Hidash
 
 > A [Learning TypeScript > Generics](https://learning-typescript.com/generics) 🥗 appetizer project.
+> You'll practice using generics to write data-agnostic utility functions.
 
 _Zap!_
 Bang!

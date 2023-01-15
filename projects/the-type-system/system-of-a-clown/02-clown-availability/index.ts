@@ -18,7 +18,7 @@ do {
 	if (krustyAvailability) {
 		guestCount -= 10;
 		krustyAvailability = false;
-		matchingsDescription += "Bozo will handle the first ten guests.\n";
+		matchingsDescription += "Krusty will handle the first ten guests.\n";
 		lastClown = "Krusty";
 		continue;
 	}
@@ -28,7 +28,7 @@ do {
 	if (ronaldAvailability) {
 		guestCount -= 5;
 		ronaldAvailability = false;
-		matchingsDescription += "Krusty will handle the next five guests.\n";
+		matchingsDescription += "Ronald will handle the next five guests.\n";
 		lastClown = "Ronald";
 		continue;
 	}

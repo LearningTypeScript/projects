@@ -7,7 +7,7 @@ Each group is directed to go to an activity, which can hold up to a certain numb
 It looks like the clowns didn't change too much on this one.
 They mostly just removed a few type annotations and changed one value.
 
-Could you please add back missing type annotations to avoid implicit `any`s, and fix the wrong value?
+Could you please add back missing type annotations to avoid evolving or implicit `any`s, and fix the wrong value?
 
 ## Files
 

@@ -1,6 +1,7 @@
 # Analyzing DNA
 
 > A [Learning TypeScript > Arrays](https://learning-typescript.com/arrays) 🥗 appetizer project.
+> You'll practice writing single- and multi-dimensional arrays, along with their corresponding type annotations.
 
 Hello!
 You're a research biologist at the Strongly Typed Institute of Biochemistry.

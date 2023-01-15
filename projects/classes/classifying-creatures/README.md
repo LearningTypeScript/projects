@@ -1,6 +1,7 @@
 # Classifying Creatures
 
 > A [Learning TypeScript > Classes](https://learning-typescript.com/classes) 🥗 appetizer project.
+> You'll practice writing classes with TypeScript type annotations to describe members.
 
 G'day, mate!
 I'm here with the veterinarian center and a wonderful selection of great pets!

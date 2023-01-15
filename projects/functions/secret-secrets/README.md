@@ -1,6 +1,7 @@
 # Secret Secrets
 
 > A [Learning TypeScript > Functions](https://learning-typescript.com/functions) 🥗 appetizer project.
+> You'll practice writing functions with parameter and return type annotations.
 
 _"Secret secrets are no fun. Secret secrets hurt someone."_
 A wise nurse once told me that.

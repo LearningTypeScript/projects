@@ -1,6 +1,7 @@
 # Vacation Planning
 
 > A [Learning TypeScript > Interfaces](https://learning-typescript.com/interfaces) 🥗 appetizer project.
+> You'll practice writing interfaces to describe structural object types.
 
 Welcome to beautiful upstate New York!
 We're so excited you've chosen us for your vacation from the crowds and dirt of New York City.

@@ -1,6 +1,7 @@
 # Typearium
 
 > A [Learning TypeScript > Using IDE Features](https://learning-typescript.com/using-ide-features) 🥗 appetizer project.
+> You'll practice using refactors provided by TypeScript in your IDE.
 
 Welcome to the Typearium: a combination aquarium/terrarium/vivarium that keeps animals in the form of TypeScript types.
 We're quite niche.

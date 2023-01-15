@@ -1,7 +1,7 @@
 # Global Travels
 
 > A [Learning TypeScript > Declaration Files](https://learning-typescript.com/declaration-files) 🥗 appetizer project.
-> You'll practice using aliased object types to represent shapes of data.
+> You'll practice using global type declaration for external global values.
 
 Hello, and welcome!
 ¡Bienvenidos!

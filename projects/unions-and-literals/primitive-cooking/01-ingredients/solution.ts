@@ -16,7 +16,7 @@ if (arugula) {
 }
 
 if (lettuce) {
-	console.log(`There are ${arugula} arugula serving(s) for this first meal.`);
+	console.log(`There are ${lettuce} lettuce serving(s) for this first meal.`);
 }
 
 arugula = undefined;
@@ -31,7 +31,7 @@ if (arugula) {
 }
 
 if (lettuce) {
-	console.log(`This time, there are ${arugula} arugula serving(s).`);
+	console.log(`This time, there are ${lettuce} lettuce serving(s).`);
 }
 
 export {};

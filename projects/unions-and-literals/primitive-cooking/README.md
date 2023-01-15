@@ -1,6 +1,7 @@
 # Primitive Cooking
 
 > A [Learning TypeScript > Unions and Literals](https://learning-typescript.com/unions-and-literals) 🥗 appetizer project.
+> You'll practice writing type annotations including literal and union types.
 
 Those pesky Java programmers are at it again!
 

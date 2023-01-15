@@ -1,6 +1,7 @@
 # Modifiers of the Types
 
 > A [Learning TypeScript > Type Modifiers](https://learning-typescript.com/type-modifiers) 🥗 appetizer project.
+> You'll practice using type modifiers to inform TypeScript's understanding of code.
 
 Greetings, my fearless friend!
 My companions and I are a group of powerful beings tasked with safeguarding the safety of this realm and many others.

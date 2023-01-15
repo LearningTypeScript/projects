@@ -3,8 +3,8 @@ let remainingGuests = 20;
 while (true) {
 	// Each group of guests will be size 5-10
 	const guestsToAssign = Math.floor(Math.random() * 5) + 5;
-	let activity;
-	let capacity;
+	let activity; // Those were some nice type annotations you had here!
+	let capacity; // It'd be a shame if we ... *erased* them! 😈
 	let requiresSupplies;
 
 	switch (Math.floor(Math.random() * 5)) {
