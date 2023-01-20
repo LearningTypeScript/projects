@@ -15,6 +15,6 @@ In `index.js`, export two classes using ES2015 `class` syntax:
 
 ## Files
 
-- `index.js`: Write your `Robot` and `Humanoid` function here
+- `index.js`: Write your `Robot` and `Humanoid` functions here
 - `index.test.js`: Tests verifying `Robot` and `Humanoid`
 - `solution.js`: Solution code
