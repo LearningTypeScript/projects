@@ -15,14 +15,7 @@ You are the _Typeinator_. 🤖
 
 ## Setup
 
-In one terminal, run the TypeScript compiler via the `tsc` script within whichever step you're working on.
-For example, to start the TypeScript compiler on the first step in watch mode:
-
-```shell
-npm run tsc -- --project 01-prototypes-to-classes --watch
-```
-
-In another terminal, run Jest via the `test` script on whichever step you're working on.
+In your terminal, run Jest via the `test` script on whichever step you're working on.
 For example, to start tests for the first step in watch mode:
 
 ```shell
