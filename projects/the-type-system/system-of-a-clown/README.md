@@ -31,4 +31,4 @@ npm run tsc -- --project 01-clowning-around --watch
 ## Notes
 
 - Don't import code from one step into another.
-- Some of the errors presented by TypeScript may use symbols or terms not you haven't covered yet. That's ok! Do your best with what you know so far.
+- Some of the errors presented by TypeScript may use symbols or terms you haven't covered yet. That's ok! Do your best with what you know so far.
