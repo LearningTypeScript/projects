@@ -95,7 +95,7 @@ Here's a step-by-step example of a player losing the game:
 </tr>
 <tr>
 <td>3</td>
-<td>5</td>
+<td>4</td>
 <td><em>Available Resource</em> is now <em>Food</em></td>
 <td>2</td>
 <td>6</td>
