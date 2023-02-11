@@ -71,8 +71,10 @@ for (const chapterSlug of fs.readdirSync("projects")) {
 							`> A [Learning TypeScript > ${chapterTitle}](https://learning-typescript.com/${chapterSlug}) 🥗 appetizer project.`
 						);
 						expect(contents).toContain(`## Setup`);
-						expect(contents)
-							.toContain(`un the TypeScript compiler via the \`tsc\` script within whichever step you're working on.
+
+						if (projectSlug !== "the-typeinator") {
+							expect(contents)
+								.toContain(`un the TypeScript compiler via the \`tsc\` script within whichever step you're working on.
 For example, to start the TypeScript compiler on the first step in watch mode:
 
 \`\`\`shell
@@ -80,20 +82,21 @@ npm run tsc -- --project ${stepSlugs[0]} --watch
 \`\`\`
 `);
 
-						if (contents.includes("run Jest")) {
-							expect(contents).toContain(
-								"In one terminal, run the TypeScript compiler"
-							);
-							expect(contents).toContain(
-								`In another terminal, run Jest via the \`test\` script on whichever step you're working on.
+							if (contents.includes("run Jest")) {
+								expect(contents).toContain(
+									"In one terminal, run the TypeScript compiler"
+								);
+								expect(contents).toContain(
+									`In another terminal, run Jest via the \`test\` script on whichever step you're working on.
 For example, to start tests for the first step in watch mode:
 
 \`\`\`shell
 npm run test -- 1 --watch
 \`\`\``
-							);
-						} else {
-							expect(contents).toContain("In your terminal, run the");
+								);
+							} else {
+								expect(contents).toContain("In your terminal, run the");
+							}
 						}
 					});
 

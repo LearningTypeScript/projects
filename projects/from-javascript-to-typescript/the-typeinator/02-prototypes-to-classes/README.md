@@ -1,6 +1,6 @@
-# Step 1: Prototypes to Classes
+# Step 2: Prototypes to Classes
 
-The first project for you to overhaul hails from before the time of `class` syntax.
+The next project for you to overhaul hails from before the time of `class` syntax.
 How primitive.
 
 The [`original.js`](./original.js) file contains the project's original code for `Robot` and `Humanoid` functions used as classes.
