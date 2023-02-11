@@ -1,7 +1,7 @@
-# Step 2: Callbacks to Async Await
+# Step 3: Callbacks to Async Await
 
 Your operational results are within the expected parameters.
-Time for the next project.
+Time for the last project.
 
 The [`original.js`](./original.js) file contains the project's original code for `checkEmotion` and `speak` functions.
 In this time period, those functions are written with traditional Node-style callback parameters.
