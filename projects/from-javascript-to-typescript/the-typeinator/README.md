@@ -25,8 +25,8 @@ npm run test -- 1 --watch
 ## Steps
 
 - [1. Syntactic Sugar](./01-syntactic-sugar)
-- [2. Prototypes to Classes](./01-prototypes-to-classes)
-- [3. Callbacks to Async Await](./02-callbacks-to-async-await)
+- [2. Prototypes to Classes](./02-prototypes-to-classes)
+- [3. Callbacks to Async Await](./03-callbacks-to-async-await)
 
 ## Notes
 
