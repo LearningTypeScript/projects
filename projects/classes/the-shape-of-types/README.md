@@ -40,7 +40,7 @@ It will contain...
 - Property:
   - `name`: An abstract read-only string only visible to the class and its derived classes
 - Public Methods:
-  - `doBattle`: Takes in an opponent `Horror`, and if this horror's `.getPower()` is greater than the opponent's, consumes the opponent _(read more later)_.
+  - `doBattle`: Takes in an opponent `Horror`, and if this horror's `.getPower()` is greater than or equal to the opponent's, consumes the opponent _(read more later)_.
   - `getPower`: Returns the sum of calling `this.getPowerFrom` on each previously consumed opponent _(read more later)_, plus the number of previously consumed opponents
 - Protected Abstract methods:
   - `getPowerFrom`: Takes in a previously consumed opponent and returns a computed power number
