@@ -7,7 +7,7 @@ const { unique } = process.env.TEST_SOLUTIONS ? solution : index;
 
 describe(unique, () => {
 	test.each([
-		[[3], []],
+		[[], []],
 		[[[]], []],
 		[[[], []], []],
 		[
