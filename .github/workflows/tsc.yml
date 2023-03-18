@@ -26,7 +26,7 @@ jobs:
         shell: bash
       - name: Run tsc in project directories
         if: ${{ steps.changed-files.outputs.all_changed_files != '' }}
-        run: ./scripts/changed-solutions.sh ${{ steps.changed-files.outputs.all_changed_files }} "tsc"
+        run: npx zx ./scripts/changed-solutions.mjs tsc ${{ steps.changed-files.outputs.all_changed_files }}
         shell: bash
       - name: Run tsc in all project directories
         if: ${{ steps.changed-files.outputs.all_changed_files == '' }}
