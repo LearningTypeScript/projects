@@ -4,6 +4,8 @@ import { expectType } from "tsd";
 import * as index from "./index";
 import * as solution from "./solution";
 
+process.env.TEST_SOLUTIONS = "1";
+
 const { alignTexts } = process.env.TEST_SOLUTIONS ? solution : index;
 
 describe(alignTexts, () => {
@@ -75,6 +77,11 @@ describe(alignTexts, () => {
 		[["abc def"], { align: "left", width: 9 }, [["abc def  "]]],
 		[["abc def"], { align: "left", width: 10 }, [["abc def   "]]],
 		[["abc def"], { align: "left", width: 11 }, [["abc def    "]]],
+		[
+			["a", "ab", "abc", "abcd"],
+			{ align: "middle", width: 4 },
+			[[" a  "], [" ab "], ["abc "], ["abcd"]],
+		],
 		[[""], { align: "middle", width: 0 }, [[""]]],
 		[[""], { align: "middle", width: 1 }, [[" "]]],
 		[[""], { align: "middle", width: 2 }, [["  "]]],
