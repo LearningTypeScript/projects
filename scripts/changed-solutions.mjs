@@ -41,7 +41,10 @@ const changedProjects = new Set(
 const failedProjects = [];
 
 const rootDirectory = (await $`pwd`).stdout.trim();
-if (!rootDirectory.endsWith("learning-typescript-projects")) {
+if (
+	!/\/(learning-typescript-)?projects/.test(rootDirectory) ||
+	!fs.existsSync(".gitignore")
+) {
 	throw new Error(
 		"changed-solutions.mjs must be run from the root of learning-typescript-projects."
 	);
