@@ -26,7 +26,7 @@ jobs:
         shell: bash
       - name: Run test in project directories
         if: ${{ steps.changed-files.outputs.all_changed_files != '' }}
-        run: ./scripts/changed-solutions.sh ${{ steps.changed-files.outputs.all_changed_files }} "test"
+        run: npx zx ./scripts/changed-solutions.mjs test ${{ steps.changed-files.outputs.all_changed_files }}
         shell: bash
       - name: Run test in all project directories
         if: ${{ steps.changed-files.outputs.all_changed_files == '' }}
