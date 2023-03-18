@@ -5,6 +5,7 @@
 		"@swc/core": "^1.2.197",
 		"@swc/jest": "^0.2.21",
 		"capital-case": "^1.0.4",
+		"chalk": "^5.2.0",
 		"comment-json": "^4.2.2",
 		"cross-env": "7.0.3",
 		"cspell": "^6.1.2",
