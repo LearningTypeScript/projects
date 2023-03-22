@@ -7,4 +7,5 @@ _Learning TypeScript_'s **Functions** chapter shows how a function's parameters 
 - Declaring function return types with type annotations
 - Describing functions that don't return a usable value with the `void` type
 - Describing functions that don't return at all with the `never` type
+- Declaring function types in type annotations
 - Using function overloads to describe varying function call signatures
