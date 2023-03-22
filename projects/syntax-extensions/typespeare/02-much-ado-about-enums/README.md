@@ -10,7 +10,7 @@ Please switch to enum of similar name.
 
 ## Specification
 
-Convert the code in `index.ts` and `colors.ts` from to use Typescript enums.
+Convert the code in `index.ts` and `colors.ts` from to use TypeScript enums.
 
 ## Files
 
