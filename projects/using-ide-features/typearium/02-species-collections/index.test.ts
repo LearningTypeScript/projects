@@ -7,7 +7,7 @@ const { getEverything } = process.env.TEST_SOLUTIONS ? solution : index;
 
 describe(getEverything, () => {
 	it("returns nothing with no settings", () => {
-		expect(getEverything()).toMatchInlineSnapshot(`Array []`);
+		expect(getEverything()).toMatchInlineSnapshot(`[]`);
 	});
 
 	it("returns everything with all settings", () => {
@@ -38,7 +38,7 @@ describe(getEverything, () => {
 				},
 			})
 		).toMatchInlineSnapshot(`
-		Array [
+		[
 		  "cats",
 		  "dogs",
 		  "monty python rabbit",
