@@ -17,6 +17,5 @@ for solutionPath in $(find projects -name \*solution\*); do
 	else
 		echo "Copying from \"$solutionPath\" to \"$replacedPath\"."
 		cp $solutionPath $replacedPath
-		echo "export * from './index';" > $solutionPath
 	fi
 done
