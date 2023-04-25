@@ -3,7 +3,7 @@ import { describe, expect, test } from "@jest/globals";
 import * as index from "./index";
 import * as solution from "./solution";
 
-const { describeCity } = process.env.TEST_SOLUTIONS ? index : index;
+const { describeCity } = process.env.TEST_SOLUTIONS ? solution : index;
 
 const dedent = (text: TemplateStringsArray) =>
 	text[0].replaceAll(/\n\s*/g, "\n").trim();

@@ -3,7 +3,7 @@ import { describe, expect, it, test } from "@jest/globals";
 import * as index from "./index";
 import * as solution from "./index.solution";
 
-const { getEverything } = process.env.TEST_SOLUTIONS ? index : index;
+const { getEverything } = process.env.TEST_SOLUTIONS ? solution : index;
 
 describe(getEverything, () => {
 	it("returns nothing with no settings", () => {

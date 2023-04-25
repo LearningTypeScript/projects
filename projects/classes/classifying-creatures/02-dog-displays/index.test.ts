@@ -3,7 +3,7 @@ import { describe, expect, it } from "@jest/globals";
 import * as index from "./index";
 import * as solution from "./solution";
 
-const { Puppy } = process.env.TEST_SOLUTIONS ? index : index;
+const { Puppy } = process.env.TEST_SOLUTIONS ? solution : index;
 
 describe(Puppy, () => {
 	describe("properties", () => {
