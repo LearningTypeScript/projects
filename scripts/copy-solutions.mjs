@@ -16,15 +16,17 @@ for (const testFile of await glob("projects/**/*.test.*")) {
 }
 
 for (const solutionPath of await glob("projects/**/*solution*")) {
-	const replacementPath = solutionPath.includes("solution.")
+	const replacedPath = solutionPath.includes("solution.")
 		? solutionPath.replace("solution", "index")
 		: solutionPath.replace(".solution", "");
 
-	if (solutionPath === replacementPath) {
+	if (solutionPath === replacedPath) {
 		console.log(
 			chalk.gray("Skipping", solutionPath, "(no replacement found).")
 		);
 	} else {
-		console.log(chalk.gray("Copying", solutionPath, "to", replacementPath));
+		console.log(chalk.gray("Copying", solutionPath, "to", replacedPath));
 	}
+
+	await fs.copyFile(solutionPath, replacedPath);
 }
