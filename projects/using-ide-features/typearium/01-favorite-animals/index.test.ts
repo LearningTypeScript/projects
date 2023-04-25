@@ -4,7 +4,7 @@ import * as index from "./index";
 import * as solution from "./solution";
 
 const { checkIsAnyAnimalFavorite, getFavoriteAnimals, logFavoriteAnimals } =
-	process.env.TEST_SOLUTIONS ? solution : index;
+	process.env.TEST_SOLUTIONS ? index : index;
 
 describe(checkIsAnyAnimalFavorite, () => {
 	it("returns true for a favorite animal", () => {

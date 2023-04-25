@@ -16,7 +16,7 @@ for (const testFile of await glob("projects/**/*.test.*")) {
 }
 
 for (const solutionPath of await glob("projects/**/*solution*")) {
-	const replacedPath = solutionPath.includes("solution.")
+	const replacedPath = solutionPath.includes("/solution.")
 		? solutionPath.replace("solution", "index")
 		: solutionPath.replace(".solution", "");
 

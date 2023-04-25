@@ -1,9 +1,8 @@
-// Please fill in any missing type annotations here...
 const headOfTable = "Me!";
-let adjacentLeft;
-let adjacentRight;
-let furtherLeft;
-let furtherRight;
+let adjacentLeft: "Susie" | "Tommy";
+let adjacentRight: "Susie" | "Tommy";
+let furtherLeft: "Angelica" | "Chuckie" | undefined;
+let furtherRight: "Chuckie" | "Kimi" | "Timmy" | undefined;
 
 // I always invite Susie and Tommy! ♥
 if (Math.random() > 0.5) {
@@ -45,7 +44,7 @@ console.log(`At the head of the table is... ${headOfTable}`);
 console.log(`Adjacent to the left is: ${adjacentLeft}`);
 console.log(`Adjacent to the right is: ${adjacentRight}`);
 
-console.log(`Further down on the left is: ${adjacentLeft ?? "nobody"}`);
-console.log(`Further down on the right is: ${adjacentRight ?? "nobody"}`);
+console.log(`Further down on the left is: ${furtherLeft ?? "nobody"}`);
+console.log(`Further down on the right is: ${furtherRight ?? "nobody"}`);
 
 export {};

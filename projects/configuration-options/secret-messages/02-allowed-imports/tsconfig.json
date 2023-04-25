@@ -1,4 +1,8 @@
 {
 	// Write your configuration options here! ✨
-	"include": ["."]
+	"compilerOptions": {
+		"allowJs": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true
+	}
 }

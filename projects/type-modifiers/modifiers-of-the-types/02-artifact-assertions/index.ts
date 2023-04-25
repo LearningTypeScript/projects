@@ -1,6 +1,3 @@
-// Write your types and function below! ✨
-// You'll need to export them so the tests can run it.
-
 const artifacts = {
 	"Black Garnet": {
 		type: "magic",
@@ -20,4 +17,10 @@ const artifacts = {
 	"Sword of the Ancients": {
 		type: "sword",
 	},
-};
+} as const;
+
+export type ArtifactName = keyof typeof artifacts;
+
+export function getArtifactType(name: ArtifactName) {
+	return artifacts[name].type;
+}
