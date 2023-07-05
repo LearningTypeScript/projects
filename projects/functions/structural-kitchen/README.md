@@ -6,7 +6,7 @@ Greetings.
 I am Chef Syntax, creator of the famed Structural Kitchen restaurant.
 We humbly request your aid in digitizing our kitchen management software.
 
-A `createKitchen` function must be created returns an object containing functions.
+A `createKitchen` function must be created that returns an object containing functions.
 It must receive an initial budget and two functions as parameters.
 It should create some state for the kitchen internally.
 
