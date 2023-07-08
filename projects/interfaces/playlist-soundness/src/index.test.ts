@@ -3,7 +3,7 @@ import { describe, expect, test } from "@jest/globals";
 import * as index from "./index";
 import * as solution from "./solution";
 
-const { unrollPlaylist } = process.env.TEST_SOLUTIONS ? solution : index;
+const { unrollPlaylist } = process.env.TEST_SOLUTIONS ? index : index;
 
 describe(unrollPlaylist, () => {
 	test.each<[solution.PlaylistItem[], unknown]>([

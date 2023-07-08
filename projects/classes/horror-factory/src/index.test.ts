@@ -4,7 +4,7 @@ import * as index from "./index";
 import * as solution from "./solution";
 
 const { createDemon, createSorcerer, Horror } = process.env.TEST_SOLUTIONS
-	? solution
+	? index
 	: index;
 
 const createMockHorrorSettings = (evil: boolean) => {

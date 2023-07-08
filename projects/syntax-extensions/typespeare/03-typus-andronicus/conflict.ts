@@ -1,4 +1,4 @@
-import { Setup } from "./setup";
+import type { Setup } from "./setup";
 
 export type ConflictSeverity = "mild" | "moderate" | "severe";
 

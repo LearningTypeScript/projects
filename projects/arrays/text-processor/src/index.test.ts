@@ -6,7 +6,7 @@ import * as solution from "./solution";
 
 process.env.TEST_SOLUTIONS = "1";
 
-const { alignTexts } = process.env.TEST_SOLUTIONS ? solution : index;
+const { alignTexts } = process.env.TEST_SOLUTIONS ? index : index;
 
 describe(alignTexts, () => {
 	describe("types", () => {

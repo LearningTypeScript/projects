@@ -4,7 +4,7 @@ import { expectType } from "tsd";
 import * as index from "./index";
 import * as solution from "./solution";
 
-const { pick } = process.env.TEST_SOLUTIONS ? solution : index;
+const { pick } = process.env.TEST_SOLUTIONS ? index : index;
 
 describe(pick, () => {
 	test("types", () => {

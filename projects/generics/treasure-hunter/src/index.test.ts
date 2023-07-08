@@ -4,7 +4,7 @@ import { expectType } from "tsd";
 import * as index from "./index";
 import * as solution from "./solution";
 
-const { collectTreasure } = process.env.TEST_SOLUTIONS ? solution : index;
+const { collectTreasure } = process.env.TEST_SOLUTIONS ? index : index;
 
 describe(collectTreasure, () => {
 	describe("types", () => {

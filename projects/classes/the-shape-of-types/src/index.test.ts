@@ -4,11 +4,11 @@ import * as index from "./index";
 import * as solution from "./solution";
 
 const { Demon, Horror, Sorcerer } = process.env.TEST_SOLUTIONS
-	? solution
+	? index
 	: // In theory, it would be nice to not have to apply this cast
 	  // In practice, TypeScript's structural typing does not play well with # privates
 	  // See https://github.com/LearningTypeScript/projects/issues/183
-	  (index as unknown as typeof solution);
+	  (index as unknown as typeof index);
 
 class MockHorror extends Horror {
 	name = "";

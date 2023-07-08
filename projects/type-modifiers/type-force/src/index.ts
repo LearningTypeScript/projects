@@ -1,32 +1,38 @@
-// Write your duel function and types below! ✨
-// You'll need to export duel so the tests can run it.
+export interface Character {
+	flying: boolean;
+	name: string;
+	power: number;
+	toughness: number;
+}
 
 const mutationsLibrary = {
-	energy: (hero) => {
+	energy: (hero: Character) => {
 		hero.power *= 1.25;
 		hero.flying = true;
 	},
-	healing: (hero) => {
+	healing: (hero: Character) => {
 		hero.toughness *= 2;
 	},
-	luck: (hero) => {
+	luck: (hero: Character) => {
 		hero.power *= 1.25;
 		hero.toughness *= 1.25;
 	},
-	flight: (hero) => {
+	flight: (hero: Character) => {
 		hero.flying = true;
 	},
-	strength: (hero) => {
+	strength: (hero: Character) => {
 		hero.power *= 2;
 	},
-	wings: (hero) => {
+	wings: (hero: Character) => {
 		hero.flying = true;
 		hero.toughness *= 0.9;
 	},
-};
+} as const;
 
-function createCharacter(name, mutations) {
-	const character = {
+export type Mutation = keyof typeof mutationsLibrary;
+
+function createCharacter(name: string, mutations: Mutation[]) {
+	const character: Character = {
 		flying: false,
 		name,
 		power: 1,
@@ -38,4 +44,18 @@ function createCharacter(name, mutations) {
 	}
 
 	return character;
+}
+
+export interface Fighter {
+	mutations: Mutation[];
+	name: string;
+}
+
+export function duel(good: Fighter, bad: Fighter) {
+	const hero = createCharacter(good.name, good.mutations);
+	const villain = createCharacter(bad.name, bad.mutations);
+
+	return hero.power / villain.toughness >= villain.power / hero.toughness
+		? (["hero", hero] as const)
+		: (["villain", villain] as const);
 }
