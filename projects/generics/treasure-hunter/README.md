@@ -49,6 +49,9 @@ Each `Buried` object can be one of three things:
   - A `TunnelSystem` shape, with properties:
     - `entrances`: An array of `Buried` objects of the same type
     - `type`: `"tunnels"`
+- A `Treasure` object with properties:
+  - `content`: A `datum` of the same type
+  - `type`: `"treasure"`
 
 The `collectTreasure` function should return an object with three properties:
 
