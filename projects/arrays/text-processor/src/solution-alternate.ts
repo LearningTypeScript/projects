@@ -49,8 +49,5 @@ function alignLines(
 	lines: string[],
 	{ align = "left", width }: AlignmentOptions
 ) {
-	const aligner = aligners[align];
-	return lines.map((line, index, lines) => {
-		return aligner(line, width);
-	});
+	return lines.map((line) => aligners[align](line, width));
 }
