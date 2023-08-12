@@ -2,9 +2,9 @@ import { describe, expect, test } from "@jest/globals";
 import { expectType } from "tsd";
 
 import * as index from "./index";
-import * as solution_alternate from "./solution-alternate";
+import * as alternate from "./solution-alternate";
 
-const { alignTexts } = process.env.TEST_SOLUTIONS ? solution_alternate : index;
+const { alignTexts } = process.env.TEST_SOLUTIONS ? alternate : index;
 
 describe(alignTexts, () => {
 	describe("types", () => {
