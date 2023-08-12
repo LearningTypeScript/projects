@@ -36,18 +36,18 @@ const aligners = {
 
 		return remainingSpaces
 			? [
-					Array.from({ length: Math.floor(remainingSpaces / 2) }, () => " "),
+					" ".repeat(Math.floor(remainingSpaces / 2)),
 					line,
-					Array.from({ length: Math.ceil(remainingSpaces / 2) }, () => " "),
-			  ].join(" ")
+					" ".repeat(Math.ceil(remainingSpaces / 2)),
+			  ].join("")
 			: line;
 	},
-	right: (line: string, width: number) => line.padEnd(width),
+	right: (line: string, width: number) => line.padStart(width),
 };
 
 function alignLines(
 	lines: string[],
 	{ align = "left", width }: AlignmentOptions
 ) {
-	return lines.map(aligners[align], width);
+	return lines.map((line) => aligners[align](line, width));
 }
