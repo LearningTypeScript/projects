@@ -19,10 +19,10 @@ The second line's contents will change based on what type of landmark it is:
 
 - Forts: _(nothing: don't include a second line)_
 - Lakes: `It covers <miles> square miles of water.`
-- Lighthouses: `It was first lit in <lit> and is <feet> feet high.`
+- Lighthouses: `It was first lit in <lit> and is <height> feet high.`
 - Mountains: `Its peak is <height> feet high.`
 - Parks: `It covers <acres> square acres.`
-- Rivers: `It flows for <length> miles and is <deep> feet deep at its deepest.`
+- Rivers: `It flows for <length> miles and is <depth> feet deep at its deepest.`
 - Waterfalls: `It is <height> feet high.`
 
 ## Specification
