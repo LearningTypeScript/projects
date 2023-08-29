@@ -3,7 +3,7 @@
 Good.
 You've chosen to accept the mission.
 
-Your first task is to implement for us a function we can use to crate text encoders.
+Your first task is to implement for us a function we can use to create text encoders.
 As you may recall from Spy 101 training, we often enlist functions such as [ROT13](https://en.wikipedia.org/wiki/ROT13) to hide text from onlookers.
 
 Your assignment, assuming you opt into it, is to develop a `createCipher` function.
