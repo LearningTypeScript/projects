@@ -17,14 +17,14 @@ export interface Lighthouse extends BaseLandmark {
 	type: "lighthouse";
 }
 
-export interface Park extends BaseLandmark {
-	acres: number;
-	type: "park";
-}
-
 export interface Mountain extends BaseLandmark {
 	height: number;
 	type: "mountain";
+}
+
+export interface Park extends BaseLandmark {
+	acres: number;
+	type: "park";
 }
 
 export interface River extends BaseLandmark {
