@@ -4,7 +4,10 @@ import * as index from "./index";
 import * as solution from "./solution";
 
 const { createDemon, createSorcerer, Horror } = process.env.TEST_SOLUTIONS
-	? solution
+	? // TypeScript treats # privates as unique, even across two otherwise identical classes.
+	  // This assertion "tricks" the type system into treating both Horror classes the same.
+	  // https://github.com/LearningTypeScript/projects/issues/276
+	  (solution as typeof index & typeof solution)
 	: index;
 
 const createMockHorrorSettings = (evil: boolean) => {
