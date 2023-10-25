@@ -9,7 +9,7 @@ Hello, and welcome!
 ברוך הבא!
 
 We are so glad you're elected to travel with Type Air.
-We hope your trip through the type-safe skies is peasant.
+We hope your trip through the type-safe skies is pleasant.
 By the way, if there a software developer flying with us, please report to the front of the plane.
 We have some files we'd like your assistance with.
 

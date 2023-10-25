@@ -2,7 +2,7 @@
 
 Well folks, it seems like we've made an unexpected stop... somewhere.
 We're not sure where.
-Will the TypeScript enthusiast we spoke to earlier please to the front of the plane again?
+Will the TypeScript enthusiast we spoke to earlier please come to the front of the plane again?
 
 Thanks for volunteering a second time.
 We've found this odd script, `./index.ts`, that seems to make use of Array and String methods not present in our JavaScript environment.
