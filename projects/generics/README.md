@@ -2,7 +2,7 @@
 
 _Learning TypeScript_'s **Generics** chapter covers making classes, functions, interfaces, and type aliases "generic" by allowing them to work with type parameters:
 
-- Using type parameters to represent types different between uses of a construct
+- Using type parameters to represent different types between uses of a construct
 - Providing explicit or implicit type arguments when calling generic functions
 - Using generic interfaces to represent generic object types
 - Adding type parameters to classes, and how that impacts their types
