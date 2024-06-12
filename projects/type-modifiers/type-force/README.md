@@ -57,5 +57,3 @@ The `duel` function's return type should be a read-only tuple containing two ele
 ## Notes
 
 - The existing code has correct runtime behavior. You'll need to add type annotations to it, but don't delete any existing code.
-
-<!-- todo add type predicate appetizer to modifiers-of-the-types -->
