@@ -8,7 +8,7 @@ let ronaldAvailability = true;
 let pennywiseAvailability = true;
 
 let matchingsDescription = "";
-let lastClown;
+let lastClown: string;
 
 do {
 	clownsCount += 1;
