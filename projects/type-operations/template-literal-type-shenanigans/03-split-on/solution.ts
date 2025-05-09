@@ -3,5 +3,5 @@ export type SplitOn<
 	On extends string,
 	Results extends string[] = [],
 > = Text extends `${infer Prefix}${On}${infer Suffix}`
-	? SplitOn<Suffix, On, [Prefix, ...Results]>
-	: [Text, ...Results];
+	? SplitOn<Suffix, On, [...Results, Prefix]>
+	: [...Results, Text];
