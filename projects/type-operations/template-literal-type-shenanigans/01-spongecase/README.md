@@ -1,6 +1,6 @@
 # Step 1: Sponge Case
 
-_SpOnGeCaSe_ is a text casing based on the [Mocking Spongebob meme](https://knowyourmeme.com/memes/mocking-spongebob).
+_SpOnGeCaSe_ is a text casing based on the [Mocking SpongeBob meme](https://knowyourmeme.com/memes/mocking-spongebob).
 It involves alternating lowercase and uppercase characters in a string, and is a natural fit for recursive template literal types!
 
 Generic template literal types are able to be made recursive in a similar way to how other types may be made recursive.

@@ -1,11 +1,10 @@
 {
-	"$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
-	"version": "0.2",
-	"dictionaries": ["typescript", "en_US", "en-gb", "custom-words"],
+	"dictionaries": ["custom-words", "css", "html", "node", "npm", "typescript"],
 	"dictionaryDefinitions": [
 		{
 			"name": "custom-words",
 			"path": "./dictionary.txt"
 		}
-	]
+	],
+	"ignorePaths": ["node_modules", "projects/*/node_modules", "projects/**/*.js"]
 }
