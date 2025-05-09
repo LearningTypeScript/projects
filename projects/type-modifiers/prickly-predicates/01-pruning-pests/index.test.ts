@@ -12,7 +12,7 @@ describe(isCropName, () => {
 	describe("types", () => {
 		test("function type", () => {
 			expectType<(name: string) => name is keyof typeof solution.cropFamilies>(
-				isCropName
+				isCropName,
 			);
 		});
 	});

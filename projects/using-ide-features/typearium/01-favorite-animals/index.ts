@@ -30,6 +30,6 @@ export function logFavoriteAnimals() {
 	["parakeet", "macaw", "cat", "monkey", "elephant", "alpaca", "fox"].forEach(
 		(animal, i) => {
 			console.log(`I like ${animal} number ${i}!`);
-		}
+		},
 	);
 }

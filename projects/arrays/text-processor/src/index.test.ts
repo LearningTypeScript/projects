@@ -12,7 +12,7 @@ describe(alignTexts, () => {
 			expectType<
 				(
 					texts: string[],
-					options: { align?: "left" | "middle" | "right"; width: number }
+					options: { align?: "left" | "middle" | "right"; width: number },
 				) => string[][]
 			>(alignTexts);
 		});

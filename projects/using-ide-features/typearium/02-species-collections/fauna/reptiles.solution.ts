@@ -8,6 +8,6 @@ export interface ReptilesSettings {
 export function getReptiles(settings?: ReptilesSettings) {
 	return onlyTruthy(
 		settings?.ferocious && "dragon",
-		settings?.small && ["frog", "gecko"]
+		settings?.small && ["frog", "gecko"],
 	);
 }

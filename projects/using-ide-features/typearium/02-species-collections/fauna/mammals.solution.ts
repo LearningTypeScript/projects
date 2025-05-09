@@ -12,6 +12,6 @@ export function getMammals(settings?: MammalsSettings) {
 			"dogs",
 			settings?.deadly && "monty python rabbit",
 		],
-		settings?.deadly && ["lion", "tiger"]
+		settings?.deadly && ["lion", "tiger"],
 	);
 }

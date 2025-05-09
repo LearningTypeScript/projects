@@ -14,7 +14,7 @@ console.log(
 		chalk.cyanBright(command),
 		chalk.blue("and changed files:"),
 		chalk.cyan(changedFiles.join(" ")),
-	].join(" ")
+	].join(" "),
 );
 
 const projectsPerDirectory = new GetterMap((directory) => {
@@ -35,7 +35,7 @@ const projectsPerDirectory = new GetterMap((directory) => {
 const changedProjects = new Set(
 	changedFiles
 		.map((changedFile) => projectsPerDirectory.get(changedFile))
-		.filter((directory) => directory !== "")
+		.filter((directory) => directory !== ""),
 );
 
 const failedProjects = [];
@@ -46,7 +46,7 @@ if (
 	!fs.existsSync(".gitignore")
 ) {
 	throw new Error(
-		"changed-solutions.mjs must be run from the root of learning-typescript-projects."
+		"changed-solutions.mjs must be run from the root of learning-typescript-projects.",
 	);
 }
 
@@ -58,7 +58,7 @@ for (const project of changedProjects) {
 			chalk.cyanBright(command),
 			chalk.blue("in"),
 			chalk.cyanBright(project),
-		].join(" ")
+		].join(" "),
 	);
 
 	cd(project);
@@ -80,7 +80,7 @@ console.log("");
 
 if (failedProjects.length) {
 	console.log(
-		chalk.redBright(`${failedProjects.length} project(s) failed! ❌`)
+		chalk.redBright(`${failedProjects.length} project(s) failed! ❌`),
 	);
 	for (const project of failedProjects) {
 		console.error(
@@ -89,7 +89,7 @@ if (failedProjects.length) {
 				chalk.redBright(command),
 				chalk.red("failed at"),
 				chalk.redBright(project),
-			].join(" ")
+			].join(" "),
 		);
 	}
 

@@ -16,7 +16,7 @@ describe(zip, () => {
 		expectType<(number | string)[]>(zip([1, "a"], [2, "b"]));
 		expectType<(boolean | number | string)[]>(zip([true, "a"], [2, "b"]));
 		expectType<(boolean | null | number | string)[]>(
-			zip([true, "a"], [2, null])
+			zip([true, "a"], [2, null]),
 		);
 	});
 

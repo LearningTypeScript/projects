@@ -5,7 +5,7 @@ Your advanced cipher held up against attack from the villainous Goldberger and D
 
 We have played defense long enough against these criminals.
 It is time to go on the offense.
-They have their own cipher technology, codenamed the _Golden Code_, which they use to create ciphertext.
+They have their own cipher technology, codenamed the _Golden Code_, which they use to create cipher text.
 
 Your final task, given you agree to tackle it, is to develop a `createCodeCracker` function.
 It should take an object of settings as described below.

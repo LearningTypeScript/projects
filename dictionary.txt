@@ -13,6 +13,7 @@ aenean
 aliqua
 aliquam
 aliquet
+Allegany
 amet
 andronicus
 ante
@@ -33,6 +34,7 @@ brewerton
 Cactaceae
 chuckie
 clownsole
+Cohoes
 commodo
 condimentum
 congue
@@ -40,6 +42,7 @@ consectetur
 consequat
 convallis
 cras
+crème
 cryptologist
 cum
 curabitur
@@ -84,6 +87,7 @@ feugiat
 fillibuster
 fringilla
 fusce
+Glynn
 goldberger
 gravida
 habitant
@@ -175,12 +179,14 @@ purus
 quam
 quis
 quisque
+Reuven
 rhancus
 rhoncus
 ridiculus
 risus
 rutrum
 sagittis
+Sammamish
 sapien
 scelerisque
 sed
@@ -196,6 +202,7 @@ sodales
 sollicitudin
 southplains
 spongecase
+Starseed
 strictus
 suscipit
 suspendisse

@@ -63,7 +63,7 @@ export function describeLandmark(landmark: Landmark) {
 
 		case "lighthouse":
 			output.push(
-				`It was first lit in ${landmark.lit} and is ${landmark.height} feet high.`
+				`It was first lit in ${landmark.lit} and is ${landmark.height} feet high.`,
 			);
 			break;
 
@@ -73,7 +73,7 @@ export function describeLandmark(landmark: Landmark) {
 
 		case "river":
 			output.push(
-				`It flows for ${landmark.length} miles and is ${landmark.depth} feet deep at its deepest.`
+				`It flows for ${landmark.length} miles and is ${landmark.depth} feet deep at its deepest.`,
 			);
 			break;
 

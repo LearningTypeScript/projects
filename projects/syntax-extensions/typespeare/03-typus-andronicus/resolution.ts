@@ -13,7 +13,7 @@ export interface ResolutionCreatorSettings {
 }
 
 export type ResolutionCreator = (
-	settings: ResolutionCreatorSettings
+	settings: ResolutionCreatorSettings,
 ) => Resolution;
 
 export const resolutionCreators: ResolutionCreator[] = [

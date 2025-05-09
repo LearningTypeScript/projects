@@ -3,5 +3,5 @@ export type FilteredArrayItems<T, Filter> = T extends (infer Item)[]
 		? FilteredArrayItems<Item, Filter>
 		: never
 	: T extends Filter
-	? T
-	: never;
+		? T
+		: never;

@@ -17,7 +17,7 @@ export interface SchemaLiteral<Value> {
 }
 
 export const literal = <Value extends string>(
-	value: Value
+	value: Value,
 ): SchemaLiteral<Value> => ({
 	value,
 	zType: "literal",
@@ -30,7 +30,7 @@ export interface SchemaUnion<Values extends any[]> {
 }
 
 export const union = <Values extends any[]>(
-	values: Values
+	values: Values,
 ): SchemaUnion<Values> => ({
 	values,
 	zType: "union",
@@ -47,7 +47,7 @@ export interface SchemaObject<Properties> {
 }
 
 export const object = <Properties>(
-	properties: Properties
+	properties: Properties,
 ): SchemaObject<Properties> => ({
 	properties,
 	zType: "object",
@@ -62,12 +62,12 @@ export type Infer<Schema> =
 	Schema extends SchemaString
 		? string
 		: // Literals
-		Schema extends SchemaLiteral<infer Value>
-		? Value
-		: // Unions
-		Schema extends SchemaUnion<infer Values>
-		? UnwrapSchemaUnion<Values>
-		: // Objects
-		Schema extends SchemaObject<infer Properties>
-		? UnwrapSchemaObject<Properties>
-		: never;
+			Schema extends SchemaLiteral<infer Value>
+			? Value
+			: // Unions
+				Schema extends SchemaUnion<infer Values>
+				? UnwrapSchemaUnion<Values>
+				: // Objects
+					Schema extends SchemaObject<infer Properties>
+					? UnwrapSchemaObject<Properties>
+					: never;

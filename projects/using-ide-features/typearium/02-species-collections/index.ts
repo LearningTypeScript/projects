@@ -32,7 +32,7 @@ function getMammals(settings?: MammalsSettings) {
 			"dogs",
 			settings?.deadly && "monty python rabbit",
 		],
-		settings?.deadly && ["lion", "tiger"]
+		settings?.deadly && ["lion", "tiger"],
 	);
 }
 
@@ -44,7 +44,7 @@ interface ReptilesSettings {
 function getReptiles(settings?: ReptilesSettings) {
 	return onlyTruthy(
 		settings?.ferocious && "dragon",
-		settings?.small && ["frog", "gecko"]
+		settings?.small && ["frog", "gecko"],
 	);
 }
 
@@ -65,7 +65,7 @@ interface FlowersSettings {
 function getFlowers(settings?: FlowersSettings) {
 	return onlyTruthy(
 		settings?.colorful && ["carnation", "lilac", "tulip"],
-		settings?.colorful && settings?.prickly && "rose"
+		settings?.colorful && settings?.prickly && "rose",
 	);
 }
 
@@ -77,7 +77,7 @@ interface TreesSettings {
 function getTrees(settings?: TreesSettings) {
 	return onlyTruthy(
 		settings?.evergreen && "pine",
-		settings?.fruitBearing && ["apple", "pear"]
+		settings?.fruitBearing && ["apple", "pear"],
 	);
 }
 

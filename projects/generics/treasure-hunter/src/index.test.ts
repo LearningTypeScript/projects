@@ -13,7 +13,7 @@ describe(collectTreasure, () => {
 				<Content, Fake extends Content, Real extends Content>(
 					buried: solution.Buried<Content>,
 					isFake: (item: Content) => item is Fake,
-					isReal: (item: Content) => item is Real
+					isReal: (item: Content) => item is Real,
 				) => { fake: Fake[]; real: Real[]; scrap: Content[] }
 			>(collectTreasure);
 		});
@@ -29,7 +29,7 @@ describe(collectTreasure, () => {
 		const actual = collectTreasure(
 			buried,
 			(item): item is string => typeof item === "string",
-			(item): item is string => typeof item === "number"
+			(item): item is string => typeof item === "number",
 		);
 
 		expect(actual).toEqual({
@@ -49,7 +49,7 @@ describe(collectTreasure, () => {
 		const actual = collectTreasure(
 			buried,
 			(item): item is string => typeof item === "number",
-			(item): item is string => typeof item === "string"
+			(item): item is string => typeof item === "string",
 		);
 
 		expect(actual).toEqual({
@@ -69,7 +69,7 @@ describe(collectTreasure, () => {
 		const actual = collectTreasure(
 			buried,
 			(item): item is string => typeof item === "number",
-			(item): item is string => typeof item === "number"
+			(item): item is string => typeof item === "number",
 		);
 
 		expect(actual).toEqual({
@@ -92,7 +92,7 @@ describe(collectTreasure, () => {
 		const actual = collectTreasure(
 			buried,
 			(item): item is string => typeof item === "string",
-			(item): item is string => typeof item === "number"
+			(item): item is string => typeof item === "number",
 		);
 
 		expect(actual).toEqual({
@@ -122,7 +122,7 @@ describe(collectTreasure, () => {
 		const actual = collectTreasure(
 			buried,
 			(item): item is string => typeof item === "string",
-			(item): item is string => typeof item === "number"
+			(item): item is string => typeof item === "number",
 		);
 
 		expect(actual).toEqual({

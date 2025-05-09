@@ -19,7 +19,7 @@ function showIllusion(illusion) {
 
 async function showVolunteerIllusion(audienceMember, illusion) {
 	console.log(
-		`Let's give a big round of applause for ${audienceMember.name}! 👏`
+		`Let's give a big round of applause for ${audienceMember.name}! 👏`,
 	);
 
 	console.log("...drumroll please... 🥁");

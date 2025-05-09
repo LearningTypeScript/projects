@@ -5,7 +5,7 @@ export type AlignmentOptions = {
 
 export function alignTexts(texts: string[], options: AlignmentOptions) {
 	return texts.map((text) =>
-		alignLines(splitLines(text, options.width), options)
+		alignLines(splitLines(text, options.width), options),
 	);
 }
 
@@ -39,7 +39,7 @@ const aligners = {
 					" ".repeat(Math.floor(remainingSpaces / 2)),
 					line,
 					" ".repeat(Math.ceil(remainingSpaces / 2)),
-			  ].join("")
+				].join("")
 			: line;
 	},
 	right: (line: string, width: number) => line.padStart(width),
@@ -47,7 +47,7 @@ const aligners = {
 
 function alignLines(
 	lines: string[],
-	{ align = "left", width }: AlignmentOptions
+	{ align = "left", width }: AlignmentOptions,
 ) {
 	return lines.map((line) => aligners[align](line, width));
 }
