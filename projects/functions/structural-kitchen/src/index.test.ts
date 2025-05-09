@@ -68,7 +68,7 @@ describe(createKitchen, () => {
 			);
 		});
 
-		it("returns false without changing stock when expense is less than budget on a second call", () => {
+		it("returns false without changing stock when expense is more than budget on a second call", () => {
 			const supplier = jest.fn((expense: number) => ({
 				breads: expense * 1,
 				fruits: expense * 2,
@@ -86,7 +86,7 @@ describe(createKitchen, () => {
 			);
 		});
 
-		it("returns false without changing stock when expense is less than budget on a second call", () => {
+		it("returns true without changing stock when expense is less than budget on a second call", () => {
 			const supplier = jest.fn((expense: number) => ({
 				breads: expense * 1,
 				fruits: expense * 2,
