@@ -5,6 +5,23 @@
 	"badgeTemplate": "\t<a href=\"#contributors-\">\n\t\t<img alt=\"All Contributors\" src=\"https://img.shields.io/badge/all_contributors-<%= contributors.length %>-14cc21.svg\" />\n\t</a>",
 	"contributors": [
 		{
+			"avatar_url": "https://avatars.githubusercontent.com/u/3335181?v=4",
+			"contributions": [
+				"bug",
+				"code",
+				"doc",
+				"ideas",
+				"infra",
+				"maintenance",
+				"review",
+				"test",
+				"tool"
+			],
+			"login": "JoshuaKGoldberg",
+			"name": "Josh Goldberg",
+			"profile": "http://www.joshuakgoldberg.com"
+		},
+		{
 			"login": "fuadop",
 			"name": "Fuad Olatunji",
 			"avatar_url": "https://avatars.githubusercontent.com/u/65264054?v=4",

@@ -10,7 +10,7 @@
 	</a>
 	<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 	<a href="#contributors-">
-  		<img alt="All Contributors" src="https://img.shields.io/badge/all_contributors-2-14cc21.svg" />
+  		<img alt="All Contributors" src="https://img.shields.io/badge/all_contributors-7-14cc21.svg" />
 	</a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 </p>
@@ -59,12 +59,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
-      <td align="center"><a href="http://fuadolatunji.me"><img src="https://avatars.githubusercontent.com/u/65264054?v=4?s=100" width="100px;" alt="Fuad Olatunji"/><br /><sub><b>Fuad Olatunji</b></sub></a><br /><a href="#infra-fuadop" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/LearningTypeScript/projects/commits?author=fuadop" title="Documentation">📖</a> <a href="https://github.com/LearningTypeScript/projects/issues?q=author%3Afuadop" title="Bug reports">🐛</a> <a href="#security-fuadop" title="Security">🛡️</a></td>
-      <td align="center"><a href="https://github.com/sisPedro"><img src="https://avatars.githubusercontent.com/u/16280628?v=4?s=100" width="100px;" alt="sisPedro"/><br /><sub><b>sisPedro</b></sub></a><br /><a href="#content-sisPedro" title="Content">🖋</a></td>
-      <td align="center"><a href="https://benchong.dev/"><img src="https://avatars.githubusercontent.com/u/61606639?v=4?s=100" width="100px;" alt="Ben Chong"/><br /><sub><b>Ben Chong</b></sub></a><br /><a href="#content-chonginator" title="Content">🖋</a></td>
-      <td align="center"><a href="https://xavd.id"><img src="https://avatars.githubusercontent.com/u/1231935?v=4?s=100" width="100px;" alt="David Brownman"/><br /><sub><b>David Brownman</b></sub></a><br /><a href="#content-xavdid" title="Content">🖋</a></td>
-      <td align="center"><a href="http://agmyintmyatoo.github.io"><img src="https://avatars.githubusercontent.com/u/37968696?v=4?s=100" width="100px;" alt="agmyintmyatoo"/><br /><sub><b>agmyintmyatoo</b></sub></a><br /><a href="#content-agmyintmyatoo" title="Content">🖋</a></td>
-      <td align="center"><a href="http://owenboreham.tech"><img src="https://avatars.githubusercontent.com/u/73446766?v=4?s=100" width="100px;" alt="Owen Boreham"/><br /><sub><b>Owen Boreham</b></sub></a><br /><a href="#content-bobrossrtx" title="Content">🖋</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://www.joshuakgoldberg.com"><img src="https://avatars.githubusercontent.com/u/3335181?v=4?s=100" width="100px;" alt="Josh Goldberg"/><br /><sub><b>Josh Goldberg</b></sub></a><br /><a href="https://github.com/LearningTypeScript/projects/issues?q=author%3AJoshuaKGoldberg" title="Bug reports">🐛</a> <a href="https://github.com/LearningTypeScript/projects/commits?author=JoshuaKGoldberg" title="Code">💻</a> <a href="https://github.com/LearningTypeScript/projects/commits?author=JoshuaKGoldberg" title="Documentation">📖</a> <a href="#ideas-JoshuaKGoldberg" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-JoshuaKGoldberg" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-JoshuaKGoldberg" title="Maintenance">🚧</a> <a href="https://github.com/LearningTypeScript/projects/pulls?q=is%3Apr+reviewed-by%3AJoshuaKGoldberg" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/LearningTypeScript/projects/commits?author=JoshuaKGoldberg" title="Tests">⚠️</a> <a href="#tool-JoshuaKGoldberg" title="Tools">🔧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://fuadolatunji.me"><img src="https://avatars.githubusercontent.com/u/65264054?v=4?s=100" width="100px;" alt="Fuad Olatunji"/><br /><sub><b>Fuad Olatunji</b></sub></a><br /><a href="#infra-fuadop" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/LearningTypeScript/projects/commits?author=fuadop" title="Documentation">📖</a> <a href="https://github.com/LearningTypeScript/projects/issues?q=author%3Afuadop" title="Bug reports">🐛</a> <a href="#security-fuadop" title="Security">🛡️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://xavd.id"><img src="https://avatars.githubusercontent.com/u/1231935?v=4?s=100" width="100px;" alt="David Brownman"/><br /><sub><b>David Brownman</b></sub></a><br /><a href="#content-xavdid" title="Content">🖋</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://agmyintmyatoo.github.io"><img src="https://avatars.githubusercontent.com/u/37968696?v=4?s=100" width="100px;" alt="agmyintmyatoo"/><br /><sub><b>agmyintmyatoo</b></sub></a><br /><a href="#content-agmyintmyatoo" title="Content">🖋</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://owenboreham.tech"><img src="https://avatars.githubusercontent.com/u/73446766?v=4?s=100" width="100px;" alt="Owen Boreham"/><br /><sub><b>Owen Boreham</b></sub></a><br /><a href="#content-bobrossrtx" title="Content">🖋</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/sisPedro"><img src="https://avatars.githubusercontent.com/u/16280628?v=4?s=100" width="100px;" alt="sisPedro"/><br /><sub><b>sisPedro</b></sub></a><br /><a href="#content-sisPedro" title="Content">🖋</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://benchong.dev/"><img src="https://avatars.githubusercontent.com/u/61606639?v=4?s=100" width="100px;" alt="Ben Chong"/><br /><sub><b>Ben Chong</b></sub></a><br /><a href="#content-chonginator" title="Content">🖋</a></td>
     </tr>
   </tbody>
 </table>
