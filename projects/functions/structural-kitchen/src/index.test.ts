@@ -11,13 +11,13 @@ describe(createKitchen, () => {
 			const kitchen = createKitchen(
 				123,
 				jest.fn<index.Cleaner>(),
-				jest.fn<index.Supplier>()
+				jest.fn<index.Supplier>(),
 			);
 
 			const result = kitchen.announce();
 
 			expect(result).toBe(
-				`I have 0 much dirt, 123 budget, 0 bread(s), 0 fruit(s), 0 sauce(s), and 0 vegetable(s).`
+				`I have 0 much dirt, 123 budget, 0 bread(s), 0 fruit(s), 0 sauce(s), and 0 vegetable(s).`,
 			);
 		});
 	});
@@ -40,14 +40,14 @@ describe(createKitchen, () => {
 			const kitchen = createKitchen(
 				1,
 				jest.fn<index.Cleaner>(),
-				jest.fn<index.Supplier>()
+				jest.fn<index.Supplier>(),
 			);
 
 			const result = kitchen.purchase(2);
 
 			expect(result).toBe(false);
 			expect(kitchen.announce()).toBe(
-				"I have 0 much dirt, 1 budget, 0 bread(s), 0 fruit(s), 0 sauce(s), and 0 vegetable(s)."
+				"I have 0 much dirt, 1 budget, 0 bread(s), 0 fruit(s), 0 sauce(s), and 0 vegetable(s).",
 			);
 		});
 
@@ -64,7 +64,7 @@ describe(createKitchen, () => {
 
 			expect(result).toBe(true);
 			expect(kitchen.announce()).toBe(
-				"I have 0 much dirt, 2 budget, 3 bread(s), 6 fruit(s), 9 sauce(s), and 12 vegetable(s)."
+				"I have 0 much dirt, 2 budget, 3 bread(s), 6 fruit(s), 9 sauce(s), and 12 vegetable(s).",
 			);
 		});
 
@@ -82,7 +82,7 @@ describe(createKitchen, () => {
 
 			expect(result).toBe(false);
 			expect(kitchen.announce()).toBe(
-				"I have 0 much dirt, 2 budget, 3 bread(s), 6 fruit(s), 9 sauce(s), and 12 vegetable(s)."
+				"I have 0 much dirt, 2 budget, 3 bread(s), 6 fruit(s), 9 sauce(s), and 12 vegetable(s).",
 			);
 		});
 
@@ -100,7 +100,7 @@ describe(createKitchen, () => {
 
 			expect(result).toBe(true);
 			expect(kitchen.announce()).toBe(
-				"I have 0 much dirt, 0 budget, 5 bread(s), 10 fruit(s), 15 sauce(s), and 20 vegetable(s)."
+				"I have 0 much dirt, 0 budget, 5 bread(s), 10 fruit(s), 15 sauce(s), and 20 vegetable(s).",
 			);
 		});
 	});
@@ -110,7 +110,7 @@ describe(createKitchen, () => {
 			const kitchen = createKitchen(
 				0,
 				jest.fn<index.Cleaner>(),
-				jest.fn<index.Supplier>()
+				jest.fn<index.Supplier>(),
 			);
 			const recipe = jest.fn(() => ({
 				newStock: {
@@ -132,7 +132,7 @@ describe(createKitchen, () => {
 			});
 			expect(result).toBe(true);
 			expect(kitchen.announce()).toBe(
-				"I have 1 much dirt, 0 budget, 1 bread(s), 2 fruit(s), 3 sauce(s), and 4 vegetable(s)."
+				"I have 1 much dirt, 0 budget, 1 bread(s), 2 fruit(s), 3 sauce(s), and 4 vegetable(s).",
 			);
 		});
 
@@ -140,7 +140,7 @@ describe(createKitchen, () => {
 			const kitchen = createKitchen(
 				0,
 				jest.fn<index.Cleaner>(),
-				jest.fn<index.Supplier>()
+				jest.fn<index.Supplier>(),
 			);
 			const recipe = jest.fn(() => ({
 				newStock: {
@@ -162,7 +162,7 @@ describe(createKitchen, () => {
 			});
 			expect(result).toBe(false);
 			expect(kitchen.announce()).toBe(
-				"I have 1 much dirt, 0 budget, 0 bread(s), 0 fruit(s), 0 sauce(s), and 0 vegetable(s)."
+				"I have 1 much dirt, 0 budget, 0 bread(s), 0 fruit(s), 0 sauce(s), and 0 vegetable(s).",
 			);
 		});
 
@@ -170,7 +170,7 @@ describe(createKitchen, () => {
 			const kitchen = createKitchen(
 				0,
 				jest.fn<index.Cleaner>(),
-				jest.fn<index.Supplier>()
+				jest.fn<index.Supplier>(),
 			);
 			const recipe = jest.fn(() => ({
 				newStock: {
@@ -191,7 +191,7 @@ describe(createKitchen, () => {
 			expect(recipe).toHaveBeenCalledTimes(100);
 			expect(result).toBe(false);
 			expect(kitchen.announce()).toBe(
-				"I have 100 much dirt, 0 budget, 1 bread(s), 2 fruit(s), 3 sauce(s), and 4 vegetable(s)."
+				"I have 100 much dirt, 0 budget, 1 bread(s), 2 fruit(s), 3 sauce(s), and 4 vegetable(s).",
 			);
 		});
 	});

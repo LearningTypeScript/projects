@@ -5,12 +5,12 @@ import * as ts from "typescript";
 
 const filePath = path.join(
 	__dirname,
-	process.env.TEST_SOLUTIONS ? "tsconfig.solution.json" : "tsconfig.json"
+	process.env.TEST_SOLUTIONS ? "tsconfig.solution.json" : "tsconfig.json",
 );
 
 const { config, error } = ts.parseConfigFileTextToJson(
 	filePath,
-	fs.readFileSync(filePath).toString()
+	fs.readFileSync(filePath).toString(),
 );
 
 if (error) {
@@ -25,7 +25,7 @@ describe("TSConfig", () => {
 				allowJs: true,
 				esModuleInterop: true,
 				resolveJsonModule: true,
-			})
+			}),
 		);
 	});
 });

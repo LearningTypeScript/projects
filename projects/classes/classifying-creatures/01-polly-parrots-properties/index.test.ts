@@ -44,7 +44,7 @@ describe(Parrot, () => {
 				const actual = parrot.speak();
 
 				expect(actual).toEqual(expected);
-			}
+			},
 		);
 
 		it.each([
@@ -99,7 +99,7 @@ describe(Parrot, () => {
 				const actual = parrot.speak();
 
 				expect(actual).toEqual(phrase);
-			}
+			},
 		);
 	});
 });

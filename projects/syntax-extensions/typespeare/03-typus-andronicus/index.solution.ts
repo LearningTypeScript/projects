@@ -18,7 +18,7 @@ function enactTragedy(
 	character: string,
 	setupCreator: SetupCreator,
 	conflictCreator: ConflictCreator,
-	resolutionCreator: ResolutionCreator
+	resolutionCreator: ResolutionCreator,
 ) {
 	const setup = setupCreator(character);
 	const conflict = conflictCreator({ character, setup });
@@ -31,7 +31,7 @@ function logTragedy(
 	character: string,
 	setup: Setup,
 	conflict: Conflict,
-	resolution: Resolution
+	resolution: Resolution,
 ) {
 	console.log(`Behold, the tale of ${character}!`);
 	console.log(`The setting: ${setup.description}.`);
@@ -48,7 +48,7 @@ function runTragedy(character: string) {
 		character,
 		setupCreator,
 		conflictCreator,
-		resolutionCreator
+		resolutionCreator,
 	);
 
 	logTragedy(character, setup, conflict, resolution);

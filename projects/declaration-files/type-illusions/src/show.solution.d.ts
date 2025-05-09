@@ -26,7 +26,7 @@ export interface Trick {
 export function isTrick(section: Section): section is Trick;
 
 export function isVolunteerIllusion(
-	illusion: Illusion
+	illusion: Illusion,
 ): illusion is VolunteerIllusion;
 
 export interface GetAudienceMemberSettings {
@@ -40,5 +40,5 @@ export interface AudienceMember {
 }
 
 export function getAudienceMemberFor(
-	settings: GetAudienceMemberSettings
+	settings: GetAudienceMemberSettings,
 ): Promise<AudienceMember>;

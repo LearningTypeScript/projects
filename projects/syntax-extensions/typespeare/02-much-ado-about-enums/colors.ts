@@ -4,4 +4,4 @@ export const Colors = {
 	Yellow: "yellow",
 } as const;
 
-export type Color = typeof Colors[keyof typeof Colors];
+export type Color = (typeof Colors)[keyof typeof Colors];

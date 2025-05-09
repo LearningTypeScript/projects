@@ -8,6 +8,6 @@ export interface TreesSettings {
 export function getTrees(settings?: TreesSettings) {
 	return onlyTruthy(
 		settings?.evergreen && "pine",
-		settings?.fruitBearing && ["apple", "pear"]
+		settings?.fruitBearing && ["apple", "pear"],
 	);
 }

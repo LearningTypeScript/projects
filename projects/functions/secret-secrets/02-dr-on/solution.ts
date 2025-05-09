@@ -3,7 +3,7 @@ export type Cipher = (character: string) => string;
 export function createAdvancedCipher(
 	onVowel: Cipher,
 	onConsonant: Cipher,
-	onPunctuation: Cipher
+	onPunctuation: Cipher,
 ) {
 	return (text: string) => {
 		let result = "";
@@ -12,8 +12,8 @@ export function createAdvancedCipher(
 			const cipher = /[aeiou]/i.test(character)
 				? onVowel
 				: /[bcdfghjklmnpqrstvwxyz]/i.test(character)
-				? onConsonant
-				: onPunctuation;
+					? onConsonant
+					: onPunctuation;
 
 			result += cipher(character);
 		}

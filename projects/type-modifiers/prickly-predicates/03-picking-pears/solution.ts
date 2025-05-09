@@ -16,7 +16,7 @@ export interface FruitBearingCactus {
 }
 
 export function isFruitBearingCactus(
-	cactus: Cactus
+	cactus: Cactus,
 ): cactus is FruitBearingCactus {
 	return cactus.state === "fruit-bearing";
 }

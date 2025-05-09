@@ -36,7 +36,7 @@ describe(getEverything, () => {
 						fruitBearing: true,
 					},
 				},
-			})
+			}),
 		).toMatchInlineSnapshot(`
 		[
 		  "cats",

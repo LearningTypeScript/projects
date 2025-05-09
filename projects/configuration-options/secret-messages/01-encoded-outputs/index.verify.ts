@@ -22,10 +22,10 @@ describe(encodeMessage, () => {
 	test("when given a high complexity string, encodes per the snapshot", () => {
 		expect(
 			encodeMessage(
-				"Why did the configuration file break up with their partner?"
-			)
+				"Why did the configuration file break up with their partner?",
+			),
 		).toMatchInlineSnapshot(
-			`"¤¶^£©¥b·¬ªfª··°´³ÂÀ°ÄºÁÁt»¿Ã½y¼ÍÁ¾ÉÕÑÚÍÙÎÜÑÏÔÞÞÐâåàØæ´"`
+			`"¤¶^£©¥b·¬ªfª··°´³ÂÀ°ÄºÁÁt»¿Ã½y¼ÍÁ¾ÉÕÑÚÍÙÎÜÑÏÔÞÞÐâåàØæ´"`,
 		);
 	});
 });

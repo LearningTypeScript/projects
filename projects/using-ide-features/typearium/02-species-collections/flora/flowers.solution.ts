@@ -8,6 +8,6 @@ export interface FlowersSettings {
 export function getFlowers(settings?: FlowersSettings) {
 	return onlyTruthy(
 		settings?.colorful && ["carnation", "lilac", "tulip"],
-		settings?.colorful && settings?.prickly && "rose"
+		settings?.colorful && settings?.prickly && "rose",
 	);
 }

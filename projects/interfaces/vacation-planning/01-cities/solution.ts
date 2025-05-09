@@ -35,7 +35,7 @@ export function describeCity(city: City) {
 			`* Located at`,
 			`${describeCoordinate(city.coordinates.north)}N`,
 			`${describeCoordinate(city.coordinates.west)}W`,
-		].join(" ")
+		].join(" "),
 	);
 
 	return lines.join("\n");

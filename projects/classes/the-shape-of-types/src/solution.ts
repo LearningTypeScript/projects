@@ -26,7 +26,7 @@ export abstract class Horror {
 	getPower() {
 		return this.#consumed.reduce(
 			(previous, consumed) => previous + this.getPowerFrom(consumed),
-			this.#consumed.length
+			this.#consumed.length,
 		);
 	}
 

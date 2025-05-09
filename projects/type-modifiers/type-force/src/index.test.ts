@@ -12,7 +12,7 @@ describe(duel, () => {
 			expectType<
 				(
 					good: solution.Fighter,
-					bad: solution.Fighter
+					bad: solution.Fighter,
 				) => readonly ["hero" | "villain", solution.Character]
 			>(duel);
 		});
@@ -170,7 +170,7 @@ describe(duel, () => {
 				],
 			])("%j results in %o", (fighter, character) => {
 				expect(duel(fighter, patsy)[1]).toEqual(
-					expect.objectContaining(character as any)
+					expect.objectContaining(character as any),
 				);
 			});
 		});

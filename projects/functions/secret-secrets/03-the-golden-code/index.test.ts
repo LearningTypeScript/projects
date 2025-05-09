@@ -24,7 +24,7 @@ describe(createCodeCracker, () => {
 					attempts: 1,
 					makeGuess: () => "",
 					validateGuess: () => false,
-				})
+				}),
 			);
 		});
 	});

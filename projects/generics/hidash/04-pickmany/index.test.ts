@@ -18,19 +18,19 @@ describe(pickMany, () => {
 		expectType<undefined[]>(pickMany({ a: 1, b: undefined }, ["b"]));
 		expectType<undefined[]>(pickMany({ a: 1, b: undefined }, ["b", "b"]));
 		expectType<(number | string)[]>(
-			pickMany({ a: 1, b: "" }, Math.random() > 0.5 ? ["a"] : ["b"])
+			pickMany({ a: 1, b: "" }, Math.random() > 0.5 ? ["a"] : ["b"]),
 		);
 		expectType<(number | string)[]>(
-			pickMany({ a: 1, b: "" }, Math.random() > 0.5 ? ["a"] : ["a", "b"])
+			pickMany({ a: 1, b: "" }, Math.random() > 0.5 ? ["a"] : ["a", "b"]),
 		);
 		expectType<(number | string)[]>(
-			pickMany({ a: 1, b: "", c: false }, Math.random() > 0.5 ? ["a"] : ["b"])
+			pickMany({ a: 1, b: "", c: false }, Math.random() > 0.5 ? ["a"] : ["b"]),
 		);
 		expectType<(boolean | number | string)[]>(
 			pickMany(
 				{ a: 1, b: "", c: false },
-				Math.random() > 0.5 ? ["a"] : ["b", "c"]
-			)
+				Math.random() > 0.5 ? ["a"] : ["b", "c"],
+			),
 		);
 	});
 

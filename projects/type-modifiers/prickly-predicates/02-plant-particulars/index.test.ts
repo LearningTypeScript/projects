@@ -12,7 +12,7 @@ describe(isAnyCrop, () => {
 	describe("types", () => {
 		test("function type", () => {
 			expectType<(data: solution.AnyCrop) => data is solution.AnyCrop>(
-				isAnyCrop
+				isAnyCrop,
 			);
 		});
 	});

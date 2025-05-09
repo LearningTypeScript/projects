@@ -38,7 +38,7 @@ function splitLines(text: string, width: number) {
 
 function alignLines(
 	lines: string[],
-	{ align = "left", width }: AlignmentOptions
+	{ align = "left", width }: AlignmentOptions,
 ) {
 	const aligned: string[] = [];
 

@@ -20,7 +20,7 @@ describe(announceCharacter, () => {
 
 		expect(mockLog).toHaveBeenCalledWith("I am Skeletype.");
 		expect(mockLog).toHaveBeenCalledWith(
-			"My powers are: magic, telepathy, teleportation."
+			"My powers are: magic, telepathy, teleportation.",
 		);
 		expect(mockLog).toHaveBeenCalledWith("I am evil.");
 	});

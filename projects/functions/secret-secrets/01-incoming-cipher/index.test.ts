@@ -16,7 +16,7 @@ describe(createCipher, () => {
 
 		test("return type", () => {
 			expectType<(text: string) => string>(
-				createCipher((text: string) => text)
+				createCipher((text: string) => text),
 			);
 		});
 	});

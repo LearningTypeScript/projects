@@ -20,11 +20,11 @@ export interface Treasure<T> {
 export function collectTreasure<
 	Content,
 	Fake extends Content,
-	Real extends Content
+	Real extends Content,
 >(
 	buried: Buried<Content>,
 	isFake: (item: Content) => item is Fake,
-	isReal: (item: Content) => item is Real
+	isReal: (item: Content) => item is Real,
 ) {
 	const fake: Fake[] = [];
 	const real: Real[] = [];

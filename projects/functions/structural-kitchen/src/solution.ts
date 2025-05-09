@@ -32,7 +32,7 @@ export type Kitchen = {
 export function createKitchen(
 	budget: number,
 	cleaner: Cleaner,
-	supplier: Supplier
+	supplier: Supplier,
 ): Kitchen {
 	let dirt = 0;
 	let stock = {

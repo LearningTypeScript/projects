@@ -13,7 +13,7 @@ describe(createAdvancedCipher, () => {
 				(
 					onVowel: (text: string) => string,
 					onConsonant: (text: string) => string,
-					onPunctuation: (text: string) => string
+					onPunctuation: (text: string) => string,
 				) => (text: string) => string
 			>(createAdvancedCipher);
 		});
@@ -23,8 +23,8 @@ describe(createAdvancedCipher, () => {
 				createAdvancedCipher(
 					(text: string) => text,
 					(text: string) => text,
-					(text: string) => text
-				)
+					(text: string) => text,
+				),
 			);
 		});
 	});
@@ -74,7 +74,7 @@ describe(createAdvancedCipher, () => {
 		// Run it extra times to make sure repeated runs still work 😉
 		expect(encoder(input)).toEqual(expected);
 		expect(
-			createAdvancedCipher(onVowel, onConsonant, onPunctuation)(input)
+			createAdvancedCipher(onVowel, onConsonant, onPunctuation)(input),
 		).toEqual(expected);
 	});
 });

@@ -13,10 +13,10 @@ describe(pick, () => {
 		expectType<number>(pick({ a: 1, b: false }, "a"));
 		expectType<undefined>(pick({ a: 1, b: undefined }, "b"));
 		expectType<number | string>(
-			pick({ a: 1, b: "" }, Math.random() > 0.5 ? "a" : "b")
+			pick({ a: 1, b: "" }, Math.random() > 0.5 ? "a" : "b"),
 		);
 		expectType<number | string>(
-			pick({ a: 1, b: "", c: false }, Math.random() > 0.5 ? "a" : "b")
+			pick({ a: 1, b: "", c: false }, Math.random() > 0.5 ? "a" : "b"),
 		);
 	});
 

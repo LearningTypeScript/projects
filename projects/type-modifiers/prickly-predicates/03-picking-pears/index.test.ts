@@ -36,7 +36,7 @@ describe(pickFruitBearingCacti, () => {
 	describe("types", () => {
 		test("function type", () => {
 			expectType<(data: solution.Cactus[]) => solution.FruitBearingCactus[]>(
-				pickFruitBearingCacti
+				pickFruitBearingCacti,
 			);
 		});
 	});

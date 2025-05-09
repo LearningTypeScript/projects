@@ -20,7 +20,7 @@ for (const chapterSlug of fs.readdirSync("projects")) {
 
 		test("_category_.json", () => {
 			const categoryData = readFileAsJSON(
-				`${chapterDirectory}/_category_.json`
+				`${chapterDirectory}/_category_.json`,
 			);
 
 			expect(categoryData).toEqual({
@@ -44,7 +44,7 @@ for (const chapterSlug of fs.readdirSync("projects")) {
 		for (const projectSlug of projectSlugs) {
 			describe(projectSlug, () => {
 				const projectContents = fs.readdirSync(
-					`projects/${chapterSlug}/${projectSlug}`
+					`projects/${chapterSlug}/${projectSlug}`,
 				);
 				const projectTitle = toTitle(projectSlug);
 
@@ -68,7 +68,7 @@ for (const chapterSlug of fs.readdirSync("projects")) {
 
 						expect(contents).toContain(`# ${projectTitle}`);
 						expect(contents).toContain(
-							`> A [Learning TypeScript > ${chapterTitle}](https://learning-typescript.com/${chapterSlug}) 🥗 appetizer project.`
+							`> A [Learning TypeScript > ${chapterTitle}](https://learning-typescript.com/${chapterSlug}) 🥗 appetizer project.`,
 						);
 						expect(contents).toContain(`## Setup`);
 
@@ -84,7 +84,7 @@ npm run tsc -- --project ${stepSlugs[0]} --watch
 
 							if (contents.includes("run Jest")) {
 								expect(contents).toContain(
-									"In one terminal, run the TypeScript compiler"
+									"In one terminal, run the TypeScript compiler",
 								);
 								expect(contents).toContain(
 									`In another terminal, run Jest via the \`test\` script on whichever step you're working on.
@@ -92,7 +92,7 @@ For example, to start tests for the first step in watch mode:
 
 \`\`\`shell
 npm run test -- 1 --watch
-\`\`\``
+\`\`\``,
 								);
 							} else {
 								expect(contents).toContain("In your terminal, run the");
@@ -103,7 +103,7 @@ npm run test -- 1 --watch
 					if (chapterSlug !== "type-operations") {
 						test("tsconfig.json", () => {
 							const tsconfigData = readFileAsJSON(
-								`${chapterDirectory}/${projectSlug}//tsconfig.json`
+								`${chapterDirectory}/${projectSlug}//tsconfig.json`,
 							);
 
 							expect(tsconfigData).toMatchObject({
@@ -119,7 +119,7 @@ npm run test -- 1 --watch
 						describe(stepSlug, () => {
 							test("tsconfig.json", () => {
 								const tsconfigData = readFileAsJSON(
-									`${chapterDirectory}/${projectSlug}/${stepSlug}/tsconfig.json`
+									`${chapterDirectory}/${projectSlug}/${stepSlug}/tsconfig.json`,
 								);
 
 								expect(tsconfigData).toMatchObject({
@@ -135,7 +135,7 @@ npm run test -- 1 --watch
 
 				function testEntreeOrDessertProject() {
 					const categoryData = readFileAsJSON(
-						`${chapterDirectory}/${projectSlug}/_category_.json`
+						`${chapterDirectory}/${projectSlug}/_category_.json`,
 					) as CategoryData;
 					const [mealEmoji, mealType] = categoryData.label.includes("🍲")
 						? ["🍲", "entree"]
@@ -152,7 +152,7 @@ npm run test -- 1 --watch
 
 						expect(contents).toContain(`# ${projectTitle}`);
 						expect(contents).toContain(
-							`> A [Learning TypeScript > ${chapterTitle}](https://learning-typescript.com/${chapterSlug}) ${mealEmoji} ${mealType} project.`
+							`> A [Learning TypeScript > ${chapterTitle}](https://learning-typescript.com/${chapterSlug}) ${mealEmoji} ${mealType} project.`,
 						);
 						expect(contents).toContain(`## Setup`);
 						expect(contents)
@@ -171,7 +171,7 @@ For example, to start tests in watch mode:
 
 \`\`\`shell
 npm run test -- --watch
-\`\`\``
+\`\`\``,
 							);
 						} else {
 							expect(contents).toContain("In your terminal, run the");
@@ -180,7 +180,7 @@ npm run test -- --watch
 
 					test("tsconfig.json", () => {
 						const tsconfigData = readFileAsJSON(
-							`${chapterDirectory}/${projectSlug}/tsconfig.json`
+							`${chapterDirectory}/${projectSlug}/tsconfig.json`,
 						);
 
 						expect(tsconfigData).toMatchObject({
@@ -192,12 +192,12 @@ npm run test -- --watch
 
 				function testCategoryJson(emoji: string) {
 					const categoryData = readFileAsJSON(
-						`${chapterDirectory}/${projectSlug}/_category_.json`
+						`${chapterDirectory}/${projectSlug}/_category_.json`,
 					);
 
 					expect(categoryData).toEqual({
 						label: expect.stringMatching(
-							new RegExp(`${emoji} ${projectTitle}`, "i")
+							new RegExp(`${emoji} ${projectTitle}`, "i"),
 						),
 						position: expect.any(Number),
 					});
@@ -206,7 +206,7 @@ npm run test -- --watch
 				function testPackageJson() {
 					test("package.json", () => {
 						const categoryData = readFileAsJSON(
-							`${chapterDirectory}/${projectSlug}/package.json`
+							`${chapterDirectory}/${projectSlug}/package.json`,
 						) as PackageData;
 
 						expect(categoryData).toEqual({
@@ -227,7 +227,7 @@ npm run test -- --watch
 						};
 
 						expect(testSolutionsScript).toEqual(
-							solutionScripts[testScript] ?? "(unknown test script)"
+							solutionScripts[testScript] ?? "(unknown test script)",
 						);
 					});
 				}
