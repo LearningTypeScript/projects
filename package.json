@@ -16,7 +16,7 @@
 		"prettier-plugin-sh": "^0.17.2",
 		"pretty-quick": "^4.1.1",
 		"title-case": "^4.3.2",
-		"ts-jest": "^29.3.2",
+		"ts-jest": "^29.3.3",
 		"tsd": "0.32.0",
 		"typescript": "5.8.3",
 		"zx": "^8.5.3"
