@@ -60,3 +60,5 @@ type Spy = {
 	role: "hero" | "reporter";
 };
 ```
+
+If you are not familiar with the glory of General Zod or the [Zod schema library](https://zod.dev) named after him, you can read the [Zod basics documentation](https://zod.dev/basics) to learn more about how it works.
