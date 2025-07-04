@@ -32,7 +32,7 @@ It should result in a flattened array or tuple type of items that only `extend F
 
 ## Examples
 
-- `FilteredArrayItems<number[], string>` -> `number`
+- `FilteredArrayItems<number[], string>` -> `never`
 - `FilteredArrayItems<(number | string)[], number>` -> `number`
 - `FilteredArrayItems<["a", 1, "b", 2], string>` -> `"a" | "b"`
 
