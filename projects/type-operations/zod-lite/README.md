@@ -4,6 +4,10 @@
 
 Kneel before Zod!
 
+General Zod of the Kryptonian Army demands your assistance in creating a [Zod](https://zod.dev)-like schema validation library.
+It must support strings, literal strings, unions of literal strings, and objects with properties that can be any of the above.
+Only in this way will the former glory of the Kryptonian Army be restored.
+
 ## Setup
 
 In one terminal, run the TypeScript compiler via the `tsc` script.
@@ -33,26 +37,26 @@ Additionally, export an `type Infer<Schema>` that creates a TypeScript type for 
 
 ## Example
 
-This code:
+Given this code:
 
 ```ts
 import * as z from "./index";
 
 const spySchema = z.object({
 	disguise: z.string(),
-	moniker: z.literal("007"),
-	plan: z.union([z.literal("active"), z.literal("improvising")]),
+	trueName: z.literal("Kal-El"),
+	role: z.union([z.literal("hero"), z.literal("reporter")]),
 });
 
 type Spy = z.Infer<typeof spySchema>;
 ```
 
-...create a `Spy` type equivalent to:
+The `Spy` type should be equivalent to:
 
 ```ts
 type Spy = {
 	disguise: string;
-	moniker: "007";
-	plan: "active" | "improvising";
+	trueName: "Kal-El";
+	role: "hero" | "reporter";
 };
 ```
