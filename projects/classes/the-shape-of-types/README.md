@@ -69,3 +69,5 @@ Two more exported classes must be exported that each extends `Horror`:
 ## Notes
 
 - You may add `#` private members to the classes as you wish, such as to store previously consumed opponents.
+- Record each opponent's name, evil, and power _at the moment you consume them_ — not a live reference
+- If a horror hasn't eaten yet, its power starts at 0
