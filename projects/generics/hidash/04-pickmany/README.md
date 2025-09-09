@@ -19,6 +19,6 @@ Example: `pickMany({ a: 1, b: 2, c: 3 }, ['a', 'c'])` -> `[1, 3]`
 
 ## Files
 
-- `index.ts`: Write your `pick` function here
-- `index.test.ts`: Tests verifying `pick`
+- `index.ts`: Write your `pickMany` function here
+- `index.test.ts`: Tests verifying `pickMany`
 - `solution.ts`: Solution code
