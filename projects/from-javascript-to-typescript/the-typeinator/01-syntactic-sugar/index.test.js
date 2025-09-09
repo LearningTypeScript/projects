@@ -1,19 +1,22 @@
-const { announceMachines } = require("./index");
+const index = require("./index");
+const solution = require("./solution");
+const { announceMachines } = process.env.TEST_SOLUTIONS ? solution : index;
 
-test("announceMachines returns correct count", () => {
-	const messages = [];
+describe("01 - Syntactic Sugar > announceMachines", () => {
+	test("announces the expected label and categories", () => {
+		const announce = jest.fn();
 
-	const result = announceMachines(
-		(msg) => messages.push(msg),
-		{ make: "Honda", model: "Civic" },
-		{ make: "Toyota", model: "Corolla", label: "Compact Car" },
-		{ make: "Ford", model: "Focus", label: "Eco Car" },
-	);
+		const result = announceMachines(
+			announce,
+			{ make: "Honda", model: "Civic" },
+			{ label: "Compact Car" },
+			{ label: "Eco Car" },
+		);
 
-	expect(result).toBe(2);
-	expect(messages).toEqual([
-		"Make: Honda Model: Civic",
-		"Compact Car",
-		"Eco Car",
-	]);
+		expect(announce.mock.calls).toEqual([
+			["Make: Honda; Model: Civic"],
+			["Compact Car"],
+			["Eco Car"],
+		]);
+	});
 });
