@@ -54,6 +54,28 @@ for (const chapterSlug of fs.readdirSync("projects")) {
 					testAppetizerProject();
 				}
 
+				function projectUsesJest() {
+					const packageData = readFileAsJSON(
+						`${chapterDirectory}/${projectSlug}/package.json`,
+					) as PackageData;
+
+					return packageData.scripts.test === "jest";
+				}
+
+				function testContainsTestFile(directorySlug: string) {
+					test("test file", () => {
+						const directoryContents = fs.readdirSync(
+							`${chapterDirectory}/${projectSlug}/${directorySlug}`,
+						);
+
+						expect(
+							directoryContents.filter((fileName) =>
+								fileName.includes(".test."),
+							),
+						).not.toEqual([]);
+					});
+				}
+
 				function testAppetizerProject() {
 					const stepSlugs = fs
 						.readdirSync(`${chapterDirectory}/${projectSlug}`)
@@ -115,8 +137,14 @@ npm run test -- 1 --watch
 						});
 					}
 
+					const usesJest = projectUsesJest();
+
 					for (const stepSlug of stepSlugs) {
 						describe(stepSlug, () => {
+							if (usesJest) {
+								testContainsTestFile(stepSlug);
+							}
+
 							test("tsconfig.json", () => {
 								const tsconfigData = readFileAsJSON(
 									`${chapterDirectory}/${projectSlug}/${stepSlug}/tsconfig.json`,
@@ -144,6 +172,10 @@ npm run test -- 1 --watch
 					testCategoryJson(mealEmoji);
 
 					testPackageJson();
+
+					if (projectUsesJest()) {
+						testContainsTestFile("src");
+					}
 
 					test("README.md", () => {
 						const contents = fs
