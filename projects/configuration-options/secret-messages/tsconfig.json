@@ -1,4 +1,9 @@
 {
+	"compilerOptions": {
+		"allowJs": true,
+		"noEmit": true,
+		"resolveJsonModule": true
+	},
 	"extends": "../../../tsconfig.json",
 	"include": ["."]
 }
